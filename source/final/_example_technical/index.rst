@@ -41,8 +41,6 @@ If I forgot how to do reStructuredText I could look at the Sphinx website [sphin
 
 .. [TextCitation] Author's Last name, First name. "Title of Source." Title of Container, other contributors, version, numbers, publisher, publication date, location.
 
-http://www.bibme.org/mla
-
 .. [dta] "`Directory traversal attack <https://en.wikipedia.org/wiki/Directory_traversal_attack>`_." Wikipedia. Wikimedia Foundation, 07 Feb. 2017. Web. 15 Feb. 2017.
 .. [sphinx] Georg Brandl. "`reStructuredText Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_" Sphinx Team, Web. 15 Feb. 2017.
 
@@ -118,3 +116,13 @@ But they don't have to be so angry.
     Only you can prevent forest fires. Really. Because we cut back on
     the budget and there isn't anyone else.
 
+Roles
+-----
+
+See: https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html
+
+You can hit :kbd:`ctrl`-:kbd:`c` to stop a running program.
+
+To continue, hit :menuselection:`Start --> Programs`
+
+You can do math equations: :math:`x=\frac{5}{a} + b^2`
