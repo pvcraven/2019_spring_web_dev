@@ -8,14 +8,7 @@ called “components” [reactIntro]_.
 Heading 1
 ---------
 
-Ut et erat vitae neque bibendum pellentesque quis quis nunc. Maecenas nisl orci,
-sodales sit amet fermentum convallis, feugiat eu lacus. Nunc vel arcu accumsan,
-laoreet diam in, elementum nisl. Maecenas elementum dapibus interdum. Morbi leo
-libero, volutpat eu nisi nec, ultricies sollicitudin felis. Suspendisse id dui
-nec felis blandit pellentesque vel quis metus. Curabitur non elit id tortor
-scelerisque vestibulum. Nunc sapien felis, convallis quis mollis quis, mattis
-sit amet quam. Maecenas rhoncus mauris vitae augue laoreet pharetra. In imperdiet
-quam vel turpis gravida fermentum.
+This is a simple tutorial for how to learn ReactJS [reactSimple]_.
 
 Heading 2
 ---------
@@ -29,5 +22,5 @@ Heading 3
 Sources
 ---------
 .. [reactIntro] "`Tutorial: Intro to React <https://reactjs.org/tutorial/tutorial.html>`_" React. Facebook Inc., 4/2/2019.
-..
+.. [reactSimple] Borgen, Per Harald. "`Learn React.js in 5 Minutes <https://medium.freecodecamp.org/learn-react-js-in-5-minutes-526472d292f4>`_" FreeCodeCamp.org, A Medium Corporation, 4/10/2018.
 
