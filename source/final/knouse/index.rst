@@ -1,4 +1,4 @@
-Report Title Goes Here
+Google Accelerated Mobile Pages
 ======================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
