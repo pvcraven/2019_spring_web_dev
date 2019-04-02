@@ -1,14 +1,9 @@
 ReactJS
 ======================
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+React is a declarative, efficient, and flexible JavaScript library for building
+user interfaces. It lets you compose complex UIs from small and isolated pieces of code
+called “components” [reactIntro]_.
 
 Heading 1
 ---------
@@ -30,3 +25,9 @@ Sub Heading
 
 Heading 3
 ---------
+
+Sources
+---------
+.. [reactIntro] "`Tutorial: Intro to React <https://reactjs.org/tutorial/tutorial.html>`_" React. Facebook Inc., 4/2/2019.
+..
+
