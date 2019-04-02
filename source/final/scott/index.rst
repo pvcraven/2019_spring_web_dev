@@ -30,3 +30,8 @@ Sub Heading
 
 Heading 3
 ---------
+
+Sources
+-------
+"React, A Javascript library for building user interfaces" reactjs, Facebook Open Source, 2019.
+"React.js: a better introduction to the most powerful UI library ever created." hackernoon, Llya Suzdalnitski, Medium, 03 Sep. 2018
