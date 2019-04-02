@@ -1,4 +1,4 @@
-Report Title Goes Here
+AngularJS
 ======================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
@@ -30,3 +30,13 @@ Sub Heading
 
 Heading 3
 ---------
+
+
+Sources
+-------
+
+.. [Angular] Angular.io "`Architecture overview <https://angular.io/guide/architecture>`_" version 7.2.12-local+sha.d727561, Google, Web 4/2/2019
+
+.. [Tutorialspoint] Tutorialspoint.com "`AngularJS - Overview <https://www.tutorialspoint.com/angularjs/angularjs_overview.htm>`_" Web 4/2/2019 
+
+.. [Chansuwath, Senivongse] W. Chansuwath and T. Senivongse "A model-driven development of web applications using AngularJS framework," 2016 IEEE/ACIS 15th International Conference on Computer and Information Science (ICIS), Okayama, 2016, pp. 1-6.
