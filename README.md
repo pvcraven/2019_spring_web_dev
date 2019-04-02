@@ -6,4 +6,4 @@ The built version of this documentation is available at:
 
 https://2019-spring-web-dev.readthedocs.io/en/latest/
 
-Documentation written in RestructuredText and built using [Sphinx](http://www.sphinx-doc.org/en/master/).
+Documentation written in [RestructuredText](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) and built using [Sphinx](http://www.sphinx-doc.org/en/master/).
