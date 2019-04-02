@@ -1,4 +1,4 @@
-Mark Becker ReactJS
+ReactJS
 ======================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
