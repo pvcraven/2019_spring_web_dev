@@ -1,4 +1,4 @@
-Report Title Goes Here
+Vue.js
 ======================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
