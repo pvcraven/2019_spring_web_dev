@@ -1,14 +1,7 @@
 Three.js
-======================
+========
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+Three.js is a 3D graphics library for JavaScript [wik]_.
 
 Heading 1
 ---------
@@ -30,3 +23,7 @@ Sub Heading
 
 Heading 3
 ---------
+
+Citations
+~~~~~~~~~
+.. [wik] John. "`Test citation <https://en.wikipedia.org/wiki/Three.js>`_" Wiki Inc, Web. 2 April 2019.
