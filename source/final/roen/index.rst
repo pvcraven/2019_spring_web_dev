@@ -2,32 +2,41 @@ Three.js
 ========
 
 Outline
-=======
-- Introduction to Three.js
-- History [FirstCommit]
-	a. Explain Ricardo Cabello's timeline up to first Github release
-	b. Ricardo Cabello released in April 2010
-- History [MoreCommits]
-	a. A few people added to the project
-	b. Many contributors help in updating and supporting this project now
-- What WebGL does [Mozilla]
-	a. WebGL is used to create 2D and 3D graphics in a web browser
-	b. Created by Mozilla
-- What Three.js adds [Threejs]
-	a. Don't need to know WebGL
-	b. Lower learning curve (WebGL is higher-level)
-- Three.js example code
-	a. Basic scene
-	b. Add a sun with orbiting moon
-- Benefits of Three.js [Github] [ThreejsExamples]
-	a. Lots of examples on the website
-	b. Project health is strong (Lots of commits, questions answered, etc)
-	c. Lightweight but has the option of adding extensions
-- Problems with Three.js [Github] [ThreejsDocs]
-	a. No versioning system, meaning API changes more often
-	b. The online editor is not good
-	c. Lots of examples, but specific documentation is not great
--Conclusion
+-------
+
+::
+
+	- Introduction to Three.js
+	- History [FirstCommit]
+		a. Explain Ricardo Cabello's timeline up to first Github release
+		b. Ricardo Cabello released in April 2010
+	- History [MoreCommits]
+		a. A few people added to the project
+		b. Many contributors help in updating and supporting this project now
+	- What WebGL does [Mozilla]
+		a. WebGL is used to create 2D and 3D graphics in a web browser
+		b. Created by Mozilla
+	- What Three.js adds [Threejs]
+		a. Don't need to know WebGL
+		b. Lower learning curve (WebGL is higher-level)
+	- Three.js example code
+		a. Basic scene
+		b. Add a sun with orbiting moon
+	- Three.js example explanation
+	- Benefits of Three.js [Github] [ThreejsExamples]
+		a. Lots of examples on the website
+		b. Project health is strong (Lots of commits, questions answered, etc)
+		c. Lightweight but has the option of adding extensions
+	- Problems with Three.js [Github] [ThreejsDocs]
+		a. No versioning system, meaning API changes more often
+		b. The online editor is not good
+		c. Lots of examples, but specific documentation is not great
+	- Conclusion
+
+.. raw:: html
+	
+	
+
 
 Three.js is a 3D graphics library for JavaScript [Threejs].
 
