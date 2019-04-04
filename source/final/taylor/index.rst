@@ -1,26 +1,23 @@
 ReactJS Project
 ======================
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+Outline
+-------
+* Introduction - What the topic is about. Cover highlight 	points. Last sentence should be a thesis statement!
+* What is ReactJS, why the UI Library is popular?  
+
+* History of ReactJS / Library of Code
+* Major Section - Internationalization of Code
+
+    * Paragraph 1
+    * Paragraph 2
+
+* Major Section II
+* Major Section III
+* Conclusion
 
 Heading 1
 ---------
-
-Ut et erat vitae neque bibendum pellentesque quis quis nunc. Maecenas nisl orci,
-sodales sit amet fermentum convallis, feugiat eu lacus. Nunc vel arcu accumsan,
-laoreet diam in, elementum nisl. Maecenas elementum dapibus interdum. Morbi leo
-libero, volutpat eu nisi nec, ultricies sollicitudin felis. Suspendisse id dui
-nec felis blandit pellentesque vel quis metus. Curabitur non elit id tortor
-scelerisque vestibulum. Nunc sapien felis, convallis quis mollis quis, mattis
-sit amet quam. Maecenas rhoncus mauris vitae augue laoreet pharetra. In imperdiet
-quam vel turpis gravida fermentum.
 
 Heading 2
 ---------
@@ -30,3 +27,24 @@ Sub Heading
 
 Heading 3
 ---------
+
+Citations
+---------
+..[ReactJS] "`Tutorial: Intor to React <https://reactjs.org/tutorial/tutorial.html>`_" React. Facebook Inc, Web. 4 Apr. 2019.
+
+..[InfoWorld] Krill, Paul. "React: Making Faster, Smoother UIs for data-driven Web Apps." InfoWorld Tech Watch, InfoWorld, 15 May 2014.
+
+..[TheNewStack] Dawson, Chris. "JavaScript's History and How it Led to React JS." The New Stack Technology, The New Stack, 25 Jul. 2014.
+
+..[InfoQ] Hemel, Zef. "Facebook's React JavaScript User Interfaces Library Receives Mixed Reviews." InfoQ News, InfoQ, 3 Jun. 2013.
+
+Webpages Links
+-----------------
+
+<https://en.wikipedia.org/wiki/React_(JavaScript_library)>
+
+<https://www.infoworld.com/article/2608181/react--making-faster--smoother-uis-for-data-driven-web-apps.html>
+
+<https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/>
+
+<https://www.infoq.com/news/2013/06/facebook-react>
