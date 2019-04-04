@@ -1,26 +1,42 @@
 React JS - STA
 ===============
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+* Introduction - What topic is about. Cover highlight points. End with thesis!
+
+
+
+* History of topic / library of code
+
+    React is a declarative, efficient and flexible JavaScript library. Created
+    by facebook engineer Jordan Walke, it was meant to help bulid user interfaces
+    React was first used by Facebook and has continued to grow over the years. In
+    May 2013, Facebook announced that it would open source React and its
+    popularity to skyrocket.
+
+
+* Using React
+
+    * Paragraph 1 (Use references)
+    * Paragraph 2
+    * Tools
+
+*
+
+    * Paragraph 1 (Use references)
+    * Paragraph 2
+    * Paragraph 3
+
+* Why React
+
+    * Paragraph 1 (Use references)
+    * Paragraph 2
+    * Paragraph 3
+
+* Conclusion
+
 
 Heading 1
 ---------
-
-Ut et erat vitae neque bibendum pellentesque quis quis nunc. Maecenas nisl orci,
-sodales sit amet fermentum convallis, feugiat eu lacus. Nunc vel arcu accumsan,
-laoreet diam in, elementum nisl. Maecenas elementum dapibus interdum. Morbi leo
-libero, volutpat eu nisi nec, ultricies sollicitudin felis. Suspendisse id dui
-nec felis blandit pellentesque vel quis metus. Curabitur non elit id tortor
-scelerisque vestibulum. Nunc sapien felis, convallis quis mollis quis, mattis
-sit amet quam. Maecenas rhoncus mauris vitae augue laoreet pharetra. In imperdiet
-quam vel turpis gravida fermentum.
 
 Heading 2
 ---------
@@ -28,5 +44,10 @@ Heading 2
 Sub Heading
 ~~~~~~~~~~~
 
-Heading 3
----------
+Works Cited
+-----------
+
+.. [React] "`React: A JavaScript library for building user interfaces <https://reactjs.org/>`_" Facebook Inc. Facebook Open Source, Web 2 April. 2019.
+.. [w3Schools] "`What is React? <https://www.w3schools.com/whatis/whatis_react.asp>`_ " W3 Schools. Refnes Data, Web 4 April. 2019.
+.. [LearnReact] "`Borgen, Per Harald <https://medium.freecodecamp.org/learn-react-js-in-5-minutes-526472d292f4>`_" freeCodeCamp.org. A Medium Corparation. 4/10/18.
+.. [ReactTutorial] "`McGinnis Tyler <https://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/>`_" TylerMcGinnis.com, np. March, 12. 2018._
