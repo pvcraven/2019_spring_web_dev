@@ -30,3 +30,14 @@ Sub Heading
 
 Heading 3
 ---------
+* intro
+
+* History
+
+* why and what to us AngularJS for.
+
+* examples
+
+
+.. [w3schools] "`AngularJS Tutorial <https://www.w3schools.com/angular/default.asp>`_" W3Schools, Web. 4 Apr. 2019
+.. [Lau] "`sitepoint <https://www.sitepoint.com/10-reasons-use-angularjs/>`_" sitepoint, 05 Sept. 2013. Web. 4 Apr. 2019
