@@ -1,26 +1,34 @@
 NodeJS
 ======
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+* Introduction
+
+* History of topic / library of code
+  Node JS was made in 2010, which makes it only 10 years old.
+
+* Major section
+  What is nodeJS
+
+  * Paragraph 1
+    Features, who uses it
+
+  * Paragraph 2
+  Advantages, disadvantages
+
+* Major section 2
+  Before NodeJS
+
+* Sample code
+  Example of nodeJS code
+  Hello world example
+
+* Conclusion
+
+
 
 Heading 1
 ---------
 
-Ut et erat vitae neque bibendum pellentesque quis quis nunc. Maecenas nisl orci,
-sodales sit amet fermentum convallis, feugiat eu lacus. Nunc vel arcu accumsan,
-laoreet diam in, elementum nisl. Maecenas elementum dapibus interdum. Morbi leo
-libero, volutpat eu nisi nec, ultricies sollicitudin felis. Suspendisse id dui
-nec felis blandit pellentesque vel quis metus. Curabitur non elit id tortor
-scelerisque vestibulum. Nunc sapien felis, convallis quis mollis quis, mattis
-sit amet quam. Maecenas rhoncus mauris vitae augue laoreet pharetra. In imperdiet
-quam vel turpis gravida fermentum.
 
 Heading 2
 ---------
@@ -30,3 +38,24 @@ Sub Heading
 
 Heading 3
 ---------
+
+
+
+Sources
+-------
+
+.. [NodeJS] Node.JS "`Introduction <https://nodejs.dev/introduction-to-nodejs>`_"
+Google, Web 4/2/2019
+
+.. [Node.js Introduction] Node.JS "`Introduction <https://www.tutorialspoint.com
+/nodejs/nodejs_introduction.htm>`_" Google, Web 4/4/2019
+
+.. [NodeJS web app] Node.JS "`Advantages and disadvantages <https://www.
+mindinventory.com/blog/pros-and-cons-of-node-js-web-app-development/>`_" Google,
+Web 4/4/2019
+
+.. [NodeJS] Node.JS "`Why use NodeJS <https://www.toptal.com/nodejs/why-the-hell
+-would-i-use-node-js>`_" Google, Web 4/4/2019
+
+.. [NodeJS] Node.JS "`Tutorials <https://codeburst.io/the-only-nodejs-
+introduction-youll-ever-need-d969a47ef219>`_" Google, Web 4/4/2019

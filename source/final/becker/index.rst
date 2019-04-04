@@ -1,32 +1,71 @@
 ReactJS
 ======================
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+Outline
+--------
+
+Introduction
+
+* Introduction - What is react, why is it a big deal, what the article is
+  going to talk about
+* History - Talk through relatively new material [reactHistory]_
+* Popularity - Who uses React? Is it a good thing to learn
+  right now? [reactPopularity]_
+* Advantages - Why use React? [reactPopularity]_
+* Future - Is React a dying technology or will it be used for years?
+
+About React.js
+
+* What is Babel and JSX? [w3Schools]_
+* Components - What is it, how is it used, what advantages?
+* Data Storage - Props and State, what are they and how do they
+  work? [reactSimple]_
+* Best Practices - The best way to use components and data
+  storage [bestPractices]_.
+* When should React.js be used?
+
+React Tutorial
+
+* Show setup/how to get React in the project
+* Use components
+* Show how to use the two forms of data storage
+* Create basic application/functionality using components and data storage
+* Conclusion
+
 
 Heading 1
 ---------
+React is a declarative, efficient, and flexible JavaScript library for building
+user interfaces. It lets you compose complex UIs from small and isolated pieces
+of code called “components” [reactIntro]_.
 
-Ut et erat vitae neque bibendum pellentesque quis quis nunc. Maecenas nisl orci,
-sodales sit amet fermentum convallis, feugiat eu lacus. Nunc vel arcu accumsan,
-laoreet diam in, elementum nisl. Maecenas elementum dapibus interdum. Morbi leo
-libero, volutpat eu nisi nec, ultricies sollicitudin felis. Suspendisse id dui
-nec felis blandit pellentesque vel quis metus. Curabitur non elit id tortor
-scelerisque vestibulum. Nunc sapien felis, convallis quis mollis quis, mattis
-sit amet quam. Maecenas rhoncus mauris vitae augue laoreet pharetra. In imperdiet
-quam vel turpis gravida fermentum.
+This is a simple tutorial for how to learn ReactJS [reactSimple]_.
 
-Heading 2
+History
 ---------
+This is the history of React.js [reactHistory]_.
 
 Sub Heading
 ~~~~~~~~~~~
 
-Heading 3
+Popularity
+------------
+This talks about React's success [reactPopularity]_.
+
+Future
 ---------
+Talk about future a little bit to close [w3Schools]_.
+
+Sources
+---------
+.. [reactIntro] "`Tutorial: Intro to React <https://reactjs.org/tutorial/tutorial.html>`_" React. Facebook Inc., 4/2/2019.
+.. [reactSimple] Borgen, Per Harald. "`Learn React.js in 5 Minutes <https://medium.freecodecamp.org/learn-react-js-in-5-minutes-526472d292f4>`_" FreeCodeCamp.org, A Medium Corporation, 4/10/2018.
+.. [reactHistory] Papp, Andrea. "`The History of React.js on a Timeline <https://blog.risingstack.com/the-history-of-react-js-on-a-timeline/>`_" RisingStack, RisingStack Inc., 7/20/2018.
+.. [w3Schools] "`What is React? <https://www.w3schools.com/whatis/whatis_react.asp>`_" w3schools.com, W3Schools, 4/3/2019.
+.. [reactPopularity] Kostrzewa, Denis. "`Is React.js the Best Javascript Framework in 2018? <https://hackernoon.com/is-react-js-the-best-javascript-framework-in-2018-264a0eb373c8>`_" Hacker Noon, A Medium Corporation, 7/19/2018.
+.. [bestPractices] "`ReactJS Best Practices. <https://www.tutorialspoint.com/reactjs/reactjs_best_practices.htm>`_" tutorialspoint.com, Tutorials Point, 4/4/2019.
+
+
+
+
+
