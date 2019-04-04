@@ -1,5 +1,5 @@
 Google Accelerated Mobile Pages
-======================
+===============================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
 id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.

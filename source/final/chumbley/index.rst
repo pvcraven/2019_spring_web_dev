@@ -28,5 +28,8 @@ Heading 2
 Sub Heading
 ~~~~~~~~~~~
 
-Heading 3
----------
+Citation
+--------
+
+.. [TextCitation] Author's Last name, First name. "Title of Source." Title of Container, other contributors, version, numbers, publisher, publication date, location.
+.. [Vue.js] "`Introduction: What is Vue.js? <https://vuejs.org/v2/guide/>`_" Vue.js. Web. 2 Mar. 2019.s
