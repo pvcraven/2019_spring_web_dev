@@ -1,4 +1,4 @@
-Report Title Goes Here
+ReactJS Project
 ======================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
