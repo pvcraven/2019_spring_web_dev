@@ -16,10 +16,13 @@ Outline
 * Major Section III
 * Conclusion
 
-Heading 1
+Introduction
 ---------
 
-Heading 2
+History of ReactJS
+---------
+
+ReactJS Example Code
 ---------
 
 Sub Heading
@@ -28,9 +31,18 @@ Sub Heading
 Heading 3
 ---------
 
+Reception of ReactJS
+---------
+
+ReactJS Internationalization
+---------
+
+Conclusion
+---------
+
 Citations
 ---------
-..[ReactJS] "`Tutorial: Intor to React <https://reactjs.org/tutorial/tutorial.html>`_" React. Facebook Inc, Web. 4 Apr. 2019.
+..[ReactJS] "`Tutorial: Intro to React <https://reactjs.org/tutorial/tutorial.html>`_" React. Facebook Inc, Web. 4 Apr. 2019.
 
 ..[InfoWorld] Krill, Paul. "React: Making Faster, Smoother UIs for data-driven Web Apps." InfoWorld Tech Watch, InfoWorld, 15 May 2014.
 
@@ -38,7 +50,7 @@ Citations
 
 ..[InfoQ] Hemel, Zef. "Facebook's React JavaScript User Interfaces Library Receives Mixed Reviews." InfoQ News, InfoQ, 3 Jun. 2013.
 
-Webpages Links
+Website Links
 -----------------
 
 <https://en.wikipedia.org/wiki/React_(JavaScript_library)>
