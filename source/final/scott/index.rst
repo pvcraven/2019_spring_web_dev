@@ -1,14 +1,7 @@
 ReactJS Scott
 ==============
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+React js is a javascript library used for building user interfaces. [React]_ [React_hackernoon]_
 
 Heading 1
 ---------
@@ -33,5 +26,8 @@ Heading 3
 
 Sources
 -------
-"React, A Javascript library for building user interfaces" reactjs, Facebook Open Source, 2019.
-"React.js: a better introduction to the most powerful UI library ever created." hackernoon, Llya Suzdalnitski, Medium, 03 Sep. 2018
+
+.. [React] "`React, A Javascript library for building user interfaces <https://reactjs.org/>`" reactjs, Facebook Open Source, 2019. <https://reactjs.org/>
+
+.. [React_hackernoon] hackernoon, Llya Suzdalnitski. "`React.js: a better introduction to the most powerful UI library ever created. <https://hackernoon.com/react-js-a-better-introduction-to-the-most-powerful-ui-library-ever-created-ecd96e8f4621>`" Medium, 03 Sep. 2018
+
