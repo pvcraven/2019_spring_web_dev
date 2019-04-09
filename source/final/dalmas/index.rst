@@ -13,7 +13,7 @@ Outline
 * Advantages in General / Why Node.js?
 	* Syntax
 
-		* Only using Javascript vs using Java and Javascript
+		* Only using JavaScript vs using Java and JavaScript
 	* Single-threaded
 	* Speed
 
