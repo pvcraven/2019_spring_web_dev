@@ -6,24 +6,25 @@ Outline
 * Introduction - What is React JS? Overall important points. Thesis statement; 
   make it obvious.
 * History - When was it created? Did it evolve from something else? Creator 
-  [ReactHistory]_. 
+* How was it created? [ReactHistory]_. 
 
 1. How React is used [FullStackReact]_
 
   * Facebook, Instagram
-  * Basic samples (Add example if-else, print statements) [ReactJS]_
+  * Basic code samples (Add example if-else, print statements) [ReactJS]_
+  * Tutorial
 
 2. Why use React?
   
   * Features - Virtual DOM, JSX, Ease of Use, one-way data binding
   * Increase in Popularity
- 
-
+  * Virtual DOM
+  
 3. Future of React
   
   * Battle between other options (Angular, Vue). Differences and similarities 
     of the frameworks.
-
+  * Market Demand [Hackernoon]
 
 * Conclusion
 Heading 1
@@ -42,3 +43,5 @@ Sources
 .. [ReactHistory] Dawson, Chris "`Javascript's History and How it led to ReactJS <https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/`_" The New Stack, 25 July 2014. Web. 4 April 2019. 
 
 .. [ReactJS] "`React <https://reactjs.org/`_" Facebook. Facebook Open Source, Web. 4 April 2019.
+
+.. [Hackernoon] Kostrzewa, Denis "`Is React.js the Best Javascript Framework in 2018? <https://hackernoon.com/is-react-js-the-best-javascript-framework-in-2018-264a0eb373c8`_" Hacker Noon, 19 July 2018. Web. 8 April 2019.
