@@ -19,14 +19,15 @@ Model
 ~~~~~
 
 This section handles how the user data is handled. The data could come from
-the user or a database.
+the user or a database. The Model could be considered the javascript or any
+language that will do logical manipulation.
 
 View
 ~~~~
 
-The view section is responisble for handling anything the user will visually see.
+The view section is responsible for handling anything the user will visually see.
 The user interface logic could get data from the controller and send data to the
-model.
+model. The View is usually the HTML.
 
 Controllers
 ~~~~~~~~~~~
@@ -34,6 +35,81 @@ Controllers
 The controllers of the MVC architecture act as a interface for the view and model
 sections. The controller will manipulate data that has came from a model or some
 other source and send it back to the model and view [Tutorialspoint]_.
+
+AngularJS MVC
+~~~~~~~~~~~~~
+
+.. image:: pictures/AngularJSwebsite.PNG
+    :width: 800
+    :alt: Download Button for AngularJS [Angular]_
+
+Starting development in AngularJS is simple and easy. Going to `Angularjs.org <https://angularjs.org>`_
+and finding what version of AngularJS you want is simple. When you find the version you
+want to start developing in all you need to do is grab the URL of the file and stick it
+in your HTML file.
+
+.. code-block:: html
+	:caption: Adding the script for AngularJS
+
+	<script type="text/javascript" src="code.angularjs.org/1.7.8/angular.min.js"></script>
+
+Then you need to be worried about the global namespace that Angular uses. The
+framework has tons of preset global variables which could interfere with your
+javascript.
+
+Global Namespace
+~~~~~~~~~~~~~~~~
+
+While creating a HTML document you can incorperate many javascript libraries
+to enhance the document. One fear is that the javascript can override each other
+if they share similar named variables in their global namespace. consider the
+following examples:
+
+.. code-block:: javascript
+    :caption: Global Namespace Example 1
+
+    var person = 'Adam';
+    var class = 'Advanced Web Development';
+
+    function getInfo(){
+        return person + ' ' + class;
+    }
+
+.. code-block:: javascript
+    :caption: Global Namespace Example 2
+
+    var person = 'Mike';
+
+    getInfo();
+
+
+
+The function in the beginning declares person as 'Adam' but prints 'Mike' when the
+function is called in the 2nd file. This is because of the global namespace.
+This is very important to know and understand before delving to far into AngularJS.
+As mentioned before AngularJS comes with a ton of pre-defined variables in the
+global namespace which can get messy and cause errors and bugs. To combat this
+the user will have to create their own namespace. One way is to create your own
+namespace by treating globals you may want to use as a JSON variable.
+
+.. code-block:: javascript
+    :caption: JSON namespace
+
+    var myNamespace = {};
+
+    myNamespace.person = 'Mike';
+
+    getInfo();
+
+This Example will no longer use the global namespace in the first example and
+the function should now return 'Adam' as intended. This concept will be very
+important for dealing with AngularJS. [Alicea]_
+
+Bring in AngularJS Features
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
 
 Advantages
 ----------
@@ -60,6 +136,8 @@ Disadvantages
 
 Sources
 -------
+
+.. [Alicea] Anthony, Alicea “`Master AngularJS (Essential JavaScript Concepts) <https://www.udemy.com/learn-angularjs>`_ ” Udemy, Anthony Alicea, Web 4/9/2019
 
 .. [Angular] Angular.io "`Architecture overview <https://angular.io/guide/architecture>`_ "version 7.2.12-local+sha.d727561, Google, Web 4/2/2019
 
