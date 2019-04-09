@@ -24,7 +24,7 @@ Outline
   
   * Battle between other options (Angular, Vue). Differences and similarities 
     of the frameworks.
-  * Market Demand [Hackernoon]
+  * Market Demand [Hackernoon]_
 
 * Conclusion
 Heading 1
