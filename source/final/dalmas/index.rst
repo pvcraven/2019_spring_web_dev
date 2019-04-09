@@ -1,9 +1,6 @@
 ⠀Node.js
 ========
 
-Lettuce
--------
-
 15 paragraphs
 
 1500+ words
@@ -19,7 +16,10 @@ Outline
 	* Speed
 	* Only using Javascript vs using Java and Javascript
 	* Single-thread
-	* Risks? Why us this over competitors?
+	* Risks and solutions
+
+		* Pyramid of Doom
+		* Waterfall
 
 * Asynchronous Programming / How it Works [NodejsDev]_
 
@@ -29,22 +29,24 @@ Outline
 	* Advantages of asynchronous programming.
 	* Asynchronous programming examples.
 
-* What is Node.js used for?
+* What is Node.js used for? [LearningNode]_
 
 	* What is this used for?
 	* Why are these differences helpful? 
-	* Screen-shots
-	* Code samples
+	* REPL
+	* Express
 	* Example project
 
-* Conclusion
+		* Screen-shots
+		* Code samples
 
-If there's a screen-door in a submarine, how many pancakes do you need to 
-shingle the roof of a dog house?
+* Conclusion
 
 Citations
 ---------
 
-.. [Nodejs] Some Dude. "`Node.js <https://nodejs.org/en/>`_" Joyent Inc, Web. 2 April. 2019.
+.. [Nodejs] Node.js Foundation. "`Node.js <https://nodejs.org/en/>`_" Joyent Inc, Web. 2 April. 2019.
 
-.. [NodejsDev] Some Dude. "`Node.js Dev <https://nodejs.dev/a-brief-history-of-nodejs>`_" Joyent Inc, Web. 2 April. 2019.
+.. [NodejsDev] Node.js Foundation. "`Node.js Dev <https://nodejs.dev/a-brief-history-of-nodejs>`_" Joyent Inc, Web. 2 April. 2019.
+
+.. [LearningNode] Powers, Shelly, *Learning Node*. Sebastopol, O'Reilly, 2012.
