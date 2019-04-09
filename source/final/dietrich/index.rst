@@ -3,12 +3,15 @@ Data-Driven Documents
 
 * Introduction
 * History
+    * Who created it
+    * What does it do
+    * What is it used for
 * Examples
-
+    * How to use in project
+    * Dynamic Properties
     * Selection
     * SVG
     * Graphs
-
 * Conclusion
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
@@ -32,17 +35,12 @@ scelerisque vestibulum. Nunc sapien felis, convallis quis mollis quis, mattis
 sit amet quam. Maecenas rhoncus mauris vitae augue laoreet pharetra. In imperdiet
 quam vel turpis gravida fermentum.
 
-Heading 2
----------
-
-Sub Heading
-~~~~~~~~~~~
-
-Heading 3
----------
 
 
 
-.. [Bostock] Bostock, Mike. “`Data-Driven Documents <https://d3js.org/>`_.” D3.Js.
+
+.. [Bostock1] Bostock, Mike. “`Data-Driven Documents <https://d3js.org/>`_.” D3.Js.
 
 .. [Tutorialspoint] Tutorialspoint.com. “`D3.Js Quick Guide <https://www.tutorialspoint.com/d3js/d3js_quick_guide.htm>`_.” tutorialspoint.com, Tutorialspoint.
+
+.. [Bostock2] Bostock, Mike. "`How Selections Work <https://bost.ocks.org/mike/selection>`_." 26 Apr. 2013.

@@ -1,26 +1,44 @@
 Vue
 ===
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
 
-Heading 1
----------
+* Bullet
+* List
 
-Ut et erat vitae neque bibendum pellentesque quis quis nunc. Maecenas nisl orci,
-sodales sit amet fermentum convallis, feugiat eu lacus. Nunc vel arcu accumsan,
-laoreet diam in, elementum nisl. Maecenas elementum dapibus interdum. Morbi leo
-libero, volutpat eu nisi nec, ultricies sollicitudin felis. Suspendisse id dui
-nec felis blandit pellentesque vel quis metus. Curabitur non elit id tortor
-scelerisque vestibulum. Nunc sapien felis, convallis quis mollis quis, mattis
-sit amet quam. Maecenas rhoncus mauris vitae augue laoreet pharetra. In imperdiet
-quam vel turpis gravida fermentum.
+
+* Introduction
+* History of Vue
+* Declarative Rendering
+
+    * Paragraph 1 [VueMastery]
+    * Paragraph 2 [VueIntroduction]
+
+* Conditionals and Loops
+* User Input with Vue [w3schools]
+* Composing with Components
+* Conclusion
+
+This is Vue
+-----------
+
+History of Vue
+--------------
+
+Vue was created and released in February of 2014 by Evan You [VueWiki]. You had
+formally worked for Google in Google's Creative Lab. He heavily used Angular 1
+working on different projects and found that many of the features he either did
+not like or hardly used [Egghead]. Out of this, Vue was born.
+
+You built a templating library for his own personal and later released it as
+Vue.js. As the user community grew and addition features were added, Vue.js grew
+from a small templating library into the open-source JavaScript framework that
+it is today comparable to Angular which it grew out of [Egghead].
+
+Declarative Rendering
+---------------------
+
+The Vue.js system allows users to declaratively render data to the Document
+Object Model.
 
 Heading 2
 ---------
@@ -31,5 +49,8 @@ Sub Heading
 Citation
 --------
 
-.. [TextCitation] Author's Last name, First name. "Title of Source." Title of Container, other contributors, version, numbers, publisher, publication date, location.
-.. [Vue.js] "`Introduction: What is Vue.js? <https://vuejs.org/v2/guide/>`_" Vue.js. Web. 2 Mar. 2019.s
+.. [VueIntroduction] "`Introduction: What is Vue.js? <https://vuejs.org/v2/guide/>`_" Vue.js. Web. 2 Mar. 2019.
+.. [VueWiki] "`Vue.js <https://en.wikipedia.org/wiki/Vue.js>`_" Wikipedia. Wikimedia Foundation, Web. 4 Apr. 2019.
+.. [w3schools] "`What is Vue.js? <https://www.w3schools.com/whatis/whatis_vue.asp>`_" w3schools. Refsnes Data, Web. 4 Apr. 2019.
+.. [VueMastery] "`The Ultimate Learning Resource for Vue Developers <https://www.vuemastery.com/>`_" Vue Mastery.  Vue Mastery, Web. 4 Apr. 2019.
+.. [Egghead] "`Evan You, creator of Vue.js <https://egghead.io/podcasts/evan-you-creator-of-vue-js>`_" Egghead.io. Egghead.io, Web. 9 Apr. 2019.

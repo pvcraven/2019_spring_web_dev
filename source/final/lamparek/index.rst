@@ -1,32 +1,39 @@
 Vue- KDL
 ======================
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+Paper Outline
+-------------
 
-Heading 1
+Why use Vue.js?
+---------------
+* What is Vue.js [WhatIsVue]_
+* History
+* How it differs from other frameworks
+* How to install [Installation]_
+* Basic Hello Vue Example
+
+How to use Vue.js
+-----------------
+* The Vue Instance
+* Reactive
+* Vue Components
+* Vue Templates
+* Computed Properties
+* Event Handling
+* Animations [Tutorial]_
+
+A Calculator App
+------------------
+* Requirements [Tutorial]_
+* Implementation
+* Conclusion
+
+Citations
 ---------
-
-Ut et erat vitae neque bibendum pellentesque quis quis nunc. Maecenas nisl orci,
-sodales sit amet fermentum convallis, feugiat eu lacus. Nunc vel arcu accumsan,
-laoreet diam in, elementum nisl. Maecenas elementum dapibus interdum. Morbi leo
-libero, volutpat eu nisi nec, ultricies sollicitudin felis. Suspendisse id dui
-nec felis blandit pellentesque vel quis metus. Curabitur non elit id tortor
-scelerisque vestibulum. Nunc sapien felis, convallis quis mollis quis, mattis
-sit amet quam. Maecenas rhoncus mauris vitae augue laoreet pharetra. In imperdiet
-quam vel turpis gravida fermentum.
-
-Heading 2
----------
-
-Sub Heading
-~~~~~~~~~~~
-
-Heading 3
----------
+.. [WhatIsVue] “Introduction - Vue.js.” Vue.js, Vue.js,
+   vuejs.org/v2/guide/index.html#What-is-Vue-js.
+.. [Installation] “VueJS Environment Setup.” Www.tutorialspoint.com,
+   Tutorials Point, 2019, www.tutorialspoint.com/vuejs/vuejs_environment_setup.htm.
+.. [Tutorial] Eschweiler, Sebastian. “Vue.js 2 Quickstart Tutorial 2017.”
+   CodingTheSmartWay, Medium, 7 Jan. 2017,
+   medium.com/codingthesmartway-com-blog/vue-js-2-quickstart-tutorial-2017-246195cfbdd2.

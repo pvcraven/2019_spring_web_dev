@@ -1,26 +1,34 @@
 React JS
 ========
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+Outline 
+------- 
+* Introduction - What is React JS? Overall important points. Thesis statement; 
+  make it obvious.
+* History - When was it created? Did it evolve from something else? Creator 
+* How was it created? [ReactHistory]_. 
 
+1. How React is used [FullStackReact]_
+
+  * Facebook, Instagram
+  * Basic code samples (Add example if-else, print statements) [ReactJS]_
+  * Tutorial
+
+2. Why use React?
+  
+  * Features - Virtual DOM, JSX, Ease of Use, one-way data binding
+  * Increase in Popularity
+  * Virtual DOM
+  
+3. Future of React
+  
+  * Battle between other options (Angular, Vue). Differences and similarities 
+    of the frameworks.
+  * Market Demand [Hackernoon]_
+
+* Conclusion
 Heading 1
 ---------
-
-Ut et erat vitae neque bibendum pellentesque quis quis nunc. Maecenas nisl orci,
-sodales sit amet fermentum convallis, feugiat eu lacus. Nunc vel arcu accumsan,
-laoreet diam in, elementum nisl. Maecenas elementum dapibus interdum. Morbi leo
-libero, volutpat eu nisi nec, ultricies sollicitudin felis. Suspendisse id dui
-nec felis blandit pellentesque vel quis metus. Curabitur non elit id tortor
-scelerisque vestibulum. Nunc sapien felis, convallis quis mollis quis, mattis
-sit amet quam. Maecenas rhoncus mauris vitae augue laoreet pharetra. In imperdiet
-quam vel turpis gravida fermentum.
 
 Heading 2
 ---------
@@ -28,5 +36,12 @@ Heading 2
 Sub Heading
 ~~~~~~~~~~~
 
-Heading 3
----------
+Sources
+-------
+.. [FullstackReact] Lerner, Ari "`30 Days of React: What is React? <https://www.fullstackreact.com/30-days-of-react/day-1/>`_" Fullstack React, 2017. Web. 2 April 2019.
+
+.. [ReactHistory] Dawson, Chris "`Javascript's History and How it led to ReactJS <https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/`_" The New Stack, 25 July 2014. Web. 4 April 2019. 
+
+.. [ReactJS] "`React <https://reactjs.org/`_" Facebook. Facebook Open Source, Web. 4 April 2019.
+
+.. [Hackernoon] Kostrzewa, Denis "`Is React.js the Best Javascript Framework in 2018? <https://hackernoon.com/is-react-js-the-best-javascript-framework-in-2018-264a0eb373c8`_" Hacker Noon, 19 July 2018. Web. 8 April 2019.

@@ -1,26 +1,89 @@
 NodeJS
 ======
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+Outline
+-------
+* Intro - What is NodeJS and how it works
+* Input Output
+* History
+* Why NodeJS?
+* How to install?
+* Starting Node JS - making
+* Connecting NodeJS with MySQL
+* Event Loops
+* What companies use NodeJS
+* Adoption and Application
+* Common Practices of NodeJS
+* Advantages and disadvantages of NodeJS
+* Node vs Angular
+* Debugging
+* Conclusion
 
-Heading 1
----------
+Intro
+-----
+[Tod]_
+[Capan]_
+[Moore]_
+[Patel]_
+[Shah]_
+[Goldspink]_
+[Thinkmobiles]_
+[Tutorialspoint]_
 
-Ut et erat vitae neque bibendum pellentesque quis quis nunc. Maecenas nisl orci,
-sodales sit amet fermentum convallis, feugiat eu lacus. Nunc vel arcu accumsan,
-laoreet diam in, elementum nisl. Maecenas elementum dapibus interdum. Morbi leo
-libero, volutpat eu nisi nec, ultricies sollicitudin felis. Suspendisse id dui
-nec felis blandit pellentesque vel quis metus. Curabitur non elit id tortor
-scelerisque vestibulum. Nunc sapien felis, convallis quis mollis quis, mattis
-sit amet quam. Maecenas rhoncus mauris vitae augue laoreet pharetra. In imperdiet
-quam vel turpis gravida fermentum.
+Node.js is a server-side platform thats build from Google Chrome's JavaScript Engine.
+Node.js is open source, cross-platform runtime environment for developing on the
+server-side. Node.js is written in JavaScript and can be ran on OS X, Microsoft,
+Windows, and Linux. [Tutorialspoint]_
+
+Node.js also priveds a library with many JavaScript modules which simplifies the
+creation of web applications.
+
+Node.js uses non-blocking, even-driven input/output to remain efficient in data-
+intensive real-time applications that runs across many devices.
+
+Getting starting on installing Node.js
+--------------------------------------
+
+Starting off, if you're installing Node.js on Windows then you can just go to
+nodejs.org and download, follow the prompts and you're set. A thing to take note
+is that the default path that it is installed at is C:\Program Files\nodejs\bin
+that will be the Node.js directory.
+
+On the other hand if you're installing on UNIX/Linux/Mac OS X or SunOS you'll
+first need to download and extract the archive into /temp, and move the extracted
+files into a specified directory directory for Node.js.
+
+.. code-block:: text
+    :Caption: Command Code
+
+    $ cd /temp
+    $wget http://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz
+    $ tar xvfz node-v10.15.3-linux-x64.tar.xz
+    $ mkdir - /usr/local/nodejs
+    $ mv node-v10.15.3-linux-x64/* /user/local/nodejs
+
+After it is installed, just to make sure its installed in working validate it by
+executing a file. You can easily do this by making a file like test.js on your machine
+and have some test code like following.
+
+.. code-block:: javascript
+    :Caption: Test for Installation
+
+    console.log("This is a test.")
+
+After that execute test.js on the Node.js interpreter to see the result.
+
+.. code-block:: text
+    :Caption: Executing test
+
+    $ node test.js
+
+If it is installed correctly it should print.
+
+.. code-block:: text
+    :Caption: Executing test
+
+    This is a test.
 
 Heading 2
 ---------
@@ -30,3 +93,14 @@ Sub Heading
 
 Heading 3
 ---------
+
+Sources
+-------
+.. [Tod] Robert Tod "`Tutorial: Setting up Node.js with a database <https://hackernoon.com/setting-up-node-js-with-a-database-part-1-3f2461bdd77f>`_" Hackernoon, Web. 07 May, 2017
+.. [Capan] Tomislav Capan "`Why the hell would I use Node.js? <https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js>`_" Topical, Web. 13 Aug. 2013
+.. [Moore] Mark Ronald Moore "`Top-10 Code examples for Node.js developers <https://bytescout.com/blog/node-js-code-examples.html>`_" Bytescout, Web. 04 Apr, 2019
+.. [Patel] Priyesh Patel "`What exactly is Node.js? <https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5>`_" Freecodecamp, Web. 18 Apr, 2018
+.. [Shah] Hezbullah Shah & Tariq Soomro. Node.js Challenges in Implementation, 2017
+.. [Goldspink] Matt Goldspink "`Node.js Best Practices <https://www.codementor.io/mattgoldspink/nodejs-best-practices-du1086jja>`_" Codementor, Web. 28 Aug, 2016
+.. [Thinkmobiles] "`Why use Node.js - look behind the scenes of web development <https://thinkmobiles.com/blog/why-use-nodejs/>`_" Thinkmobiles, Web. 04 Apr, 2019
+.. [Tutorialspoint] "`Node.js Tutorial <https://www.tutorialspoint.com/nodejs/>`_" Tutorialspoint, Web. 02 Apr. 2019
