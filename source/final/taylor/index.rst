@@ -60,13 +60,17 @@ Conclusion
 
 Citations
 ---------
-..[ReactJS] "`Tutorial: Intro to React <https://reactjs.org/tutorial/tutorial.html>`_" React. Facebook Inc, Web. 4 Apr. 2019.
+..[ReactJS] "`Tutorial: Intro to React <https://reactjs.org/tutorial/tutorial.html>`_"
+React. Facebook Inc, Web. 4 Apr. 2019.
 
-..[ReactJS] "`Components and Props <https://reactjs.org/docs/components-and-props.html#props-are-read-only>`_" React. Facebook Inc, Web. 4 Apr. 2019.
+..[ReactJS] "`Components and Props <https://reactjs.org/docs/components-and-props.html#props-are-read-only>`_"
+React. Facebook Inc, Web. 4 Apr. 2019.
 
-..[ReactJS] "`Refs and the DOM <https://reactjs.org/docs/refs-and-the-dom.html>`_" React. Facebook Inc, Web. 4 Apr. 2019.
+..[ReactJS] "`Refs and the DOM <https://reactjs.org/docs/refs-and-the-dom.html>`_"
+React. Facebook Inc, Web. 4 Apr. 2019.
 
-..[ReactJS] "`Draft: JSX Specification <https://reactjs.org/docs/refs-and-the-dom.html>`_" JSX, Facebook Inc, Web. 4 Apr. 2019.
+..[ReactJS] "`Draft: JSX Specification <https://reactjs.org/docs/refs-and-the-dom.html>`_"
+JSX, Facebook Inc, Web. 4 Apr. 2019.
 
 ..[InfoWorld] Krill, Paul. "React: Making Faster, Smoother UIs for data-driven Web Apps. " InfoWorld Tech Watch, InfoWorld, Web. 15 May 2014.
 
