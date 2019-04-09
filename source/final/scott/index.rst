@@ -3,10 +3,11 @@ ReactJS Scott
 
 React js is a javascript library used for building user interfaces. [React]_ [React_hackernoon]_
 
-Intro
------
+Preface
+-------
 
 What is React JS?  What will I cover in this assessment.  Thesis *To the point*
+
 
 History
 -------
@@ -31,16 +32,22 @@ very little code to implement, this user interface creator and editor is a
 very convenient and time saving library to use, not to mention its relatively
 new presence in the world of technology. [RisingStack]_
 
-Future potential
-----------------
-
-
-Notable Uses
-------------
-
 
 How to use/ Tutorial
 --------------------
+React updates and re-renders automatically (Add code in this section)
+
+
+Notable Uses/Examples
+---------------------
+
+
+Future potential (optional)
+---------------------------
+
+
+Conclusion
+----------
 
 
 Sources
