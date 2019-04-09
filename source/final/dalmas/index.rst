@@ -1,9 +1,6 @@
 ⠀Node.js
 ========
 
-Lettuce
--------
-
 15 paragraphs
 
 1500+ words
@@ -13,38 +10,50 @@ Outline
 
 * Introduction - What the topic is about. Cover highlight points. Thesis.
 * History
-* Advantages in General / Why Node.js? [Nodejs]_
+* Advantages in General / Why Node.js?
+	* Syntax
 
-	* Advantages
+		* Only using JavaScript vs using Java and JavaScript
+	* Single-threaded
 	* Speed
-	* Only using Javascript vs using Java and Javascript
-	* Single-thread
-	* Risks? Why us this over competitors?
 
-* Asynchronous Programming / How it Works [NodejsDev]_
-
+		* Asynchronous
+	* Libraries
 	* How Node.js works.
+
+		* Event loop
+* Asynchronous Programming
 	* What is Asynchronous Programming?
-	* How Asynchronous Programming is different from regular programming.
 	* Advantages of asynchronous programming.
-	* Asynchronous programming examples.
+	* How does Node.js utilize Asynchronous Programming?
+	* Asynchronous programming examples with Node.js.
+	* Timers
 
-* What is Node.js used for?
+		* Set Timeout
+		* Next Tick
+* Other 
+	* What can Node.js be used for?
+	* Issues & Solutions
 
-	* What is this used for?
-	* Why are these differences helpful? 
-	* Screen-shots
-	* Code samples
+		* Pyramid of Doom
+		* Waterfall
+	* REPL
+	* Express
 	* Example project
 
+		* Screen-shots
+		* Code samples
 * Conclusion
 
-If there's a screen-door in a submarine, how many pancakes do you need to 
-shingle the roof of a dog house?
+[Nodejs]_
+[NodejsDev]_
+[LearningNode]_
 
 Citations
 ---------
 
-.. [Nodejs] Some Dude. "`Node.js <https://nodejs.org/en/>`_" Joyent Inc, Web. 2 April. 2019.
+.. [Nodejs] Node.js Foundation. "`Node.js <https://nodejs.org/en/>`_" Joyent Inc, Web. 2 April. 2019.
 
-.. [NodejsDev] Some Dude. "`Node.js Dev <https://nodejs.dev/a-brief-history-of-nodejs>`_" Joyent Inc, Web. 2 April. 2019.
+.. [NodejsDev] Node.js Foundation. "`Node.js Dev <https://nodejs.dev/a-brief-history-of-nodejs>`_" Joyent Inc, Web. 2 April. 2019.
+
+.. [LearningNode] Powers, Shelly, *Learning Node*. Sebastopol, O'Reilly, 2015.
