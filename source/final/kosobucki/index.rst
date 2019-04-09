@@ -1,14 +1,33 @@
 Playing with ReactJS
 ====================
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+Major heading one: the ReactJS
+
+* ReactJS introduction
+* ReactJS purpose (sources)
+* ReactJS history (sources)
+* ReactJS development (sources)
+* ReactJS moving forward (sources)
+
+Major heading two: ReactJS uses and benefits
+
+* ReactJS example sites that use it besides its own
+* ReactJS compared to other similar libraries (sources)
+* ReactJS current use in the wide web (sources)
+* ReactJS uses in big and small companies (sources)
+* ReactJS mixing between other libraries (sources)
+
+Major heading three: Example and conlusions
+
+* Example code
+* Interactive demonstration
+* Outside issues and compaints (sources)
+* Personal view
+* Conclusion
+
+reactjs quick link: [dta]_ 
+
+.. [dta] "`reactjs <https://reactjs.org/>`_." Facebook Inc, 07 ND.
 
 Heading 1
 ---------
