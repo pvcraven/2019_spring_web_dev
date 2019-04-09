@@ -4,6 +4,7 @@ NodeJS
 Outline
 -------
 * Intro - What is NodeJS and how it works
+* Input Output
 * History
 * Why NodeJS?
 * How to install?
@@ -14,10 +15,20 @@ Outline
 * Adoption and Application
 * Common Practices of NodeJS
 * Advantages and disadvantages of NodeJS
+* Node vs Angular
+* Debugging
 * Conclusion
 
 Intro
 -----
+[Tod]_
+[Capan]_
+[Moore]_
+[Patel]_
+[Shah]_
+[Goldspink]_
+[Thinkmobiles]_
+[Tutorialspoint]_
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
 id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
 Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
