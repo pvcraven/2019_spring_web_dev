@@ -7,17 +7,17 @@ Paper Outline
   documentation of itself [VueDocumentation]_
 * Here in another source [Ref]_
 
-Heading 1
+Why use Vue.js?
+---------
+* What is Vue.js
+* History
+* How it differs from other frameworks
+* How to install
+
+How to use Vue.js
 ---------
 
-
-Heading 2
----------
-
-Sub Heading
-~~~~~~~~~~~
-
-Heading 3
+Extensive Examples
 ---------
 
 Citations
