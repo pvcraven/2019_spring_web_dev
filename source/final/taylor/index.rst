@@ -3,8 +3,8 @@ ReactJS Project
 
 Outline
 -------
-* Introduction - What the topic is about. Cover highlight points. Last sentence
-    should be a thesis statement!
+* Introduction - What the topic is about. Cover highlight points.
+* Last sentence should be a thesis statement!
 * What is ReactJS, why the UI Library is popular?  
 
 * History of ReactJS / Library of Code
@@ -37,6 +37,9 @@ Outline
 Introduction
 ---------
 
+Sub Heading
+~~~~~~~~~~~
+
 History of ReactJS
 ---------
 
@@ -45,9 +48,6 @@ ReactJS Example Code
 
 ReactJS Notable Features
 ---------
-
-Sub Heading
-~~~~~~~~~~~
 
 Reception of ReactJS
 ---------
@@ -66,9 +66,9 @@ Citations
 
 ..[ReactJS] "`Refs and the DOM <https://reactjs.org/docs/refs-and-the-dom.html>`_" React. Facebook Inc, Web. 4 Apr. 2019.
 
-..[ReactJS] "Draft: JSX Specification `<https://reactjs.org/docs/refs-and-the-dom.html>`_" JSX, Facebook Inc, Web. 4 Apr. 2019.
+..[ReactJS] "`Draft: JSX Specification <https://reactjs.org/docs/refs-and-the-dom.html>`_" JSX, Facebook Inc, Web. 4 Apr. 2019.
 
-..[InfoWorld] Krill, Paul. "React: Making Faster, Smoother UIs for data-driven Web Apps." InfoWorld Tech Watch, InfoWorld, Web. 15 May 2014.
+..[InfoWorld] Krill, Paul. "React: Making Faster, Smoother UIs for data-driven Web Apps. " InfoWorld Tech Watch, InfoWorld, Web. 15 May 2014.
 
 ..[TheNewStack] Dawson, Chris. "JavaScript's History and How it Led to React JS." The New Stack Technology, The New Stack, Web. 25 Jul. 2014.
 
