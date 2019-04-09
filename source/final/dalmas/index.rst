@@ -10,37 +10,44 @@ Outline
 
 * Introduction - What the topic is about. Cover highlight points. Thesis.
 * History
-* Advantages in General / Why Node.js? [Nodejs]_
+* Advantages in General / Why Node.js?
+	* Syntax
 
-	* Advantages
+		* Only using Javascript vs using Java and Javascript
+	* Single-threaded
 	* Speed
-	* Only using Javascript vs using Java and Javascript
-	* Single-thread
-	* Risks and solutions
+
+		* Asynchronous
+	* Libraries
+	* How Node.js works.
+
+		* Event loop
+* Asynchronous Programming
+	* What is Asynchronous Programming?
+	* Advantages of asynchronous programming.
+	* How does Node.js utilize Asynchronous Programming?
+	* Asynchronous programming examples with Node.js.
+	* Timers
+
+		* Set Timeout
+		* Next Tick
+* Other 
+	* What can Node.js be used for?
+	* Issues & Solutions
 
 		* Pyramid of Doom
 		* Waterfall
-
-* Asynchronous Programming / How it Works [NodejsDev]_
-
-	* How Node.js works.
-	* What is Asynchronous Programming?
-	* How Asynchronous Programming is different from regular programming.
-	* Advantages of asynchronous programming.
-	* Asynchronous programming examples.
-
-* What is Node.js used for? [LearningNode]_
-
-	* What is this used for?
-	* Why are these differences helpful? 
 	* REPL
 	* Express
 	* Example project
 
 		* Screen-shots
 		* Code samples
-
 * Conclusion
+
+[Nodejs]_
+[NodejsDev]_
+[LearningNode]_
 
 Citations
 ---------
@@ -49,4 +56,4 @@ Citations
 
 .. [NodejsDev] Node.js Foundation. "`Node.js Dev <https://nodejs.dev/a-brief-history-of-nodejs>`_" Joyent Inc, Web. 2 April. 2019.
 
-.. [LearningNode] Powers, Shelly, *Learning Node*. Sebastopol, O'Reilly, 2012.
+.. [LearningNode] Powers, Shelly, *Learning Node*. Sebastopol, O'Reilly, 2015.
