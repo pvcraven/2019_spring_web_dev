@@ -289,7 +289,7 @@ chaining them together as follows:
 
 It is not important to understand what the $http service is doing in this example,
 but how the chaining can go on and on. Some chains can get very complex but it can
-be very powerful.
+be very powerful. [Strahl]_
 
 Disadvantages
 -------------
@@ -314,3 +314,5 @@ Sources
 .. [Austin] Andrew Austin “`An Overview of AngularJS for Managers. <https://andrewaustin.com/an-overview-of-angularjs-for-managers/>`_” Andrew Austin, 14 Aug. 2014
 
 .. [Chansuwath] W. Chansuwath and T. Senivongse "`A model-driven development of web applications using AngularJS framework <https://ieeexplore.ieee.org/document/7550838/>`_ "2016 IEEE/ACIS 15th International Conference on Computer and Information Science (ICIS), Okayama, 2016, pp. 1-6.
+
+.. [Strahl] Strahl, Rick. “`AngularJs and Promises with the $Http Service. <https://ieeexplore.ieee.org/document/7550838/>`_ ” Rick Strahl's Web Log, Rick Strahl, Web 4/10/2019
