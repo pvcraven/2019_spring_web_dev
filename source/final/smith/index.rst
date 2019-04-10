@@ -4,9 +4,32 @@ AngularJS
 Introduction
 ------------
 
-  * What topic is about, cover highlights, thesis for the last sentence
-  * History of framework
-  * Use this article [Austin]_
+JavaScript is a programming language that is designed to enhance web applications.
+Since the release, programmers have been learning and adding to the pool of
+frameworks that make writing code even easier. AngularJS was one of those
+frameworks that has proven to be a very powerful tool that has the ability to two
+way bind data, create beautiful single page applications, and provides tons of
+functions for the programmer making the javascript cleaner.
+
+History
+~~~~~~~
+
+AngularJS was created initially by two Google employees: Misko Hevery and Adam
+Abrons. The two employees originally called the framework 'GetAngular' which
+would give web programmers more interaction between the front and back end of the
+application.
+
+Eventually Hevery had to work on a different project for Google called Feedback.
+over the course of 6 months there was 17,000 lines of code written for this program
+which became increasingly difficult to test. This drove Hevery to rewrite the
+software but this time using his part of the GetAngular project from earlier. With
+GetAngular he was able to turn the initial 17,000 lines of code into just 1,500
+in 3 weeks. With this massive rework and elimination of lines of code his manager
+took interest in GetAngular which would lead Google to start heavily development
+into Angular.js. [Austin]_ AngularJS over the years would turn into a framework
+monolith in the javascript community. The ability to creat single page applications in
+just a couple hundred lines of code is incredible.
+
 
 MVC (Model, View, Controller)
 -----------------------------
@@ -108,22 +131,165 @@ important for dealing with AngularJS. [Alicea]_
 Bring in AngularJS Features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+AngularJS offer's so many features that it makes development easy. In Angular
+the MVC is easy to understand with just a little example.
+
+.. code-block:: html
+    :caption: Making your HTML document a AngularJS Model
+
+    // This is the View
+    <html lang="en-us" ng-app="myApp">
+
+Adding the 'ng-app' is Angular's way of specifying a model the programmer will
+be able to control in the javascript. You can name it what ever you want, it just
+has to be the same name in the javascript.
+
+.. code-block:: javascript
+    :caption: Javascript of declaring a AngularJS Module
+
+    // This is Model
+    // The [] in the parameters is a array of dependencies for Angular to work
+    // with. I will discuss this later.
+    // The first parameter is the name you used in the HTML attribute ng-app
+    var myApp = angular.module('myApp', []);
+
+This code will create a variable which is like the DOM. This variable will
+be how you control the specified HTML document. Now you may want to manipulate it
+somehow. This is where the controller part of the MVC comes in.
+
+.. code-block:: javascript
+    :caption: Javascript of declaring a Controller
+
+    // This is the Controller
+    myApp.controller('mainController', function(){});
+
+And before this controller will work with anything you must hook it up somewhere
+in the HTML.
+
+.. code-block:: html
+    :caption: HTML for connecting a Controller
+
+    <!--This is where the controller in the myApp.js is connected to --->
+    <div ng-controller="mainController">
+
+Now you have a controller which you can write code in the function block in the
+parameters and manipulate the DOM. This is a simplified version of the AngularJS
+MVC model. Notice in the two code examples above that the ng-controller
+attribute value matches the string in the 1st parameter in the javascript
+code. [Alicea]_
+
+What is AngularJS good for?
+---------------------------
+
+Data-Binding
+~~~~~~~~~~~~
+
+AngularJS is a fantastic framework for binding data in the javascript and the
+HTML DOM. The user of a website can change something in the HTML via a textbox
+or some field and it will directly change the javascript too. AngularJS makes this
+easy! consider the following:
+
+.. code-block:: html
+    :caption: Sample HTML for data-binding
+
+    <!DOCTYPE html>
+    <html lang="en-us" ng-app="myApp">
+        <head>
+            <title>AngularJS Example</title>
+            <meta charset="UTF-8">
+        </head>
+
+        <body>
+            <div class="container">
+                <div ng-controller="mainController">
+                    <!-- Angular looks for {{}} and replaces it with anything
+                    you want to put there. currently there is a
+                    string called name in the middle of the curly braces
+                    which will have to match name of the variable in the
+                    javascript you wish to fill it with-->
+                    <h1>AngularJS is neat! Example by: {{name}}</h1>
+                </div>
+            </div>
+        </body>
+
+    <script type="text/javascript" src="code.angularjs.org/1.7.8/angular.min.js"></script>
+    </html>
+
+.. image:: pictures/Data-Binding_Not_connected.PNG
+    :width: 800
+    :alt: Picture of what the HTML Shows
 
 
+There is a lot going on in this sample code. in the container div there is a
+'ng-controller' attribute which we will link to the javascript so we can start
+manipulating the DOM. This code will connect the two together:
 
-Advantages
-----------
+.. code-block:: javascript
+    :caption: Connecting to the DOM with AngularJS
 
-  * Show Examples [Tutorialspoint]_ [Angular]_
-  * Data Binding
+    myApp.controller('mainController', function($scope){
+        $scope.name = 'Adam';
+    });
 
-    * Give Code examples
-    * Why Angular makes Data Binding Easy
+
+.. image:: pictures/Data-Binding_Connected.PNG
+    :width: 800
+    :alt: Picture of the HTML after connecting the javascript
+
+A question that may arise is what is '$scope'. It is important to know that
+AngularJS prefixes all their variables with either $ or $$ so that the programmer
+can include more frameworks if they wish. This would help mitigate conflicting
+names. The $scope variable represents a service offered by AngularJS. There are
+a whole collection of services that are offered and can be found at `Angularjs.org <https://angularjs.org>`_
+for documentation. The $scope is how Angular 'talks' to the DOM.
 
   * SPA (Single Page Application)
 
     * Why AngularJS is nice for SPA programming
     * Maybe include code examples on how this is or a diagram
+
+
+Chaining Promises = Complicated
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+AngularJS has some really incredible services and features, one of them being
+the ability to chain things called promises. This is important because javascript
+is asynchronous and you aren't really guaranteed an order of operation in some
+parts of the code. AngularJS can handle many events that may transpire while
+getting information over some kind of call over the internet. Here is a very
+simple example:
+
+.. code-block:: javascript
+    :caption: Exmaple of Promise chaining
+
+    function returnStudentMajors(){
+    return $http.get("Some url to get data")
+        .success(function(data){
+            //do something
+        })
+        .error(function(data){
+            //do someting
+        })
+    }
+
+This is a simple use of a promise but it can get really complicated when you start
+chaining them together as follows:
+
+.. code-block:: javascript
+    :caption: Exmaple of Promise chaining
+
+    $http.get("Some url to get data").then(function(data){
+        //do something
+    }).then(function(data){
+        //do something
+    }).then(function(data){
+        //do something
+    });
+    //You can chain this for as long as you have stuff to do on the data
+
+It is not important to understand what the $http service is doing in this example,
+but how the chaining can go on and on. Some chains can get very complex but it can
+be very powerful.
 
 Disadvantages
 -------------
