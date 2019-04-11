@@ -51,7 +51,10 @@ ReactJS began with developer
 
 ReactJS Example Code
 ---------
-This example code works
+This is a test to see if the example code screen shot will work.
+
+.. figure:: example.png
+    :width: 50%
 
 ReactJS Notable Features
 ---------
