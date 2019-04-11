@@ -4,7 +4,6 @@ NodeJS
 Outline
 -------
 * Intro - What is NodeJS and how it works
-* Input Output
 * History
 * Why NodeJS?
 * How to install?
@@ -41,12 +40,22 @@ creation of web applications.
 Node.js uses non-blocking, even-driven input/output to remain efficient in data-
 intensive real-time applications that runs across many devices.
 
+History
+-------
+Node.js was first created by Ryan Dahl and was developed and maintained by Dahl
+which later got sponsored and supported by Joyent(What is joyent). Dahl created
+Node.js because he had a distaste about the way Apache Http server used to handle
+a lot of concurrent connections and how the code being created was either
+blocked by the entire process or implied multiple execution stacks.
+
+[Thinkmobiles]_
+
 Getting starting on installing Node.js
 --------------------------------------
 
 Starting off, if you're installing Node.js on Windows then you can just go to
 nodejs.org and download, follow the prompts and you're set. A thing to take note
-is that the default path that it is installed at is C:\Program Files\nodejs\bin
+is that the default path that it is installed at is ``C:\Program Files\nodejs\bin``
 that will be the Node.js directory.
 
 On the other hand if you're installing on UNIX/Linux/Mac OS X or SunOS you'll
@@ -57,7 +66,7 @@ files into a specified directory directory for Node.js.
     :Caption: Command Code
 
     $ cd /temp
-    $wget http://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz
+    $ wget http://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz
     $ tar xvfz node-v10.15.3-linux-x64.tar.xz
     $ mkdir - /usr/local/nodejs
     $ mv node-v10.15.3-linux-x64/* /user/local/nodejs
@@ -85,14 +94,44 @@ If it is installed correctly it should print.
 
     This is a test.
 
-Heading 2
----------
+Getting an application started
+------------------------------
+Next up to create the server you will have to call on the http module and then use
+that to create a server and bind it to a port.
 
-Sub Heading
-~~~~~~~~~~~
+.. code-block:: javascript
+    :Caption: First Application
 
-Heading 3
----------
+    var http = require("http");
+
+    http.createServer(function(request, response){
+    response.writeHead(500, {'Content-Type': 'text/plain'});
+    response.end('Test');
+    }).listen(8080);
+    console.log("First application instance");
+
+Line one uses the require directive to store the returned HTTP instance into an
+http variable from http module. On line three is where you create an http instance,
+this is done by calling the ``http.createServer()`` method that creates the server
+instance and then on line six you bind it to port 8080. By default, once you start
+the server it'll automatically go to ``http://127.0.0.1:8080`` in a web browser.
+What should show is what you put into ``response.end()`` on line five. To stop the
+server instance, just hit ``Ctrl+c`` in the command line.
+
+Node.js virtual environment
+---------------------------
+Node.js comes with a virtual environment called REPL (also Node shell). REPL is
+the abbreviation of Read-Eval-Print-Loop. Its a way to quickly test simple
+Node.js/JavaScript code.
+
+To launch REPL
+~~~~~~~~~~~~~~
+
+.. code-block:: text
+    ::Caption:: Command line for REPL
+
+    node
+
 
 Sources
 -------
