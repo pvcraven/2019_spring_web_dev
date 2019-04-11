@@ -1,6 +1,9 @@
 Data-Driven Documents
 =====================
 
+Outline
+-------
+
 * Introduction
 * History
     * Who created it
@@ -14,33 +17,48 @@ Data-Driven Documents
     * Graphs
 * Conclusion
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+Introduction
+------------
 
-Heading 1
+D3.js is a JavaScript library that allows developers to easily manipulate
+documents based on data. It does this through a combination of HTML, CSS, and
+SVG creation and manipulation. The main point of D3 is providing a simple way to
+create powerful visualizations in a web page from data. It does not attempt to
+solve every problem with front-end development, but rather focuses on providing
+a solution for efficiently manipulating documents based on the data provided.
+D3 is extremely fast, and is able to support large datasets being manipulated
+because it has little overhead. D3 allows developers to more easily integrate
+the use of data into their web page without hurting the performance of the page
+itself.
+
+[Bostock1]_
+
+History
+-------
+
+How to Use
+----------
+
+Selection
 ---------
 
-Ut et erat vitae neque bibendum pellentesque quis quis nunc. Maecenas nisl orci,
-sodales sit amet fermentum convallis, feugiat eu lacus. Nunc vel arcu accumsan,
-laoreet diam in, elementum nisl. Maecenas elementum dapibus interdum. Morbi leo
-libero, volutpat eu nisi nec, ultricies sollicitudin felis. Suspendisse id dui
-nec felis blandit pellentesque vel quis metus. Curabitur non elit id tortor
-scelerisque vestibulum. Nunc sapien felis, convallis quis mollis quis, mattis
-sit amet quam. Maecenas rhoncus mauris vitae augue laoreet pharetra. In imperdiet
-quam vel turpis gravida fermentum.
+.. code-block:: javascript
+    :Caption: Randomly colored paragraphs
 
+    d3.selectAll("p").style("color", function() {
+        return "hsl(" + Math.random() * 360 + ",100%,50%)";
+    })
 
+SVG
+---
 
-
+Graphs
+------
 
 .. [Bostock1] Bostock, Mike. “`Data-Driven Documents <https://d3js.org/>`_.” D3.Js.
 
 .. [Tutorialspoint] Tutorialspoint.com. “`D3.Js Quick Guide <https://www.tutorialspoint.com/d3js/d3js_quick_guide.htm>`_.” tutorialspoint.com, Tutorialspoint.
 
 .. [Bostock2] Bostock, Mike. "`How Selections Work <https://bost.ocks.org/mike/selection>`_." 26 Apr. 2013.
+
+.. [Murray] Murray, Scott, et al. “`Data Driven Documents <http://www.jeromecukier.net/presentations/d3-tutorial/S01%20-%20introduction.pdf>`_.” VisWeek 2012, 2012.
