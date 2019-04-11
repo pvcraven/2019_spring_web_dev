@@ -53,8 +53,8 @@ ReactJS Example Code
 ---------
 This is a test to see if the example code screen shot will work.
 
-.. figure:: example.png
-    :width: 50%
+.. image:: example.png
+    :width: 40%
 
 ReactJS Notable Features
 ---------
