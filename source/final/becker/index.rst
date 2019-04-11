@@ -41,7 +41,7 @@ React is a declarative, efficient, and flexible JavaScript library for building
 user interfaces. Since React is fast and flexible, it allows developers to make
 complex UIs from small and isolated pieces of code
 called “components”. Components are essentially JavaScript
-functions or classes that describe how certain parts of the user interface
+functions or classes that describe how certain segments of the user interface
 should look [reactIntro]_.
 
 History
@@ -55,7 +55,7 @@ eventually ran into many cascading updates with their user interface, and
 software teams could not keep up. In 2011, Jordan Walke created the first
 prototype of React called FaxJS to make everything more efficient.
 
-In 2012, React started to be used by Facebook. On April 9th, 2012, Facebook
+In 2012, React started being used by Facebook. On April 9th 2012, Facebook
 acquired Instagram. Instagram wanted to use Facebook's technology and this
 eventually led to React being open-sourced in 2013. Initially people thought
 of React as a big step backward, but over time it grew in reputation. In 2014,
@@ -67,18 +67,68 @@ library [reactHistory]_.
 Popularity
 ~~~~~~~~~~~
 
-React might be the most popular JavaScript library on the market right now.
+React is arguably most popular JavaScript library on the market right now.
 In June 2018, React was mentioned in over 28% of job postings across popular
 languages. Vue and Angular were far behind, with under 10% of job postings
-listing them.
+listing them. React also has significantly more NPM downloads than Vue or
+Angular, which shows more people are using React for their websites than
+these other competitors [reactPopularity]_. Popular websites using React are:
 
-Popularity
-------------
-This talks about React's success [reactPopularity]_.
+* Facebook
+* Instagram
+* Uber
+* WhatsApp
+* Khan Academy
+* Netflix
+* PayPal
+* Airbnb
+* and many more...
+
+Advantages
+~~~~~~~~~~~~
+
+Why are so many people using React?
 
 React Tutorial
 ---------------
 Talk about future a little bit to close [w3Schools]_.
+
+Here is everything you need to get React into an HTML webpage:
+
+
+..  code-block:: html
+
+    <html>
+        <head>
+            <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+            <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+            <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        </head>
+        <body>
+            <div id="root"></div>
+            <script type="text/babel" src="reactCode.jsx"></script> <!–– refer to React JSX file here -->
+        </body>
+    </html>
+
+In the reactCode.jsx file, put the following code to
+simply print "Hello World".
+
+
+.. code-block:: javascript
+
+    class Hello extends React.Component {
+        render() {
+            return <h1>Hello world!</h1>;
+        }
+    }
+
+    ReactDOM.render(
+        <Hello />,
+        document.getElementById("root")
+    );
+
+Awesome! We now have a working React webpage! Let's look at some of React's
+features now.
 
 Sources
 ---------
