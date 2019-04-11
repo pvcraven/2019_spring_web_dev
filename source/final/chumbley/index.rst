@@ -38,7 +38,30 @@ Declarative Rendering
 ---------------------
 
 The Vue.js system allows users to declaratively render data to the Document
-Object Model.
+Object Model (DOM). From the surface, it appears like it is rendering a string
+template. However, Vue has done a lot of the work behind the scene. The data and
+the DOM have been linked making everything reactive [VueIntroduction]. Let's
+take a look at an example to get a better understanding.
+
+.. code-block:: HTML
+	:caption: Vue Example HMTL
+
+        <div id="app">
+            <h1>{{ title }}</h1>
+            <h2>{{ author }}</h2>
+        </div>
+
+.. code-block:: JavaScript
+    :caption: Vue Example JavaScript
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                title: 'Moby Dick',
+                author: 'Herman Melville'
+            }
+        })
+
 
 Heading 2
 ---------
