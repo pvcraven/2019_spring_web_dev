@@ -34,17 +34,27 @@ Outline
 
 * Conclusion
 
-Introduction
+Introduction to ReactJS
 ---------
-
-Sub Heading
-~~~~~~~~~~~
+ReactJS is a Javascript library that specializes in building user interfaces.
+This JavaScript library makes it easy to create user interfaces for your programming
+application or to update and render the proper components in your application
+change correctly. In ReactJS, you are able to use declarative views which makes
+your code easier to read and to debug. ReactJS is a component based Javascript
+library that focuses on building encapsulated components that are able to manage
+their own state which can help the user compose some of the most easiest or most
+complex user interfaces.
 
 History of ReactJS
 ---------
+ReactJS began with developer
 
 ReactJS Example Code
 ---------
+This is a test to see if the example code screen shot will work.
+
+.. image:: example.PNG
+    :width: 40%
 
 ReactJS Notable Features
 ---------
@@ -57,6 +67,8 @@ ReactJS Internationalization
 
 Conclusion
 ---------
+Sub Heading
+~~~~~~~~~~~
 
 Citations
 ---------
@@ -72,32 +84,20 @@ React. Facebook Inc, Web. 4 Apr. 2019.
 ..[ReactJS] "`Draft: JSX Specification <https://reactjs.org/docs/refs-and-the-dom.html>`_"
 JSX, Facebook Inc, Web. 4 Apr. 2019.
 
-..[InfoWorld] Krill, Paul. "React: Making Faster, Smoother UIs for data-driven Web Apps. " InfoWorld Tech Watch, InfoWorld, Web. 15 May 2014.
+..[InfoWorld] Krill, Paul. "`React: Making Faster, Smoother UIs for data-driven Web Apps <https://www.infoworld.com/article/2608181/react--making-faster--smoother-uis-for-data-driven-web-apps.html>`_"
+InfoWorld Tech Watch, InfoWorld, Web. 15 May 2014.
 
-..[TheNewStack] Dawson, Chris. "JavaScript's History and How it Led to React JS." The New Stack Technology, The New Stack, Web. 25 Jul. 2014.
+..[TheNewStack] Dawson, Chris. "`JavaScript's History and How it Led to React JS <https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/>`_"
+The New Stack Technology, The New Stack, Web. 25 Jul. 2014.
 
-..[InfoQ] Hemel, Zef. "Facebook's React JavaScript User Interfaces Library Receives Mixed Reviews." InfoQ News, InfoQ, Web. 3 Jun. 2013.
+..[InfoQ] Hemel, Zef. "`Facebook's React JavaScript User Interfaces Library Receives Mixed Reviews <https://www.infoq.com/news/2013/06/facebook-react>`_"
+InfoQ News, InfoQ, Web. 3 Jun. 2013.
 
-..[Medium] Berkana. "A Compelling Reason Not to Use ReactJS." Bits and Pixels, A Medium Corporation, Web. 24 May 2015.
+..[Medium] Berkana. "`A Compelling Reason Not to Use ReactJS <https://medium.com/bits-and-pixels/a-compelling-reason-not-to-use-reactjs-beac24402f7b>`_"
+Bits and Pixels, A Medium Corporation, Web. 24 May 2015.
 
-..[FacebookCode] Pearce, James. "Updating Our Open Source Patent Grant." Facebook Code, Facebook Inc, Web. 10 Apr. 2015.
+..[FacebookCode] Pearce, James. "`Updating Our Open Source Patent Grant <https://code.fb.com/open-source/updating-our-open-source-patent-grant/>`_"
+Facebook Code, Facebook Inc, Web. 10 Apr. 2015.
 
-..[TechCrunch] Lomas, Natasha. "WordPress to Ditch React Library Over Facebook Patent Clause Risk." TechCrunch News, TechCrunch, Web. 8 Apr. 2017.
-
-
-Website Links
------------------
-
-<https://en.wikipedia.org/wiki/React_(JavaScript_library)>
-
-<https://www.infoworld.com/article/2608181/react--making-faster--smoother-uis-for-data-driven-web-apps.html>
-
-<https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/>
-
-<https://www.infoq.com/news/2013/06/facebook-react>
-
-<https://medium.com/bits-and-pixels/a-compelling-reason-not-to-use-reactjs-beac24402f7b>
-
-<https://code.fb.com/open-source/updating-our-open-source-patent-grant/>
-
-<https://techcrunch.com/2017/09/15/wordpress-to-ditch-react-library-over-facebook-patent-clause-risk/>
+..[TechCrunch] Lomas, Natasha. "`WordPress to Ditch React Library Over Facebook Patent Clause Risk <https://techcrunch.com/2017/09/15/wordpress-to-ditch-react-library-over-facebook-patent-clause-risk/>`_"
+TechCrunch News, TechCrunch, Web. 8 Apr. 2017.
