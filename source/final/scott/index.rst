@@ -35,11 +35,36 @@ new presence in the world of technology. [RisingStack]_
 
 How to use/ Tutorial
 --------------------
-React updates and re-renders automatically (Add code in this section)
+
+React updates and re-renders automatically without having to reload the
+page. (Add more of a description first)
+XML like syntax called JSX (edit and/or change)
+
+(Add code in this section)
+.. code-block:: javascript
+	:Caption: Live name updater
+
+	class HelloMessage extends React.Component {
+      render() {
+        return (
+          <div>
+            Hello {this.props.name}
+          </div>
+        );
+      }
+    }
+
+    ReactDOM.render(
+      <HelloMessage name="Taylor" />,
+      document.getElementById('hello-example')
+    );
+
 
 
 Notable Uses/Examples
 ---------------------
+
+ReactJS is a JS library used by various popular social media applications such as Instagram, Facebook
 
 
 Future potential (optional)
@@ -60,5 +85,7 @@ Sources
 .. [RisingStack] Papp, Andrea. "`The History of React.js on a Timeline. <https://blog.risingstack.com/the-history-of-react-js-on-a-timeline/>`" RisingStack, March. 2018
 
 .. [TheNewStack] Dawson, Chris. "`JavaScript's History and How it Led To ReactJS. <https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/>`" TheNewStack, 25 Jul. 2014
+
+https://brainhub.eu/blog/10-famous-apps-using-reactjs-nowadays/
 
 
