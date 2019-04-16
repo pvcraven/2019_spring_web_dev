@@ -123,15 +123,17 @@ Board Example
 ~~~~~~~~~~~~~
 This particular chunk of code is able to create a game tic-tac-toe game board.
 The code creates an array of nine different boxes.
+
 .. image:: board.PNG
     :width: 25%
 
 Player Input Code
 ~~~~~~~~~~~~~~~~~
 This block of code is able to let the user click on the game board. This lets
-the user click and place an 'X' or an 'O'.
+the user click and place an X or an O.
+
 .. code-block:: javascript
-    :caption: Starting Tic-Tac-Toe
+    :caption: Getting User Input
 
  handleClick(i)
     {
@@ -153,7 +155,7 @@ the user click and place an 'X' or an 'O'.
             });
     }
 
-render()
+ render()
     {
         const history = this.state.history;
         const current = history[history.length - 1];
@@ -172,7 +174,7 @@ render()
         });
     }
 
-let status;
+ let status;
     if (winner)
         {
             status = 'Winner: ' + winner;
@@ -202,10 +204,11 @@ let status;
 
 // ========================================
 
-ReactDOM.render(
-  <Game />,
-  document.getElementById('root')
-);
+ ReactDOM.render
+    (
+    <Game />,
+     document.getElementById('root')
+    );
 
 function calculateWinner(squares)
     {
@@ -232,6 +235,7 @@ function calculateWinner(squares)
 
 Player Input Example
 ~~~~~~~~~~~~~~~~~~~~
+
 .. image:: board1.PNG
     :width: 25%
 
