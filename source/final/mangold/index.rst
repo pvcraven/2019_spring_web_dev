@@ -1,14 +1,11 @@
 AngularJS
 =========
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, nunc
-id posuere accumsan, ante metus cursus massa, vitae ultrices urna neque in dolor.
-Aenean porttitor ornare quam. Aliquam pellentesque enim sem, id eleifend dolor
-tempor sed. Phasellus ullamcorper, nunc et tristique mollis, ante nisi molestie
-ligula, et fringilla erat lorem nec augue. Nunc scelerisque sapien ex, sed
-vulputate libero faucibus lacinia. Donec interdum justo justo, ut molestie massa
-malesuada ut. Vivamus euismod diam eget dignissim sollicitudin. Morbi suscipit
-felis nisi, sit amet efficitur sem consectetur ac.
+.. literalinclude:: example.html
+    :linenos:
+    :language: html
+    :caption: example.html
+    :emphasize-lines: 6
 
 Heading 1
 ---------
@@ -39,12 +36,6 @@ Heading 2
         <body>
             <div class="container">
                 <div ng-controller="mainController">
-                    <!-- Angular looks for {{}} and replaces it with anything
-                    you want to put there. currently there is a
-                    string called name in the middle of the curly braces
-                    which will have to match name of the variable in the
-                    javascript you wish to fill it with-->
-                    <div>
                         <label>Please enter your name:</label>
                         <input type="text" ng-model="name" />
                         <h1>Your name: {{name}}</h1>
@@ -56,15 +47,14 @@ Heading 2
     <script type="text/javascript" src="https://code.angularjs.org/1.7.0-rc.0/angular.min.js"></script>
     </html>
 
-
 Sub Heading
 ~~~~~~~~~~~
 
 Heading 3
 ---------
-* intro
+* intro [w3schools]
 
-* History
+* History[Lau]
 
 * why and what to us AngularJS for.
 
@@ -73,4 +63,3 @@ Heading 3
 
 .. [w3schools] "`AngularJS Tutorial <https://www.w3schools.com/angular/default.asp>`_" W3Schools, Web. 4 Apr. 2019
 .. [Lau] "`10 Reasons Why You Should Use AngularJS <https://www.sitepoint.com/10-reasons-use-angularjs/>`_" SitePoint Pty. Ltd., 05 Sept. 2013. Web. 4 Apr. 2019
-.. [w3schools] "`AngularJS Tutorial <https://www.w3schools.com/angular/default.asp>`_" W3Schools, Web. 4 Apr. 2019
