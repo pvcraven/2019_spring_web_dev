@@ -57,7 +57,8 @@ Controllers
 
 The controllers of the MVC architecture act as a interface for the view and model
 sections. The controller will manipulate data that has came from a model or some
-other source and send it back to the model and view [TutorialspointAngular]_.
+other source and send it back to the model and view .
+[TutorialspointAngularMVC]_ [TutorialspointAngular]_
 
 AngularJS MVC
 ~~~~~~~~~~~~~
@@ -344,7 +345,8 @@ Once we have our service we can connect the navigation links in the HTML DOM wit
 our javascript to make the magic happen. AngularJS will look at what the URL
 and then manipulate the DOM based on what it finds. Lines 8 - 14 in listing 13
 will look for those specific url extensions and will insert the string of html
-that follows the template into the ng-view attribute in the HTML document. [W3Schools]_
+that follows the template into the ng-view attribute in the HTML document.
+[W3SchoolsAngular]_
 
 Chaining Promises = Complicated
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -414,9 +416,11 @@ Sources
 
 .. [Angular] Angular.io "`Architecture overview <https://angular.io/guide/architecture>`_ "version 7.2.12-local+sha.d727561, Google, Web 4/2/2019
 
-.. [TutorialspointAngular] Tutorialspoint.com "`AngularJS - Overview <https://www.tutorialspoint.com/angularjs/angularjs_overview.htm>`_ "Web 4/2/2019, Tutorialspoint.com "`MVC Framework - Introduction <https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm>`_ "Web 4/4/2019
+.. [TutorialspointAngular] Tutorialspoint.com "`AngularJS - Overview <https://www.tutorialspoint.com/angularjs/angularjs_overview.htm>`_ "Web 4/2/2019
 
-.. [W3Schools] W3schools.com `"AngularJS Routing <https://www.w3schools.com/angular/angular_routing.asp>`_" Web 4/16/2019
+.. [TutorialspointAngularMVC] Tutorialspoint.com "`MVC Framework - Introduction <https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm>`_ " Web 4/4/2019
+
+.. [W3SchoolsAngular] W3schools.com `"AngularJS Routing <https://www.w3schools.com/angular/angular_routing.asp>`_" Web 4/16/2019
 
 .. [Austin] Andrew Austin “`An Overview of AngularJS for Managers. <https://andrewaustin.com/an-overview-of-angularjs-for-managers/>`_” Andrew Austin, 14 Aug. 2014
 
