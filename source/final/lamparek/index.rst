@@ -10,9 +10,47 @@ Vue.js is a progressive framework built in Javascript that can build single page
 * History
 * How it differs from other frameworks
 * How to install [Installation]_
+It is possible to use Vue.js without installing it by using their CDN in a <script> tag:
+
+``https://cdn.jsdelivr.net/npm/vue/dist/vue.js``
+
+However, for larger applications, I recommend using npm to download the framework.
+To use npm, download `Node.js <https://nodejs.org/en/download/>`_ first.
+After installing npm, execute the following in a terminal:
+
+.. code-block:: javascript
+    :Caption: Installing Vue.js
+
+    npm install vue
+    npm install --global vue-cli
+
+The CLI will be useful for initializing Vue.js projects and running our application server.
+To get started, type in these commands into the terminal:
+
+.. code-block:: javascript
+    :Caption: Getting Started
+
+    vue init webpack myVueProject
+    cd myVueProject
+    npm install
+    npm run dev
+
+``vue init webpack`` creates a webpack module. Webpack will add .vue files the the module and makes it easier
+to use both markup with Vue.js syntax. Examples will be given once in the hello vue example below.
+
+``cd myVueProject`` changes the directory to the vue project that was just created.
+
+``npm install`` checks the dependencies in package.json and installs any package that is missing.
+
+``npm run dev`` runs the development server and will run the initial boilerplate Vue.js template.
+Go to localhost on port 8080 to see the initial app.
+
+Now that Vue.js is installed, it is now possible to start the hello vue example.
 
 
 * Basic Hello Vue Example
+In this example, the project structure will be covered and some basic syntax will be explained.
+First and foremost, here is a picture of what the directory structure should look like:
 
 How to use Vue.js
 -----------------
