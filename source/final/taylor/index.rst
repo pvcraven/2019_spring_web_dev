@@ -51,7 +51,8 @@ ReactJS began with developer
 
 ReactJS Example Code
 ---------
-This is a test to see if the example code screen shot will work.
+This particular block of code derives from the ReactJS tutorial. This code lets
+the user create and interact with a tic-tac-toe board.
 
 .. code-block:: javascript
     :caption: Starting Tic-Tac-Toe
@@ -67,15 +68,17 @@ This is a test to see if the example code screen shot will work.
     class Board extends React.Component
         {
             renderSquare(i)
-                {
+            {
                 return (
                 <Square
                 value={this.props.squares[i]}
                 onClick={() => this.props.onClick(i)}
                 />
                  );
+            }
         }
     }
+
     render()
         {
         return (
@@ -98,6 +101,22 @@ This is a test to see if the example code screen shot will work.
             </div>
             );
         }
+
+    class Game extends React.Component
+        {
+            constructor(props)
+                {
+                    super(props);
+                    this.state =
+                        {
+                             history: [{
+                                squares: Array(9).fill(null)
+                                }],
+                        xIsNext: true
+                        };
+                }
+        }
+
 
 ReactJS Notable Features
 ---------
