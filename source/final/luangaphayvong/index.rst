@@ -223,6 +223,26 @@ doing the following -
 
     $ npm search "ModuleName"
 
+
+Package.json
+~~~~~~~~~~~~
+package.json is in the root directory of any Node application/module and is used
+to define properties of a package.
+
+Attributes of Package.json
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Name - name of the package
+* Version - version of the package
+* Description - Description of the package
+* Homepage - Homepage of the package
+* Author - Author of the package
+* Contributors - Name of contributors to the package
+* Dependencies - List of dependencies
+* Repository - Repository type and URL of the package
+* Main - Entry point of the package
+* Keywords - Keywords
+
 Creating Modules
 ~~~~~~~~~~~~~~~~
 Now that the basics are done, the user can also create a module. This requires

@@ -46,6 +46,7 @@ should look [reactIntro]_.
 
 History
 ~~~~~~~~
+
 A software engineer at Facebook named Jordan Walke is the creator of React.
 Around 2010, Facebook struggled with code maintenance. They were implementing
 new features of Facebook Ads and it made the Facebook application increasingly
@@ -87,7 +88,86 @@ these other competitors [reactPopularity]_. Popular websites using React are:
 Advantages
 ~~~~~~~~~~~~
 
-Why are so many people using React?
+Why are so many people using React compared to other JavaScript libraries?
+One reason is that it's very easy to use. Later, we will see how simple it is
+to implement React into a project and use React's features. Another reason
+for its popularity is because it breaks code down into reusable components.
+Code is broken up into small sections which makes it more maintainable and
+easier to change especially in larger projects. Along with technical
+advantages, since React has a large amount of users there are a lot of people
+ready to help when developers run into issues [reactPopularity]_.
+
+Future
+~~~~~~~~
+
+React is a relatively new technology that has exploded in the last five years.
+With React being by far the most popular
+JavaScript library used right now, I don't see it going away in the next five to
+ten years. Even if another better library comes along, it will take
+awhile for React to dwindle into obscurity. With React's community
+support and technical benefits for current technologies, it
+has a continuing bright future ahead.
+
+About React
+-------------
+
+What is Babel and JSX?
+~~~~~~~~~~~~~~~~~~~~~~
+
+React uses something called Babel to translate JSX code into JavaScript. Babel
+is a JavaScript compiler that can translate markup or programming languages
+into JavaScript. JSX stands for JavaScript XML. It takes elements from XML,
+HTML, and JavaScript and combines it into one language [w3Schools]_. Example
+JSX code looks something like this:
+``var element = <h1>This is a Header Variable!</h1>``
+
+React Components
+~~~~~~~~~~~~~~~~~~~
+
+Almost all code using React is in components. Components are basically
+bite-sized pieces of code that perform one functionality. Components can be
+either JavaScript functions or classes. Inside components there is often a
+method called ``render()``. The ``render()`` method is used to display
+HTML elements [reactSimple]_. Components use two types of data storage called
+Props and State, which we will look at next.
+
+Data Storage
+~~~~~~~~~~~~~~
+
+Props and State are how React handles data. Props are
+essentially parameters passed into a component from a different component,
+while state is private and can only be changed within the component itself.
+If a component needs external data it will rely on props. Internal data
+will be controlled by state [reactSimple]_. The difference between props and
+state will be shown more clearly in the later tutorial.
+
+Best Practices
+~~~~~~~~~~~~~~~~
+
+There are several helpful tips to know when using React that will make code
+cleaner and more efficient:
+
+* It is good programming practice
+  to put most of the application's logic in a component's ``render()``
+  method.
+* It is best to avoid state as much as possible and pass data using
+  props instead.
+* When passing props into components the PropType should be
+  defined to improve readability.
+* Components should only be responsible
+  for a single functionality.
+* It is more maintainable to have many small
+  components than a few large ones [bestPractices]_.
+
+When Should React be used?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+React is most helpful when building an advanced user interface. When developing
+simple, static web pages React is pointless. React makes
+complex interfaces easier to maintain and more efficient. By using JSX
+components, it is usually easier to write and change than JavaScript and
+other JavaScript libraries. React is also easy to learn and has a large
+community to help with developing issues [reactPopularity]_.
 
 React Tutorial
 ---------------
@@ -96,7 +176,8 @@ Talk about future a little bit to close [w3Schools]_.
 Here is everything you need to get React into an HTML webpage:
 
 
-..  code-block:: html
+.. code-block:: html
+   :caption: Using React in Project
 
     <html>
         <head>
@@ -115,6 +196,7 @@ simply print "Hello World".
 
 
 .. code-block:: javascript
+   :caption: Simple JSX Example
 
     class Hello extends React.Component {
         render() {
