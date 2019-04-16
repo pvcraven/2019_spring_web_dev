@@ -4,6 +4,7 @@ Responsive Web
 * Introduction - This is what Responsive Web is about.  This is where the thesis
   should be as well.
   A few of the main topics I will be diving into are:
+
     * CSS
     * Bootstrap
     * Stylebot
@@ -37,11 +38,12 @@ Responsive Web Design
 
 Media Queries
 ~~~~~~~~~~~~~
+
 * Example of code:
-``<meta name="viewport" content="width=device-width, initial-scale=1">``
+  ``<meta name="viewport" content="width=device-width, initial-scale=1">``
 
 .. code-block:: html
-	:caption: viewport
+    :caption: viewport
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
