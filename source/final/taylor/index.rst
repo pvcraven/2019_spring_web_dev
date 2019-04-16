@@ -53,8 +53,17 @@ ReactJS Example Code
 ---------
 This is a test to see if the example code screen shot will work.
 
-.. image:: example.PNG
-    :width: 40%
+.. code-block:: javascript
+    :caption: Starting Tic-Tac-Toe
+
+    function Square(props)
+        {
+        return(
+        <button className="square" onClick={props.onClick}>
+        {props.value}
+        </button>
+        );
+        }
 
 ReactJS Notable Features
 ---------
