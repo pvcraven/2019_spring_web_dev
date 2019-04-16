@@ -25,15 +25,15 @@ History of topic / library of code
 
 Responsive Web Design
 ~~~~~~~~~~~~~~~~~~~~~
-    * This is where I will go further into Responsive Web Design.  I will talk
-      about the different stylesheets and what different tools you could use.
-      Also, I will put some basic code blocks here to show the simpler ways you
-      could use CSS to add some style or looks when it comes to resizing the page.
+* This is where I will go further into Responsive Web Design.  I will talk
+  about the different stylesheets and what different tools you could use.
+  Also, I will put some basic code blocks here to show the simpler ways you
+  could use CSS to add some style or looks when it comes to resizing the page.
 
-    [w3SchoolsRef]
-    [diviSpace]
-    [MediaQueries]
-    [SmashingMagazine]
+    [w3SchoolsRef]_
+    [diviSpace]_
+    [MediaQueries]_
+    [SmashingMagazine]_
 
 Media Queries
 ~~~~~~~~~~~~~
