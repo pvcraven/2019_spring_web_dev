@@ -38,7 +38,12 @@ Responsive Web Design
 Media Queries
 ~~~~~~~~~~~~~
 * Example of code:
-`for (int i=0; i <10; i++)`
+``<meta name="viewport" content="width=device-width, initial-scale=1">``
+
+.. code-block:: html
+	:caption: viewport
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 Bootstrap
 ~~~~~~~~~
