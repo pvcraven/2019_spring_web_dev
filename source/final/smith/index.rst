@@ -57,7 +57,8 @@ Controllers
 
 The controllers of the MVC architecture act as a interface for the view and model
 sections. The controller will manipulate data that has came from a model or some
-other source and send it back to the model and view [Tutorialspoint]_.
+other source and send it back to the model and view .
+[TutorialspointAngularMVC]_ [TutorialspointAngular]_
 
 AngularJS MVC
 ~~~~~~~~~~~~~
@@ -83,7 +84,7 @@ javascript.
 Global Namespace
 ~~~~~~~~~~~~~~~~
 
-While creating a HTML document you can incorperate many javascript libraries
+While creating a HTML document you can incorporate many javascript libraries
 to enhance the document. One fear is that the javascript can override each other
 if they share similar named variables in their global namespace. consider the
 following examples:
@@ -146,6 +147,7 @@ has to be the same name in the javascript.
 
 .. code-block:: javascript
     :caption: Javascript of declaring a AngularJS Module
+    :linenos:
 
     // This is Model
     // The [] in the parameters is a array of dependencies for Angular to work
@@ -191,6 +193,7 @@ easy! consider the following:
 
 .. code-block:: html
     :caption: Sample HTML for data-binding
+    :linenos:
 
     <!DOCTYPE html>
     <html lang="en-us" ng-app="myApp">
@@ -231,13 +234,14 @@ manipulating the DOM. This code will connect the two together:
 
 .. code-block:: javascript
     :caption: Connecting to the DOM with AngularJS
+    :linenos:
 
     myApp.controller('mainController', ['$scope','$timeout',function($scope,$timeout)
         $scope.name='';
         //$timeout is AngularJS service that can wait x amount of milliseconds
         //before performing a function, in this case I wanted to demo how
         //the two way data binding worked
-        $timeout(funtion(){console.log($scope.name},5000);
+        $timeout(function(){console.log($scope.name},5000);
     )]);
 
 .. image:: pictures/Data-Binding_Connected.PNG
@@ -271,6 +275,79 @@ to test. This will allow testing suites to more easily test the web application
 when the development team deploys a new build. This also means rolling back
 changes is also easy, since everything is bundled together.  [Rajput]_
 
+Lets take a look on how AngularJS can dynamically change what the user will see.
+We can add this snippet of code to our HTML file we have from above in the body.
+It will create 3 links that will let the user change a field in the document.
+
+.. code-block:: HTML
+    :caption: Sample HTML for Routing in AngularJS
+    :linenos:
+
+    <a href="#/!">Default</a>
+    <a href="#!Test1">Switch Routes!</a>
+    <a href="#!Test2">Try a 3rd time</a>
+    <div ng-view></div>
+
+There is also another AngularJS script needed to make it all work.
+
+.. code-block:: HTML
+    :caption: CDN for AngularJS $routeProvider service
+
+    <script type="text/javascript" src="https://code.angularjs.org/1.7.0-rc.0/angular-route.min.js"></script>
+
+
+Next we need to add a route to our myApp module so AngularJS knows how to navigate
+through the different potential html pages.
+
+.. code-block:: JavaScript
+    :caption: JavaScript to create AngularJS Routes
+    :linenos:
+
+    //Add "$ngRoute" into the [] when you create the module
+    var myApp = angular.module('myApp', ["ngRoute"]);
+    //This will inject the ngRoute dependency into the module which is not
+    //included into the default AngularJS library
+
+    myApp.config(function($routeProvider){
+       $routeProvider
+       .when("/", {
+           template : "<h1>Default View</h1> <p> This is the default</p>"
+       })
+        .when("/Test1",{
+           template : "<h1>Clicked 2nd link!</h1> <p> This is the 2nd sample page!</p>"
+       })
+        .when("/Test2", {
+           template : "<h1>Clicked 3rd link!</h1> <p> This is the 3rd sample page!</p>"
+       });
+    });
+
+.. image:: pictures/Routing1.PNG
+    :width: 400
+    :alt: Picture of the HTML no linked clicked
+
+.. image:: pictures/Routing2.PNG
+    :width: 400
+    :alt: Picture of the HTML after 2nd linked clicked
+
+.. image:: pictures/Routing3.PNG
+    :width: 400
+    :alt: Picture of the HTML after 3rd link clicked
+
+
+Earlier when we declared our myApp module the empty array in the parameter list
+was empty. This is how Angular will inject dependencies into the module (see
+line 2). These dependencies are usually more services that do not come with
+AngularJS by default. In this case when working with the routing services we have
+to get that delivered through a CDN additionally and then inject it into our
+application before we can use it.
+
+Once we have our service we can connect the navigation links in the HTML DOM with
+our javascript to make the magic happen. AngularJS will look at what the URL
+and then manipulate the DOM based on what it finds. Lines 8 - 14 in listing 13
+will look for those specific url extensions and will insert the string of html
+that follows the template into the ng-view attribute in the HTML document.
+[W3SchoolsAngular]_
+
 Chaining Promises = Complicated
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -283,6 +360,7 @@ over the internet. Here is a very simple example:
 
 .. code-block:: javascript
     :caption: Exmaple of Promise chaining
+    :linenos:
 
     function returnStudentMajors(){
     return $http.get("Some url to get data")
@@ -290,7 +368,7 @@ over the internet. Here is a very simple example:
             //do something
         })
         .error(function(data){
-            //do someting
+            //do something
         })
     }
 
@@ -299,6 +377,7 @@ chaining them together as follows:
 
 .. code-block:: javascript
     :caption: Exmaple of Promise chaining
+
 
     $http.get("Some url to get data").then(function(data){
         //do something
@@ -337,7 +416,11 @@ Sources
 
 .. [Angular] Angular.io "`Architecture overview <https://angular.io/guide/architecture>`_ "version 7.2.12-local+sha.d727561, Google, Web 4/2/2019
 
-.. [Tutorialspoint] Tutorialspoint.com "`AngularJS - Overview <https://www.tutorialspoint.com/angularjs/angularjs_overview.htm>`_ "Web 4/2/2019, Tutorialspoint.com "`MVC Framework - Introduction <https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm>`_ "Web 4/4/2019
+.. [TutorialspointAngular] Tutorialspoint.com "`AngularJS - Overview <https://www.tutorialspoint.com/angularjs/angularjs_overview.htm>`_ "Web 4/2/2019
+
+.. [TutorialspointAngularMVC] Tutorialspoint.com "`MVC Framework - Introduction <https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm>`_ " Web 4/4/2019
+
+.. [W3SchoolsAngular] W3schools.com `"AngularJS Routing <https://www.w3schools.com/angular/angular_routing.asp>`_" Web 4/16/2019
 
 .. [Austin] Andrew Austin “`An Overview of AngularJS for Managers. <https://andrewaustin.com/an-overview-of-angularjs-for-managers/>`_” Andrew Austin, 14 Aug. 2014
 
