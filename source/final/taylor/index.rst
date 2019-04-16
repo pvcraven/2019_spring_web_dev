@@ -51,6 +51,8 @@ ReactJS began with developer
 
 ReactJS Example Code
 ---------
+Tic-Tac-Toe Tutorial
+~~~~~~~~~~~
 This particular block of code derives from the ReactJS tutorial. This code lets
 the user create and interact with a tic-tac-toe board.
 
@@ -117,6 +119,10 @@ the user create and interact with a tic-tac-toe board.
                 }
         }
 
+Board Example
+~~~~~~~~~~~
+.. image:: board.PNG
+    :width: 25%
 
 ReactJS Notable Features
 ---------
