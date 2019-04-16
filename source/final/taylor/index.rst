@@ -50,7 +50,7 @@ History of ReactJS
 ReactJS began with developer
 
 ReactJS Example Code
--------------------
+--------------------
 Tic-Tac-Toe Tutorial
 ~~~~~~~~~~~~~~~~~~~~
 This particular block of code derives from the ReactJS tutorial. This code lets
@@ -135,7 +135,7 @@ the user click and place an X or an O.
 .. code-block:: javascript
     :caption: Getting User Input
 
- handleClick(i)
+    handleClick(i)
     {
         const history = this.state.history;
         const current = history[history.length - 1];
@@ -155,7 +155,7 @@ the user click and place an X or an O.
             });
     }
 
- render()
+    render()
     {
         const history = this.state.history;
         const current = history[history.length - 1];
@@ -174,7 +174,7 @@ the user click and place an X or an O.
         });
     }
 
- let status;
+    let status;
     if (winner)
         {
             status = 'Winner: ' + winner;
@@ -187,30 +187,29 @@ the user click and place an X or an O.
     return
         (
         <div className="game">
-        <div className="game-board">
-          <Board
-            squares={current.squares}
-            onClick={(i) => this.handleClick(i)}
-          />
-        </div>
-        <div className="game-info">
-          <div>{status}</div>
-          <ol>{moves}</ol>
-        </div>
+            <div className="game-board">
+             <Board
+                squares={current.squares}
+                onClick={(i) => this.handleClick(i)}
+                />
+            </div>
+            <div className="game-info">
+                <div>{status}</div>
+                <ol>{moves}</ol>
+            </div>
       </div>
     );
-  }
-}
+    }
 
-// ========================================
+    // ========================================
 
- ReactDOM.render
-    (
-    <Game />,
-     document.getElementById('root')
-    );
+     ReactDOM.render
+        (
+         <Game />,
+        document.getElementById('root')
+        );
 
-function calculateWinner(squares)
+    function calculateWinner(squares)
     {
     const lines = [
         [0, 1, 2],
@@ -221,17 +220,17 @@ function calculateWinner(squares)
         [2, 5, 8],
         [0, 4, 8],
         [2, 4, 6],
-  ];
-  for (let i = 0; i < lines.length; i++)
+    ];
+    for (let i = 0; i < lines.length; i++)
       {
         const [a, b, c] = lines[i];
-     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c])
+        if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c])
          {
             return squares[a];
          }
+      }
+    return null;
     }
-  return null;
-}
 
 Player Input Example
 ~~~~~~~~~~~~~~~~~~~~
