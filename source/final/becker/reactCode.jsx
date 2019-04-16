@@ -1,11 +1,11 @@
-class Hello extends React.Component {
-    render() {
-        return <h1>Hello world!</h1>;
+class Example extends React.Component {
+        render() {
+            return <h1>Hi, my name is {this.props.name}!</h1>;
+        }
     }
-}
 
 ReactDOM.render(
-    <Hello />,
+    <Example name="Edward"/>,
     document.getElementById("root")
 );
 

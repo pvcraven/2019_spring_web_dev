@@ -16,12 +16,12 @@ Introduction
 
 About React.js
 
-* What is Babel and JSX? [w3Schools]_
+* What is Babel and JSX? [reactW3Schools]_
 * Components - What is it, how is it used, what advantages?
 * Data Storage - Props and State, what are they and how do they
   work? [reactSimple]_
 * Best Practices - The best way to use components and data
-  storage [bestPractices]_.
+  storage [reactBestPractices]_.
 * When should React.js be used?
 
 React Tutorial
@@ -117,7 +117,7 @@ What is Babel and JSX?
 React uses something called Babel to translate JSX code into JavaScript. Babel
 is a JavaScript compiler that can translate markup or programming languages
 into JavaScript. JSX stands for JavaScript XML. It takes elements from XML,
-HTML, and JavaScript and combines it into one language [w3Schools]_. Example
+HTML, and JavaScript and combines it into one language [reactW3Schools]_. Example
 JSX code looks something like this:
 ``var element = <h1>This is a Header Variable!</h1>``
 
@@ -157,7 +157,7 @@ cleaner and more efficient:
 * Components should only be responsible
   for a single functionality.
 * It is more maintainable to have many small
-  components than a few large ones [bestPractices]_.
+  components than a few large ones [reactBestPractices]_.
 
 When Should React be used?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -171,13 +171,16 @@ community to help with developing issues [reactPopularity]_.
 
 React Tutorial
 ---------------
-Talk about future a little bit to close [w3Schools]_.
 
-Here is everything you need to get React into an HTML webpage:
+Setup
+~~~~~~
 
+The following HTML code shows how to get React into a project. There are three
+head scripts, and than one script in the body that refers to the React
+JSX file.
 
 .. code-block:: html
-   :caption: Using React in Project
+   :caption: Setup
 
     <html>
         <head>
@@ -191,35 +194,57 @@ Here is everything you need to get React into an HTML webpage:
         </body>
     </html>
 
-In the reactCode.jsx file, put the following code to
-simply print "Hello World".
+Components
+~~~~~~~~~~~
+
+As mentioned before, React components can be either JavaScript functions or
+classes. In this section, we will make a simple component using both methods.
+It is important to note, however, that using classes for components is more
+common among React developers.
 
 
-.. code-block:: javascript
-   :caption: Simple JSX Example
+.. code-block:: jsx
+   :caption: Simple Class Component
 
-    class Hello extends React.Component {
+    class Example extends React.Component {
         render() {
-            return <h1>Hello world!</h1>;
+            return <h1>I am a simple React component!</h1>;
         }
     }
 
     ReactDOM.render(
-        <Hello />,
+        <Example />,
         document.getElementById("root")
     );
 
-Awesome! We now have a working React webpage! Let's look at some of React's
-features now.
+.. code-block:: jsx
+   :caption: Simple Function Component
+
+    function Example(){
+      return <h1>I am a simple React component!</h1>;
+    }
+
+    ReactDOM.render(
+        <Example />,
+        document.getElementById("root")
+    );
+
+Awesome! We now have a working React component! Now let's take a look at using
+props and state in React components.
+
+Data Storage
+~~~~~~~~~~~~~
+
+
 
 Sources
 ---------
 .. [reactIntro] "`Tutorial: Intro to React <https://reactjs.org/tutorial/tutorial.html>`_" React. Facebook Inc., 4/2/2019.
 .. [reactSimple] Borgen, Per Harald. "`Learn React.js in 5 Minutes <https://medium.freecodecamp.org/learn-react-js-in-5-minutes-526472d292f4>`_" FreeCodeCamp.org, A Medium Corporation, 4/10/2018.
 .. [reactHistory] Papp, Andrea. "`The History of React.js on a Timeline <https://blog.risingstack.com/the-history-of-react-js-on-a-timeline/>`_" RisingStack, RisingStack Inc., 7/20/2018.
-.. [w3Schools] "`What is React? <https://www.w3schools.com/whatis/whatis_react.asp>`_" w3schools.com, W3Schools, 4/3/2019.
+.. [reactW3Schools] "`What is React? <https://www.w3schools.com/whatis/whatis_react.asp>`_" w3schools.com, W3Schools, 4/3/2019.
 .. [reactPopularity] Kostrzewa, Denis. "`Is React.js the Best Javascript Framework in 2018? <https://hackernoon.com/is-react-js-the-best-javascript-framework-in-2018-264a0eb373c8>`_" Hacker Noon, A Medium Corporation, 7/19/2018.
-.. [bestPractices] "`ReactJS Best Practices. <https://www.tutorialspoint.com/reactjs/reactjs_best_practices.htm>`_" tutorialspoint.com, Tutorials Point, 4/4/2019.
+.. [reactBestPractices] "`ReactJS Best Practices. <https://www.tutorialspoint.com/reactjs/reactjs_best_practices.htm>`_" tutorialspoint.com, Tutorials Point, 4/4/2019.
 
 
 
