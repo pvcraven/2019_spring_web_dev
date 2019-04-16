@@ -5,7 +5,7 @@ AngularJS
     :linenos:
     :language: html
     :caption: example.html
-    :emphasize-lines: 6
+    
 
 Heading 1
 ---------
@@ -17,14 +17,14 @@ libero, volutpat eu nisi nec, ultricies sollicitudin felis. Suspendisse id dui
 nec felis blandit pellentesque vel quis metus. Curabitur non elit id tortor
 scelerisque vestibulum. Nunc sapien felis, convallis quis mollis quis, mattis
 sit amet quam. Maecenas rhoncus mauris vitae augue laoreet pharetra. In imperdiet
-quam vel turpis gravida fermentum.
+quam vel turpis gravida fermentum. [Lau]_
 
 Heading 2
 ---------
 
 
 .. code-block:: html
-    :caption: Sample HTML for data-binding
+    :caption: data-binding
 
     <!DOCTYPE html>
     <html lang="en-us" ng-app="myApp">
@@ -52,9 +52,9 @@ Sub Heading
 
 Heading 3
 ---------
-* intro [w3schools]
+* intro [w3schools]_
 
-* History[Lau]
+* History
 
 * why and what to us AngularJS for.
 

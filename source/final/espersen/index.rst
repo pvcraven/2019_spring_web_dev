@@ -8,6 +8,12 @@ Responsive Web
     * Bootstrap
     * Stylebot
 
+* When it comes to styling a web page or a mobile app or even being able to print
+  out a web page there are many tools that you can use.  The main idea here is
+  the CSS or a cascading style sheet.  This special document usually holds all of
+  the styling and formatting for the web page or mobile app you are designing.
+  
+
 * History of topic / library of code
 
 
@@ -16,8 +22,8 @@ Responsive Web
       about the different stylesheets and what different tools you could use.
       Also, I will put some basic code blocks here to show the simpler ways you
       could use CSS to add some style or looks when it comes to resizing the page.
-    * Media Queries
 
+* Media Queries
 
 * Bootstrap
     * what is Bootstrap?
@@ -35,6 +41,7 @@ Sources
 ------------
 .. [w3Schools] "`HTML Responsive Web Design <https://www.w3schools.com/html/html_responsive.asp>`_" w3Schools. w3Schools.com, 4/4/2019.
 .. [diviSpace] John Anderson. "`How to use Stylebot: <https://divi.space/css-course/how-to-use-stylebot-to-manipulate-css-on-the-fly/>`_" divi.space, Web. 18 Dec. 2017.
+.. [W3Schools] "`Media Queries <https://www.w3schools.com/css/css_rwd_mediaqueries.asp>`_" w3Schools. w3Schools.com, 4/16/2019.
 
 
 
