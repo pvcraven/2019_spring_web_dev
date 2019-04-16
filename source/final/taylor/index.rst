@@ -238,6 +238,9 @@ Player Input Example
 .. image:: board1.PNG
     :width: 25%
 
+.. image:: board2.PNG
+    :width: 25%
+
 ReactJS Notable Features
 ------------------------
 
