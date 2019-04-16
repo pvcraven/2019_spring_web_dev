@@ -10,6 +10,7 @@ Outline
     * Getting started
     * Selection
     * Dynamic Properties
+    * SVG
     * Graphs
 * Who uses D3?
 * Conclusion
@@ -94,6 +95,8 @@ the for loop or extra lines.
 
     d3.selectAll("p").style("color", "pink");
 
+[Bostock2]_
+
 Dynamic Properties
 ~~~~~~~~~~~~~~~~~~
 
@@ -160,9 +163,16 @@ function, it will manipulate the text contained within the ``<h1>`` tag using
 the data being passed into the function. When all of this code is put together,
 we end up with a web page that looks like the following.
 
-.. image:: images/dynamicProperties.png
-    :width: 800
-    :alt: Dynamically setting properties using D3.js
+:ref:`dynamic-properties-josh`
+
+[Bostock1]_
+
+Interactive SVGs
+~~~~~~~~~~~~~~~~
+
+:ref:`interactive-svg-josh`
+
+[Bostock3]_
 
 Graphs
 ~~~~~~
@@ -193,9 +203,11 @@ Conclusion
 
 .. [Bostock1] Bostock, Mike. “`Data-Driven Documents <https://d3js.org/>`_.” D3.Js.
 
-.. [Tutorialspoint] Tutorialspoint.com. “`D3.Js Quick Guide <https://www.tutorialspoint.com/d3js/d3js_quick_guide.htm>`_.” tutorialspoint.com, Tutorialspoint.
-
 .. [Bostock2] Bostock, Mike. "`How Selections Work <https://bost.ocks.org/mike/selection>`_." 26 Apr. 2013.
+
+.. [Bostock3] Bostock, Mike. “`OMG Particles! <https://bl.ocks.org/mbostock/1062544>`_” Popular Blocks, 20 Feb. 2019.
+
+.. [Tutorialspoint] Tutorialspoint.com. “`D3.Js Quick Guide <https://www.tutorialspoint.com/d3js/d3js_quick_guide.htm>`_.” tutorialspoint.com, Tutorialspoint.
 
 .. [Murray] Murray, Scott, et al. “`Data Driven Documents <http://www.jeromecukier.net/presentations/d3-tutorial/S01%20-%20introduction.pdf>`_.” VisWeek 2012, 2012.
 

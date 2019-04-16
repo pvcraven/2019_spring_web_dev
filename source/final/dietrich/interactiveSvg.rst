@@ -1,4 +1,4 @@
-.. _example-page-josh:
+.. _interactive-svg-josh:
 
 Interactive SVG
 ===============
