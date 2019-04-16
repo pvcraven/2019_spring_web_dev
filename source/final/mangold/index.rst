@@ -25,11 +25,37 @@ quam vel turpis gravida fermentum.
 Heading 2
 ---------
 
-.. literalinclude:: example.js
-    :linenos:
-    :language: JavaScript
-    :caption: example.js
-    :emphasize-lines: 5
+
+.. code-block:: html
+    :caption: Sample HTML for data-binding
+
+    <!DOCTYPE html>
+    <html lang="en-us" ng-app="myApp">
+        <head>
+            <title>AngularJS Example</title>
+            <meta charset="UTF-8">
+        </head>
+
+        <body>
+            <div class="container">
+                <div ng-controller="mainController">
+                    <!-- Angular looks for {{}} and replaces it with anything
+                    you want to put there. currently there is a
+                    string called name in the middle of the curly braces
+                    which will have to match name of the variable in the
+                    javascript you wish to fill it with-->
+                    <div>
+                        <label>Please enter your name:</label>
+                        <input type="text" ng-model="name" />
+                        <h1>Your name: {{name}}</h1>
+                    </div>
+                </div>
+            </div>
+        </body>
+
+    <script type="text/javascript" src="https://code.angularjs.org/1.7.0-rc.0/angular.min.js"></script>
+    </html>
+
 
 Sub Heading
 ~~~~~~~~~~~
