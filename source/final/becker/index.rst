@@ -235,7 +235,126 @@ props and state in React components.
 Data Storage
 ~~~~~~~~~~~~~
 
+Data can be used in React using props or state. The following code shows how
+to use props:
 
+.. code-block:: jsx
+   :caption: Props
+
+   class Example extends React.Component {
+           render() {
+               return <h1>Hi, my name is {this.props.name}!</h1>;
+           }
+       }
+
+   ReactDOM.render(
+       <Example name="Edward"/>,
+       document.getElementById("root")
+   );
+
+Notice how the data for the Example component is passed in from outside the
+component itself. Props cannot be changed once inside the component.
+To change data inside a component, state needs to be used. Here is a simple
+example of using state:
+
+.. code-block:: jsx
+   :caption: State
+
+   class Example extends React.Component {
+
+       constructor(){
+           super();
+           this.state = {
+               name: "Lukas"
+           };
+       }
+
+       render() {
+           return <div><h1>Hi, my name is {this.props.name}!</h1><br></br>
+                  <h1>Hi, my name is {this.state.name} and I'm from state!</h1></div>;
+       }
+   }
+
+   ReactDOM.render(
+       <Example name="Edward"/>,
+       document.getElementById("root")
+   );
+
+Great! Now that we have learned components and data storage, let's make a
+simple application that takes a name input and prints it out on the screen.
+
+Simple Application
+-------------------
+
+For this application, we are going to make a few changes to our Example
+component. We first need to change our ``render()`` method to display a name
+input and button.
+
+.. code-block:: jsx
+   :caption: Render Method
+
+   render() {
+           return (
+               <div>
+                   <label>
+                     Name:
+                     <input type="text" value={this.state.name} onChange={this.changeName} />
+                   </label>
+
+                   <button type="button" onClick={this.submitName}>Submit</button>
+                   <br></br>
+
+                   <h1>My name is {this.state.submittedName}!</h1>
+               </div>
+       );
+   }
+
+Next, we need to change the constructor of our component to use prop data and
+bind "this" to the functions we will create. Without binding the "this"
+keyword to the functions, we would not be able to access "this" within
+the functions. The two simple functions simply set state data.
+
+.. code-block:: jsx
+   :caption: Constructor and Functions
+
+    constructor(props){
+        super(props);
+        this.state = {
+            name: props.name,
+            submittedName: props.name
+        };
+
+        this.submitName = this.submitName.bind(this);
+        this.changeName = this.changeName.bind(this);
+    }
+
+    submitName(){
+        this.setState({submittedName: this.state.name});
+    }
+
+    changeName(event){
+        this.setState({name: event.target.value});
+    }
+
+Nice work, we are finished! Here is what the end result should look like:
+
+.. literalinclude:: reactPage.html
+    :linenos:
+    :language: html
+    :caption: Final HTML Page
+
+.. literalinclude:: reactCode.jsx
+    :linenos:
+    :language: jsx
+    :caption: Final JSX File
+
+.. figure:: result.PNG
+    :width: 50%
+
+    Final Application Result
+
+Conclusion
+-----------
 
 Sources
 ---------
