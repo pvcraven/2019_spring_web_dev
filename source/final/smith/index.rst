@@ -57,7 +57,8 @@ Controllers
 
 The controllers of the MVC architecture act as a interface for the view and model
 sections. The controller will manipulate data that has came from a model or some
-other source and send it back to the model and view [Tutorialspoint]_.
+other source and send it back to the model and view .
+[TutorialspointAngularMVC]_ [TutorialspointAngular]_
 
 AngularJS MVC
 ~~~~~~~~~~~~~
@@ -83,7 +84,7 @@ javascript.
 Global Namespace
 ~~~~~~~~~~~~~~~~
 
-While creating a HTML document you can incorperate many javascript libraries
+While creating a HTML document you can incorporate many javascript libraries
 to enhance the document. One fear is that the javascript can override each other
 if they share similar named variables in their global namespace. consider the
 following examples:
@@ -240,7 +241,7 @@ manipulating the DOM. This code will connect the two together:
         //$timeout is AngularJS service that can wait x amount of milliseconds
         //before performing a function, in this case I wanted to demo how
         //the two way data binding worked
-        $timeout(funtion(){console.log($scope.name},5000);
+        $timeout(function(){console.log($scope.name},5000);
     )]);
 
 .. image:: pictures/Data-Binding_Connected.PNG
@@ -316,7 +317,7 @@ through the different potential html pages.
            template : "<h1>Clicked 2nd link!</h1> <p> This is the 2nd sample page!</p>"
        })
         .when("/Test2", {
-               template : "<h1>Clicked 3rd link!</h1> <p> This is the 3rd sample page!</p>"
+           template : "<h1>Clicked 3rd link!</h1> <p> This is the 3rd sample page!</p>"
        });
     });
 
@@ -338,7 +339,14 @@ was empty. This is how Angular will inject dependencies into the module (see
 line 2). These dependencies are usually more services that do not come with
 AngularJS by default. In this case when working with the routing services we have
 to get that delivered through a CDN additionally and then inject it into our
-application before we can use it. [W3Schools]_
+application before we can use it.
+
+Once we have our service we can connect the navigation links in the HTML DOM with
+our javascript to make the magic happen. AngularJS will look at what the URL
+and then manipulate the DOM based on what it finds. Lines 8 - 14 in listing 13
+will look for those specific url extensions and will insert the string of html
+that follows the template into the ng-view attribute in the HTML document.
+[W3SchoolsAngular]_
 
 Chaining Promises = Complicated
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -360,7 +368,7 @@ over the internet. Here is a very simple example:
             //do something
         })
         .error(function(data){
-            //do someting
+            //do something
         })
     }
 
@@ -408,9 +416,11 @@ Sources
 
 .. [Angular] Angular.io "`Architecture overview <https://angular.io/guide/architecture>`_ "version 7.2.12-local+sha.d727561, Google, Web 4/2/2019
 
-.. [Tutorialspoint] Tutorialspoint.com "`AngularJS - Overview <https://www.tutorialspoint.com/angularjs/angularjs_overview.htm>`_ "Web 4/2/2019, Tutorialspoint.com "`MVC Framework - Introduction <https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm>`_ "Web 4/4/2019
+.. [TutorialspointAngular] Tutorialspoint.com "`AngularJS - Overview <https://www.tutorialspoint.com/angularjs/angularjs_overview.htm>`_ "Web 4/2/2019
 
-.. [W3Schools] W3schools.com `"AngularJS Routing <https://www.w3schools.com/angular/angular_routing.asp>`_" Web 4/16/2019
+.. [TutorialspointAngularMVC] Tutorialspoint.com "`MVC Framework - Introduction <https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm>`_ " Web 4/4/2019
+
+.. [W3SchoolsAngular] W3schools.com `"AngularJS Routing <https://www.w3schools.com/angular/angular_routing.asp>`_" Web 4/16/2019
 
 .. [Austin] Andrew Austin “`An Overview of AngularJS for Managers. <https://andrewaustin.com/an-overview-of-angularjs-for-managers/>`_” Andrew Austin, 14 Aug. 2014
 
