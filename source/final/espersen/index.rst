@@ -30,8 +30,15 @@ Responsive Web Design
       Also, I will put some basic code blocks here to show the simpler ways you
       could use CSS to add some style or looks when it comes to resizing the page.
 
+    [w3SchoolsRef]
+    [diviSpace]
+    [MediaQueries]
+    [SmashingMagazine]
+
 Media Queries
 ~~~~~~~~~~~~~
+* Example of code:
+`for (int i=0; i <10; i++)`
 
 Bootstrap
 ~~~~~~~~~
@@ -50,9 +57,9 @@ Conclusion
 
 Sources
 ------------
-.. [w3Schools] "`HTML Responsive Web Design <https://www.w3schools.com/html/html_responsive.asp>`_" w3Schools. w3Schools.com, 4/4/2019.
+.. [w3SchoolsRef] "`HTML Responsive Web Design <https://www.w3schools.com/html/html_responsive.asp>`_" w3Schools. w3Schools.com, 4/4/2019.
 .. [diviSpace] John Anderson. "`How to use Stylebot: <https://divi.space/css-course/how-to-use-stylebot-to-manipulate-css-on-the-fly/>`_" divi.space, Web. 18 Dec. 2017.
-.. [W3Schools] "`Media Queries <https://www.w3schools.com/css/css_rwd_mediaqueries.asp>`_" w3Schools. w3Schools.com, 4/16/2019.
+.. [MediaQueries] "`Media Queries <https://www.w3schools.com/css/css_rwd_mediaqueries.asp>`_" w3Schools. w3Schools.com, 4/16/2019.
 .. [SmashingMagazine] Christian Krammer. "`How To Setup A Print Style Sheet <https://www.smashingmagazine.com/2011/11/how-to-set-up-a-print-style-sheet/>`_" SmashingMagazine. smashingmagazine.com, 4/16/2019.
 
 
