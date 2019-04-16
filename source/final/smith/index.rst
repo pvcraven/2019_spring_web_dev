@@ -57,7 +57,7 @@ Controllers
 
 The controllers of the MVC architecture act as a interface for the view and model
 sections. The controller will manipulate data that has came from a model or some
-other source and send it back to the model and view [Tutorialspoint]_.
+other source and send it back to the model and view [TutorialspointAngular]_.
 
 AngularJS MVC
 ~~~~~~~~~~~~~
@@ -414,7 +414,7 @@ Sources
 
 .. [Angular] Angular.io "`Architecture overview <https://angular.io/guide/architecture>`_ "version 7.2.12-local+sha.d727561, Google, Web 4/2/2019
 
-.. [Tutorialspoint] Tutorialspoint.com "`AngularJS - Overview <https://www.tutorialspoint.com/angularjs/angularjs_overview.htm>`_ "Web 4/2/2019, Tutorialspoint.com "`MVC Framework - Introduction <https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm>`_ "Web 4/4/2019
+.. [TutorialspointAngular] Tutorialspoint.com "`AngularJS - Overview <https://www.tutorialspoint.com/angularjs/angularjs_overview.htm>`_ "Web 4/2/2019, Tutorialspoint.com "`MVC Framework - Introduction <https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm>`_ "Web 4/4/2019
 
 .. [W3Schools] W3schools.com `"AngularJS Routing <https://www.w3schools.com/angular/angular_routing.asp>`_" Web 4/16/2019
 
