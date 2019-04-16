@@ -25,6 +25,12 @@ quam vel turpis gravida fermentum.
 Heading 2
 ---------
 
+.. literalinclude:: example.js
+    :linenos:
+    :language: JavaScript
+    :caption: example.js
+    :emphasize-lines: 5
+
 Sub Heading
 ~~~~~~~~~~~
 
@@ -40,4 +46,5 @@ Heading 3
 
 
 .. [w3schools] "`AngularJS Tutorial <https://www.w3schools.com/angular/default.asp>`_" W3Schools, Web. 4 Apr. 2019
-.. [Lau] "`sitepoint <https://www.sitepoint.com/10-reasons-use-angularjs/>`_" sitepoint, 05 Sept. 2013. Web. 4 Apr. 2019
+.. [Lau] "`10 Reasons Why You Should Use AngularJS <https://www.sitepoint.com/10-reasons-use-angularjs/>`_" SitePoint Pty. Ltd., 05 Sept. 2013. Web. 4 Apr. 2019
+.. [w3schools] "`AngularJS Tutorial <https://www.w3schools.com/angular/default.asp>`_" W3Schools, Web. 4 Apr. 2019
