@@ -83,7 +83,7 @@ javascript.
 Global Namespace
 ~~~~~~~~~~~~~~~~
 
-While creating a HTML document you can incorperate many javascript libraries
+While creating a HTML document you can incorporate many javascript libraries
 to enhance the document. One fear is that the javascript can override each other
 if they share similar named variables in their global namespace. consider the
 following examples:
@@ -240,7 +240,7 @@ manipulating the DOM. This code will connect the two together:
         //$timeout is AngularJS service that can wait x amount of milliseconds
         //before performing a function, in this case I wanted to demo how
         //the two way data binding worked
-        $timeout(funtion(){console.log($scope.name},5000);
+        $timeout(function(){console.log($scope.name},5000);
     )]);
 
 .. image:: pictures/Data-Binding_Connected.PNG
@@ -316,7 +316,7 @@ through the different potential html pages.
            template : "<h1>Clicked 2nd link!</h1> <p> This is the 2nd sample page!</p>"
        })
         .when("/Test2", {
-               template : "<h1>Clicked 3rd link!</h1> <p> This is the 3rd sample page!</p>"
+           template : "<h1>Clicked 3rd link!</h1> <p> This is the 3rd sample page!</p>"
        });
     });
 
@@ -338,7 +338,13 @@ was empty. This is how Angular will inject dependencies into the module (see
 line 2). These dependencies are usually more services that do not come with
 AngularJS by default. In this case when working with the routing services we have
 to get that delivered through a CDN additionally and then inject it into our
-application before we can use it. [W3Schools]_
+application before we can use it.
+
+Once we have our service we can connect the navigation links in the HTML DOM with
+our javascript to make the magic happen. AngularJS will look at what the URL
+and then manipulate the DOM based on what it finds. Lines 8 - 14 in listing 13
+will look for those specific url extensions and will insert the string of html
+that follows the template into the ng-view attribute in the HTML document. [W3Schools]_
 
 Chaining Promises = Complicated
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -360,7 +366,7 @@ over the internet. Here is a very simple example:
             //do something
         })
         .error(function(data){
-            //do someting
+            //do something
         })
     }
 
