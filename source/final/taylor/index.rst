@@ -129,7 +129,8 @@ The code creates an array of nine different boxes.
 Player Input Code
 ~~~~~~~~~~~~~~~~~
 This block of code is able to let the user click on the game board. This lets
-the user click and place an 'X' or an 'O'.
+the user click and place an X or an O.
+
 .. code-block:: javascript
     :caption: Starting Tic-Tac-Toe
 
