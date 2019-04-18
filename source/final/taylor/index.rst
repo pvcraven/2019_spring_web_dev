@@ -120,6 +120,12 @@ code is organized into different classes.
         }
     }
 
+From this code block the user is able to create a function that allows the user
+click a button once the game begins. The Board class is then created which calls
+the Square function which allows the user to click a square within the game
+board. By clicking one of these squares, a user either puts down an X or an O
+within the square selected. 
+
 .. code-block:: text
     :caption: Starting Tic-Tac-Toe: Creating 3x3 Array
     render()
