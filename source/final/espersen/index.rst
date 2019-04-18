@@ -48,7 +48,8 @@ Responsive Web Design
   ``<p id="p2">Green</p>``
   Once these tags are applied to the <p> tags above the background of those words will
   appear red and green like this:
-  .. image:: ColorDemo.PNG
+
+.. image:: ColorDemo.PNG
     :width: 25%
 
  [w3SchoolsRef]_
