@@ -1,39 +1,28 @@
 NodeJS
 ======
 
-Outline
--------
-* Intro - What is NodeJS and how it works
+* Intro
 * History
-* Why NodeJS?
-* How to install?
-* Starting Node JS - making
-* Connecting NodeJS with MySQL
-* Event Loops
-* What companies use NodeJS
-* Adoption and Application
-* Common Practices of NodeJS
-* Advantages and disadvantages of NodeJS
-* Node vs Angular
-* Debugging
+* Getting started with Node.js installation
+* Getting an application started
+* Node.js virtual environment (REPL)
+* Node Package Manager
+* Setting up Node.js with MySQL
 * Conclusion
 
 Intro
 -----
-[Tod]_
-[Capan]_
-[Moore]_
-[Shah]_
-[Goldspink]_
-[Thinkmobiles]_
-[Tutorialspoint]_
+Node.js is a helpful run-time environment that is able to quickly and easily run
+JavaScript code and this tutorial will show how to set up Node.js from with things
+like, installation, REPL commands, Node package manager, and setting up Node.js 
+with MySQL for database queries.
 
 Node.js is a server-side platform thats build from Google Chrome's JavaScript Engine.
 Node.js is open source, cross-platform runtime environment for developing on the
 server-side. Node.js is written in JavaScript and can be ran on OS X, Microsoft,
 Windows, and Linux. [Tutorialspoint]_
 
-Node.js also priveds a library with many JavaScript modules which simplifies the
+Node.js also provides a library with many JavaScript modules which simplifies the
 creation of web applications.
 
 Node.js uses non-blocking, even-driven input/output to remain efficient in data-
@@ -69,8 +58,8 @@ files into a specified directory directory for Node.js.
     $ mv node-v10.15.3-linux-x64/* /user/local/nodejs
 
 After it is installed, just to make sure its installed in working validate it by
-executing a file. You can easily do this by making a file like test.js on your machine
-and have some test code like following.
+executing a file. You can easily do this by making a file like test.js on your 
+machine and have some test code like following.
 
 .. code-block:: javascript
     :Caption: Test for Installation
@@ -210,6 +199,7 @@ imported using require() in the Node application directly.
 
 Uninstalling, Updating, Searching a Module
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Uninstalling, updating and searching a module is simple and can easily be done by
 doing the following -
 
@@ -249,16 +239,88 @@ Now that the basics are done, the user can also create a module. This requires
 that package.json to be generated and using NPM will generate a basic skeleton
 of package.json.
 
+.. code-block:: text
+    :Caption: Create modules
 
-=================
+    $ npm init
+
+    npm help json
+    npm install <pkg> --save
+    ^C
+    Name:(webmaster)
+
+After ``$ npm init`` is used, the utility will walk the user through making a 
+package.json file and covers common items. For help for package.json documentation 
+``$ npm help json`` will help with definitive documentation on the package.json 
+fields and what they do. ``$ npm install <pkg> --save`` will install the package
+and save it as a dependency in package.json file.
+
+Next up is registering the user with the NPM repository site using a valid email
+address. This can be done by doing the following-
+
+.. code-block:: text
+    :Caption: Publishing modules
+
+    $ npm adduser
+    Username: "Your username"
+    Password: "Your password"
+    Email: "Your email"
+    $ npm publish
+
+``npm publish`` is when the user actually publishes the modules, but before that
+a valid account is needed. An important thing to note is that the email address
+will be public and on the internet and in the fields where it says "Your ..." put
+in the respective username, password, and email for the user that is publishing 
+the module.
+
+Setting up Node.js with MySQL
+-----------------------------
+There are many ways to set up Node.js with a database and it may seem complicated, 
+but it's actually simple and this quick tutorial will show how to connect Node.js
+with MySQL.
+
+First up what is needed is to install the MySQL module and this can be done in
+the command console. After the module is installed, next will be to make a JavaScript
+file that creates the connection and what will be used to query the database.
+
+.. code-block:: text
+    :Caption: Installing MySQL module
+
+    npm install mysql
+
+.. code-block:: javascript
+    :linenos:
+    :Caption: Connecting to a database
+
+    var mysql = require('mysql')
+
+    var con = mysql.createConnection({
+        host: "localhost"
+        user: "yourUserName"
+        password: "yourPassword"
+        });
+
+        con.connect(function(err){
+        if (err) throw err;
+        console.log("Connected")
+
+        con.query(sql, function (err, result){
+        if(err) throw err;
+        console.log("Result: " + result)
+        })
+    })
+
+[W3Schools]_ used as reference code
+
+Conclusion
+----------
 
 Sources
 -------
-.. [Tod] Robert Tod "`Tutorial: Setting up Node.js with a database <https://hackernoon.com/setting-up-node-js-with-a-database-part-1-3f2461bdd77f>`_" Hackernoon, Web. 07 May, 2017
-.. [Capan] Tomislav Capan "`Why the hell would I use Node.js? <https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js>`_" Topical, Web. 13 Aug. 2013
-.. [Moore] Mark Ronald Moore "`Top-10 Code examples for Node.js developers <https://bytescout.com/blog/node-js-code-examples.html>`_" Bytescout, Web. 04 Apr, 2019
 .. [Buna] Samer Buna "`Requiring modules in Node.js: Everything you need to know <https://medium.freecodecamp.org/requiring-modules-in-node-js-everything-you-need-to-know-e7fbd119be8>`_" Freecodecamp, Web. 19 Mar, 2017
-.. [Shah] Hezbullah Shah & Tariq Soomro. Node.js Challenges in Implementation, 2017
-.. [Goldspink] Matt Goldspink "`Node.js Best Practices <https://www.codementor.io/mattgoldspink/nodejs-best-practices-du1086jja>`_" Codementor, Web. 28 Aug, 2016
+
 .. [Thinkmobiles] "`Why use Node.js - look behind the scenes of web development <https://thinkmobiles.com/blog/why-use-nodejs/>`_" Thinkmobiles, Web. 04 Apr, 2019
+
 .. [Tutorialspoint] "`Node.js Tutorial <https://www.tutorialspoint.com/nodejs/>`_" Tutorialspoint, Web. 02 Apr. 2019
+
+.. [W3Schools] "`Node.js MySQL <https://www.w3schools.com/nodejs/nodejs_mysql.asp>`_" W3Schools, Web. 18 Apr. 2019
