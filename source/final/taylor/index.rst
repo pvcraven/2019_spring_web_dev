@@ -48,7 +48,15 @@ easiest or most complex user interfaces.
 Over the years, several social media platforms like Facebook and Instagram have
 endorsed the JavaScript library and have implemented it into their applications.
 However, within the last five years the development of the this library has come
-over scrutiny. Disputes about
+under scrutiny. Disputes started to arise over Facebook's licensing agreement
+with the ReactJS and how the user agreement was specifically written. The terms
+and conditions for the JavaScript library made it so that you had the inability
+to sue Facebook and its subsidiaries, but Facebook and its subsidiaries could
+sue you for patent infringement, if that issue were to arise.
+
+Since this Javascript library is open sourced, it made it difficult for
+developers to want to work with ReactJS. Developers feared that even if they
+worked with ReactJS
 
 History of ReactJS
 ------------------
@@ -57,7 +65,9 @@ those engineers was Jordan Walke who helped integrate ReactJS into Facebook's
 news feed style set up. After ReactJS was implemented into Facebook's news feed
 set up, Instagram followed suit as well adding ReactJS to their application as
 well a year later in 2012. After the two social media giants endorsed this
-JavaScript library, the code was open sourced to the public
+JavaScript library, the code was open sourced to the public in 2013.
+
+Pete Hunt is another software developer that has wo
 
 ReactJS Example Code
 --------------------
