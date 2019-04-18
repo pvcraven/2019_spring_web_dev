@@ -1,18 +1,16 @@
 ReactJS
-========
-
-Introduction
--------------
+=======
 
 React is a declarative, efficient, and flexible JavaScript library for building
 user interfaces. Since React is fast and flexible, it allows developers to make
 complex UIs from small and isolated pieces of code
 called “components”. Components are essentially JavaScript
 functions or classes that describe how certain segments of the user interface
-should look [reactIntro]_.
+should look [reactIntro]_. This article explains how React came to be,
+why people should learn it, and how to use it.
 
 History
-~~~~~~~~
+-------
 
 A software engineer at Facebook named Jordan Walke is the creator of React.
 Around 2010, Facebook struggled with code maintenance. They were implementing
@@ -33,7 +31,7 @@ React has grown immensely and has become a leading JavaScript
 library [reactHistory]_.
 
 Popularity
-~~~~~~~~~~~
+----------
 
 React is arguably most popular JavaScript library on the market right now.
 In June 2018, React was mentioned in over 28% of job postings across popular
@@ -53,7 +51,7 @@ these other competitors [reactPopularity]_. Popular websites using React are:
 * and many more...
 
 Advantages
-~~~~~~~~~~~~
+----------
 
 Why are so many people using React compared to other JavaScript libraries?
 One reason is that it's very easy to use. Later, we will see how simple it is
@@ -65,7 +63,7 @@ advantages, since React has a large amount of users there are a lot of people
 ready to help when developers run into issues [reactPopularity]_.
 
 Future
-~~~~~~~~
+------
 
 React is a relatively new technology that has exploded in the last five years.
 With React being by far the most popular
@@ -77,6 +75,10 @@ has a continuing bright future ahead.
 
 About React
 -------------
+
+React has features that make it more powerful. It utilizes Babel and JSX,
+components, and unique data storage techniques. We will take a look at these
+in this section.
 
 What is Babel and JSX?
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -138,6 +140,9 @@ community to help with developing issues [reactPopularity]_.
 
 React Tutorial
 ---------------
+
+This section will help explain components and data storage in React through
+simple examples. At the end, we will create a basic React application.
 
 Setup
 ~~~~~~
