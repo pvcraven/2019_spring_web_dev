@@ -1,15 +1,23 @@
 Vue
 ===
 
-* Introduction
-
-
-
 * Conditionals and Loops
+* Component Composition
 * Conclusion
 
 This is Vue
 -----------
+
+Vue.js is a progressive open-source JavaScript framework built for the purpose
+of building user interfaces. The Vue library was designed to be easily
+integrated with other libraries and existing projects. Vue.js architecture
+focuses on declarative rendering and component composition which we will get
+into in the later sections. [VueWiki]_ [VueIntroduction]_
+
+To include Vue.js with an HTML document, add the following script:
+``<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>``
+
+Note that this is the development version of Vue.js. [VueIntroduction]_
 
 
 
@@ -80,11 +88,11 @@ The text should then render to whatever you set the new value to be.
 
 
 Vue Directives
---------------
+~~~~~~~~~~~~~~
 
 You have probably noticed that double braces ``{{ }}`` are used as place-holders
 for the data that is rendered from the javascript. With Vue.js, you can also
-call directives, which are HTML attributes, with the prefix ``v-`` [w3schools]_.
+call directives, which are HTML attributes, with the prefix ``v-`` [w3schoolsVue]_.
 The example below will walk you through a few examples of different Vue.js
 directives.
 
@@ -117,17 +125,61 @@ JavaScript Example
 
 This example shows the v-model and the v-bind directive. Like before, everything
 is reactive and both the message and the secretMessage can be changed with
-``app.message = "Something"`` or ``app.secretMessage = "Something"``.
+``app.message = "Something"`` or ``app.secretMessage = "Something"``.\
+
+Conditionals and Loops
+~~~~~~~~~~~~~~~~~~~~~~
+
+Using directives, Vue gives you the ability to write if statements and for loops
+with ``v-if`` and ``v-for``. The following example walks you through how to do
+conditionals and loops in Vue.js.
+
+HTML Example
+
+.. code-block:: HTML
+	:caption: Vue Loops and Conditionals Example HTML
+
+        <div id="app">
+            <p v-if="happy">Hello there friend!</p>
+            <p v-else>Go away.</p>
+            <button v-on:click="changeMood">Change Mood</button>
+
+            <p>Grocery List</p>
+            <ol>
+                <li v-for="groceries in foods">
+                    {{groceries.text}}
+                </li>
+            </ol>
+        </div>
+
+JavaScript Example
+
+.. code-block:: JavaScript
+    :caption: Vue Loops and Conditionals Example JavaScript
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                happy: true,
+                foods: [
+                    {text: 'Bread'},
+                    {text: 'Milk'},
+                    {text: 'Spinach'}
+                ]
+            },
+            methods:{
+                changeMood: function(){
+                    this.happy = !this.happy;
+                }
+            }
+        })
 
 
-
-Sub Heading
-~~~~~~~~~~~
 
 Citation
 --------
 
 .. [VueIntroduction] "`Introduction: What is Vue.js? <https://vuejs.org/v2/guide/>`_" Vue.js. Web. 2 Mar. 2019.
 .. [VueWiki] "`Vue.js <https://en.wikipedia.org/wiki/Vue.js>`_" Wikipedia. Wikimedia Foundation, Web. 4 Apr. 2019.
-.. [w3schools] "`What is Vue.js? <https://www.w3schools.com/whatis/whatis_vue.asp>`_" w3schools. Refsnes Data, Web. 4 Apr. 2019.
+.. [w3schoolsVue] "`What is Vue.js? <https://www.w3schools.com/whatis/whatis_vue.asp>`_" w3schools. Refsnes Data, Web. 4 Apr. 2019.
 .. [Egghead] "`Evan You, creator of Vue.js <https://egghead.io/podcasts/evan-you-creator-of-vue-js>`_" Egghead.io. Egghead.io, Web. 9 Apr. 2019.
