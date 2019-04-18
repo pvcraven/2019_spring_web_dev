@@ -3,7 +3,12 @@ Three.js
 
 Introduction to Three.js
 ------------------------
-Three.js is a 3D graphics API for JavaScript [Threejs]_. The d
+Three.js is a 3D graphics API for JavaScript [Threejs]_. It is meant as a tool for
+higher-level programming compared to WebGL [Mozilla]_. It has gained
+popularity in a variety of projects, including online games, demonstrations,
+and models. Three.js gives programmers an opportunity to develop 3D programs
+that are organized and readable, while also offering a significant amount
+of features to create fantastic projects.
 
 History
 -------
@@ -19,11 +24,20 @@ What WebGL does
 
 What Three.js adds
 ------------------
+Three.js is significantly easier to learn than pure WebGL. The lower barrier
+to entry is incredibly helpful for users who are new to developing 3D projects.
+For experiences developers, three.js makes it easier to create the same
+projects in less time and with less effort. Three.js is specifically meant for
+developers who want to work with graphics and animation without having to worry
+about how it will interact with hardware. A new developer does not have to learn
+any WebGL if they want to start developing a 3D application. Instead, they can
+create the same projects with Three.js.
+
 * Don't need to know WebGL [Threejs]_
 * Lower learning curve (WebGL is higher-level)
 
-Three.js example code
----------------------
+Three.js Example
+----------------
 .. raw:: html
 	<embed>
 	
@@ -32,7 +46,6 @@ Three.js example code
 				<style>
 					#threejscanvas
 					{
-						position: relative;
 						width: 100%;
 						height: 300px;
 						margin: 0 auto;
@@ -56,14 +69,8 @@ Three.js example code
 
 					#sliders
 					{
-						text-align: center;
-						height: 100px;
+						text-align: left;
 						width: 100%;
-					}
-					
-					body
-					{
-						height: 400px;
 					}
 		   </style>
 				<meta charset="utf-8">
@@ -91,12 +98,17 @@ Three.js example code
 				</div>
 			</body>
 		</html>
-
-
-
     </embed>
 
-Three.js example explanation
+|
+|
+|
+|
+|
+|	
+	
+	
+Three.js Example Explanation
 ----------------------------
 
 Benefits of Three.js
