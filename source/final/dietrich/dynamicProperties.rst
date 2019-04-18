@@ -1,3 +1,5 @@
+:orphan:
+
 .. _dynamic-properties-josh:
 
 Dynamic Properties
