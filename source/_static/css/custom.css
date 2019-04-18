@@ -190,3 +190,20 @@ kbd.type-writer, .type-writer kbd {
   background: #333;
   color: white;
 }
+
+@media print {
+  body {
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 40px;
+  }
+  div[class^='highlight'] pre {
+    font-size: 12px;
+  }
+  ul {
+    line-height: 12px;
+  }
+
+}

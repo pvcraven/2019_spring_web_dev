@@ -170,7 +170,56 @@ we end up with a web page that looks like the following.
 Interactive SVGs
 ~~~~~~~~~~~~~~~~
 
-:ref:`interactive-svg-josh`
+.. raw:: html
+
+    <style type="text/css">
+        rect {
+            fill: none;
+            pointer-events: all;
+        }
+
+        circle {
+            fill: none;
+            stroke-width: 2.5px;
+        }
+    </style>
+
+    <div id="interactive-svg"></div>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+        var width = innerWidth, height = 500;
+
+        var svg = d3.select("#interactive-svg").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        svg.append("rect")
+            .attr("width", width)
+            .attr("height", height)
+            .on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
+
+        function particle() {
+            var m = d3.mouse(this);
+
+            svg.insert("circle", "rect")
+                .attr("cx", m[0])
+                .attr("cy", m[1])
+                .attr("r", 1e-6)
+                .style("stroke", function () {
+                    return "hsl(" + Math.random() * 360 + ",100%,50%)";
+                })
+                .style("stroke-opacity", 1)
+                .transition()
+                .duration(2000)
+                .ease(Math.sqrt)
+                .attr("r", 100)
+                .style("stroke-opacity", 1e-6)
+                .remove();
+
+            d3.event.preventDefault();
+        }
+    </script>
 
 [Bostock3]_
 
@@ -206,8 +255,6 @@ Conclusion
 .. [Bostock2] Bostock, Mike. "`How Selections Work <https://bost.ocks.org/mike/selection>`_." 26 Apr. 2013.
 
 .. [Bostock3] Bostock, Mike. “`OMG Particles! <https://bl.ocks.org/mbostock/1062544>`_” Popular Blocks, 20 Feb. 2019.
-
-.. [Tutorialspoint] Tutorialspoint.com. “`D3.Js Quick Guide <https://www.tutorialspoint.com/d3js/d3js_quick_guide.htm>`_.” tutorialspoint.com, Tutorialspoint.
 
 .. [Murray] Murray, Scott, et al. “`Data Driven Documents <http://www.jeromecukier.net/presentations/d3-tutorial/S01%20-%20introduction.pdf>`_.” VisWeek 2012, 2012.
 
