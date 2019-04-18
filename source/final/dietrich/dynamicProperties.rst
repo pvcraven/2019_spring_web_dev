@@ -1,3 +1,5 @@
+:orphan:
+
 .. _dynamic-properties-josh:
 
 Dynamic Properties
@@ -31,3 +33,5 @@ Dynamic Properties
             return "Box " + d;
         });
     </script>
+
+Refreshing the page will change the color of each of the boxes.
