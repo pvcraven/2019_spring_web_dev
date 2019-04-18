@@ -42,15 +42,19 @@ Responsive Web Design
 * The background color is easily changeable with a simple selector tag and a few
   adjustments. Here is how the selector tags are done:
   ``#p1 {background-color:rgba(255,0,0,1);}``
-  ``#p2 {background-color:rgba(0,255,0,1);}``
-  Here is how the selector tags are applied to paragraph tags:
+``#p2 {background-color:rgba(0,255,0,1);}``
+
+* Here is how the selector tags are applied to paragraph tags:
   ``<p id="p1">Red</p>``
-  ``<p id="p2">Green</p>``
-  Once these tags are applied to the <p> tags above the background of those words will
+``<p id="p2">Green</p>``
+
+* Once these tags are applied to the <p> tags above the background of those words will
   appear red and green like this:
 
-.. image:: ColorDemo.PNG
+  .. image:: ColorDemo.PNG
     :width: 25%
+
+
 
  [w3SchoolsRef]_
 Media Queries
