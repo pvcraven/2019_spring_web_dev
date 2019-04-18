@@ -37,26 +37,47 @@ Outline
 Introduction to ReactJS
 -----------------------
 ReactJS is a Javascript library that specializes in building user interfaces.
-This JavaScript library makes it easy to create user interfaces for your programming
-application or to update and render the proper components in your application
-change correctly. In ReactJS, you are able to use declarative views which makes
-your code easier to read and to debug. ReactJS is a component based Javascript
-library that focuses on building encapsulated components that are able to manage
-their own state which can help the user compose some of the most easiest or most
-complex user interfaces.
+This JavaScript library makes it easy to create user interfaces for your
+programming application or to update and render the proper components in your
+application change correctly. In ReactJS, you are able to use declarative views
+which makes your code easier to read and to debug. ReactJS is a component based
+Javascript library that focuses on building encapsulated components that are
+able to manage their own state which can help the user compose some of the most
+easiest or most complex user interfaces.
+
+Over the years, several social media platforms like Facebook and Instagram have
+endorsed the JavaScript library and have implemented it into their applications.
+However, within the last five years the development of the this library has come
+under scrutiny. Disputes started to arise over Facebook's licensing agreement
+with the ReactJS and how the user agreement was specifically written. The terms
+and conditions for the JavaScript library made it so that you had the inability
+to sue Facebook and its subsidiaries, but Facebook and its subsidiaries could
+sue you for patent infringement, if that issue were to arise.
+
+Since this Javascript library is open sourced, it made it difficult for
+developers to want to work with ReactJS. Developers feared that even if they
+worked with ReactJS
 
 History of ReactJS
 ------------------
-ReactJS began with developer
+ReactJS began in 2011 with a couple of software engineers from Facebook. One of
+those engineers was Jordan Walke who helped integrate ReactJS into Facebook's
+news feed style set up. After ReactJS was implemented into Facebook's news feed
+set up, Instagram followed suit as well adding ReactJS to their application as
+well a year later in 2012. After the two social media giants endorsed this
+JavaScript library, the code was open sourced to the public in 2013.
+
+Pete Hunt is another software developer that has wo
 
 ReactJS Example Code
 --------------------
 Tic-Tac-Toe Tutorial
 ~~~~~~~~~~~~~~~~~~~~
 This particular block of code derives from the ReactJS tutorial. This code lets
-the user create and interact with a tic-tac-toe board.
+the user create and interact with a tic-tac-toe board. This particular block of
+code is organized into different classes. The first class lets the user
 
-.. code-block:: javascript
+.. code-block:: text
     :caption: Starting Tic-Tac-Toe
 
     function Square(props)
@@ -132,7 +153,7 @@ Player Input Code
 This block of code is able to let the user click on the game board. This lets
 the user click and place an X or an O.
 
-.. code-block:: javascript
+.. code-block:: text
     :caption: Getting User Input
 
     handleClick(i)

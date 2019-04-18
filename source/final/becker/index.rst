@@ -1,38 +1,5 @@
 ReactJS
-======================
-
-Outline
---------
-
-Introduction
-
-* Introduction - What is react, why is it a big deal, what the article is
-  going to talk about
-* History - Talk through relatively new material [reactHistory]_
-* Popularity - Who uses React? Is it a good thing to learn
-  right now? [reactPopularity]_
-* Advantages - Why use React? [reactPopularity]_
-* Future - Is React a dying technology or will it be used for years?
-
-About React.js
-
-* What is Babel and JSX? [reactW3Schools]_
-* Components - What is it, how is it used, what advantages?
-* Data Storage - Props and State, what are they and how do they
-  work? [reactSimple]_
-* Best Practices - The best way to use components and data
-  storage [reactBestPractices]_.
-* When should React.js be used?
-
-React Tutorial
-
-* Show setup/how to get React in the project
-* Use components
-* Show how to use the two forms of data storage
-* Create basic application/functionality using components and data storage
-
-Conclusion
-
+========
 
 Introduction
 -------------
@@ -203,7 +170,7 @@ It is important to note, however, that using classes for components is more
 common among React developers.
 
 
-.. code-block:: jsx
+.. code-block:: text
    :caption: Simple Class Component
 
     class Example extends React.Component {
@@ -217,7 +184,7 @@ common among React developers.
         document.getElementById("root")
     );
 
-.. code-block:: jsx
+.. code-block:: text
    :caption: Simple Function Component
 
     function Example(){
@@ -238,7 +205,7 @@ Data Storage
 Data can be used in React using props or state. The following code shows how
 to use props:
 
-.. code-block:: jsx
+.. code-block:: text
    :caption: Props
 
    class Example extends React.Component {
@@ -257,7 +224,7 @@ component itself. Props cannot be changed once inside the component.
 To change data inside a component, state needs to be used. Here is a simple
 example of using state:
 
-.. code-block:: jsx
+.. code-block:: text
    :caption: State
 
    class Example extends React.Component {
@@ -290,7 +257,7 @@ For this application, we are going to make a few changes to our Example
 component. We first need to change our ``render()`` method to display a name
 input and button.
 
-.. code-block:: jsx
+.. code-block:: text
    :caption: Render Method
 
    render() {
@@ -314,7 +281,7 @@ bind "this" to the functions we will create. Without binding the "this"
 keyword to the functions, we would not be able to access "this" within
 the functions. The two simple functions simply set state data.
 
-.. code-block:: jsx
+.. code-block:: text
    :caption: Constructor and Functions
 
     constructor(props){
@@ -345,7 +312,7 @@ Nice work, we are finished! Here is what the end result should look like:
 
 .. literalinclude:: reactCode.jsx
     :linenos:
-    :language: jsx
+    :language: text
     :caption: Final JSX File
 
 .. figure:: result.PNG
@@ -355,6 +322,13 @@ Nice work, we are finished! Here is what the end result should look like:
 
 Conclusion
 -----------
+
+React is a helpful JavaScript library when creating complex or
+dynamic user interfaces. Since code is in small chunks, React makes
+applications more maintainable and easier to write. Even though React is not
+a decade old, it is already the most popular JavaScript library for web
+development. With its technical benefits and large community support, I
+do not see React going away anytime soon.
 
 Sources
 ---------
