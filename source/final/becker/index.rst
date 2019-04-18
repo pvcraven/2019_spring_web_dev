@@ -1,39 +1,37 @@
 ReactJS
-========
-
-Introduction
--------------
+=======
 
 React is a declarative, efficient, and flexible JavaScript library for building
 user interfaces. Since React is fast and flexible, it allows developers to make
 complex UIs from small and isolated pieces of code
 called “components”. Components are essentially JavaScript
 functions or classes that describe how certain segments of the user interface
-should look [reactIntro]_.
+should look [reactIntro]_. This article explains how React came to be,
+why people should learn it, and how to use it.
 
 History
-~~~~~~~~
+-------
 
 A software engineer at Facebook named Jordan Walke is the creator of React.
 Around 2010, Facebook struggled with code maintenance. They were implementing
 new features of Facebook Ads and it made the Facebook application increasingly
-complex. The complexity of the application along with the increased team-members
-necessary to maintain it caused Facebook to slow down as a company. They
-eventually ran into many cascading updates with their user interface, and
-software teams could not keep up. In 2011, Jordan Walke created the first
-prototype of React called FaxJS to make everything more efficient.
+complex. The complexity of the application caused Facebook to slow down as a
+company. They eventually ran into many cascading updates with their user
+interface, and software teams could not keep up. In 2011, Jordan Walke
+created the first prototype of React called FaxJS to make everything
+more efficient.
 
-In 2012, React started being used by Facebook. On April 9th 2012, Facebook
+In 2012, React started being used by Facebook. Facebook also
 acquired Instagram. Instagram wanted to use Facebook's technology and this
-eventually led to React being open-sourced in 2013. Initially people thought
-of React as a big step backward, but over time it grew in reputation. In 2014,
-Facebook started appealing to enterprises like Netflix instead of relying
-on React's technical benefits as a selling point. Over the past few years
+eventually led to React being open-sourced. Initially people thought
+React was a big step backward, but over time it grew in reputation. In 2014,
+Facebook started appealing to enterprises like Netflix
+as a selling point. Over the past few years
 React has grown immensely and has become a leading JavaScript
 library [reactHistory]_.
 
 Popularity
-~~~~~~~~~~~
+----------
 
 React is arguably most popular JavaScript library on the market right now.
 In June 2018, React was mentioned in over 28% of job postings across popular
@@ -53,19 +51,19 @@ these other competitors [reactPopularity]_. Popular websites using React are:
 * and many more...
 
 Advantages
-~~~~~~~~~~~~
+----------
 
 Why are so many people using React compared to other JavaScript libraries?
 One reason is that it's very easy to use. Later, we will see how simple it is
-to implement React into a project and use React's features. Another reason
-for its popularity is because it breaks code down into reusable components.
-Code is broken up into small sections which makes it more maintainable and
+to implement React in a project. Another reason
+for its popularity is it breaks code down into reusable components.
+This makes code more maintainable and
 easier to change especially in larger projects. Along with technical
 advantages, since React has a large amount of users there are a lot of people
 ready to help when developers run into issues [reactPopularity]_.
 
 Future
-~~~~~~~~
+------
 
 React is a relatively new technology that has exploded in the last five years.
 With React being by far the most popular
@@ -77,6 +75,10 @@ has a continuing bright future ahead.
 
 About React
 -------------
+
+React has features that make it more powerful. It utilizes Babel and JSX,
+components, and unique data storage techniques. This section takes a
+look at these features.
 
 What is Babel and JSX?
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -138,6 +140,9 @@ community to help with developing issues [reactPopularity]_.
 
 React Tutorial
 ---------------
+
+This section will help explain components and data storage in React through
+simple examples. At the end, we will create a basic React application.
 
 Setup
 ~~~~~~
