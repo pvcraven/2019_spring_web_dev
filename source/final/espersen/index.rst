@@ -1,13 +1,5 @@
 Responsive Web
-======================
-
-* Introduction - This is what Responsive Web is about.  This is where the thesis
-  should be as well.
-  A few of the main topics I will be diving into are:
-
-    * CSS
-    * Bootstrap
-    * Stylebot
+==============
 
 Introduction
 ~~~~~~~~~~~~
@@ -43,37 +35,38 @@ Responsive Web Design
   adjustments. Here is how the selector tags are done:
 
   .. code-block:: html
-      :caption: Tag Example
+      :caption: Selector Example
 
       #p1 {background-color:rgba(255,0,0,1);}
       #p2 {background-color:rgba(0,255,0,1);}
 
-``#p1 {background-color:rgba(255,0,0,1);}``
-  ``#p2 {background-color:rgba(0,255,0,1);}``
-
 * Here is how the selector tags are applied to paragraph tags:
-  ``<p id="p1">Red</p>``
-``<p id="p2">Green</p>``
 
-* Once these tags are applied to the <p> tags above the background of those words will
+  .. code-block:: html
+      :caption: Applying Selectors
+
+      <p id="p1">Red</p>
+      <p id="p2">Green</p>
+
+* Once these tags are applied to the <p> tags above, the background of those words will
   appear red and green like this:
 
   .. image:: ColorDemo.PNG
     :width: 25%
 
 
-
  [w3SchoolsRef]_
+
 Media Queries
 ~~~~~~~~~~~~~
 
+
 * Example of code:
-  ``<meta name="viewport" content="width=device-width, initial-scale=1">``
 
-.. code-block:: html
-    :caption: viewport
+  .. code-block:: html
+      :caption: viewport
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
 [MediaQueries]_
 [w3SchoolsMediaQueries]_
