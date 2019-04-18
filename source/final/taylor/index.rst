@@ -78,7 +78,7 @@ programming. Meteor and Angular are examples of that. When your data updates,
 your UI is automatically updated to reflect that, and the system manages that
 for you. The difference with React is the way that you program it is much more
 like a game engine, as opposed to these alternative approaches, with
-data binding"[InfoWorld].
+data binding". [InfoWorld]_
 
 ReactJS Example Code
 --------------------
