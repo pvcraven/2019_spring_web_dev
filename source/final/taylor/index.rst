@@ -56,7 +56,10 @@ sue you for patent infringement, if that issue were to arise.
 
 Since this Javascript library is open sourced, it made it difficult for
 developers to want to work with ReactJS. Developers feared that even if they
-worked with ReactJS
+tinkered with the library, that they could be sued by Facebook for patent
+infringement, which was never the developers intent. Even though ReactJS has
+had its issues in the development world, its benefits to creating simple UI's is
+something most individuals so realize before judging the JavaScript library.
 
 History of ReactJS
 ------------------
@@ -67,7 +70,9 @@ set up, Instagram followed suit as well adding ReactJS to their application as
 well a year later in 2012. After the two social media giants endorsed this
 JavaScript library, the code was open sourced to the public in 2013.
 
-Pete Hunt is another software developer that has wo
+Pete Hunt is another software developer that has been a core member of the
+ReactJS software development team. In an interview with InfoWorld, Hunt
+discussed the history of ReactJS.
 
 ReactJS Example Code
 --------------------
@@ -75,7 +80,7 @@ Tic-Tac-Toe Tutorial
 ~~~~~~~~~~~~~~~~~~~~
 This particular block of code derives from the ReactJS tutorial. This code lets
 the user create and interact with a tic-tac-toe board. This particular block of
-code is organized into different classes. The first class lets the user
+code is organized into different classes.
 
 .. code-block:: text
     :caption: Starting Tic-Tac-Toe
@@ -255,6 +260,9 @@ the user click and place an X or an O.
 
 Player Input Example
 ~~~~~~~~~~~~~~~~~~~~
+This is what the output would look like if one or many users were to participate
+in a game of tic-tac-toe. The user or users has the ability to select a
+particular box in the tic-tac-toe board to place either an X or an O.
 
 .. image:: board1.PNG
     :width: 25%
