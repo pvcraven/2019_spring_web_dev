@@ -36,12 +36,12 @@ Outline
 
 Introduction to ReactJS
 -----------------------
-ReactJS is a Javascript library that specializes in building user interfaces.
+ReactJS is a JavaScript library that specializes in building user interfaces.
 This JavaScript library makes it easy to create user interfaces for your
 programming application or to update and render the proper components in your
 application change correctly. In ReactJS, you are able to use declarative views
 which makes your code easier to read and to debug. ReactJS is a component based
-Javascript library that focuses on building encapsulated components that are
+JavaScript library that focuses on building encapsulated components that are
 able to manage their own state which can help the user compose some of the most
 easiest or most complex user interfaces.
 
@@ -54,10 +54,10 @@ and conditions for the JavaScript library made it so that you had the inability
 to sue Facebook and its subsidiaries, but Facebook and its subsidiaries could
 sue you for patent infringement, if that issue were to arise.
 
-Since this Javascript library is open sourced, it made it difficult for
+Since this JavaScript library is open sourced, it made it difficult for
 developers to want to work with ReactJS. Developers feared that even if they
 tinkered with the library, that they could be sued by Facebook for patent
-infringement, which was never the developers intent. Even though ReactJS has
+infringement, which was never the developer's intent. Even though ReactJS has
 had its issues in the development world, its benefits to creating simple UI's is
 something most individuals so realize before judging the JavaScript library.
 
@@ -72,7 +72,13 @@ JavaScript library, the code was open sourced to the public in 2013.
 
 Pete Hunt is another software developer that has been a core member of the
 ReactJS software development team. In an interview with InfoWorld, Hunt
-discussed the history of ReactJS.
+discusses the shift that reactive programming has underwent in the last few
+years. Hunt stated "We've seen a shift toward what we like to call reactive
+programming. Meteor and Angular are examples of that. When your data updates,
+your UI is automatically updated to reflect that, and the system manages that
+for you. The difference with React is the way that you program it is much more
+like a game engine, as opposed to these alternative approaches, with
+data binding"[InfoWorld].
 
 ReactJS Example Code
 --------------------
