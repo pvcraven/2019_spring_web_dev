@@ -71,14 +71,21 @@ well a year later in 2012. After the two social media giants endorsed this
 JavaScript library, the code was open sourced to the public in 2013.
 
 Pete Hunt is another software developer that has been a core member of the
-ReactJS software development team. In an interview with InfoWorld, Hunt
+ReactJS software development team. In an interview with [InfoWorld]_, Hunt
 discusses the shift that reactive programming has underwent in the last few
 years. Hunt stated "We've seen a shift toward what we like to call reactive
 programming. Meteor and Angular are examples of that. When your data updates,
 your UI is automatically updated to reflect that, and the system manages that
 for you. The difference with React is the way that you program it is much more
 like a game engine, as opposed to these alternative approaches, with
-data binding". [InfoWorld]_
+data binding". Hunt was able to describe how different ReactJS is
+compared to other JavaScript libraries.
+
+When it comes to ReactJS, the developers for the library wanted it to have a
+different look and presence compared to other popular UI developing languages.
+ReactJS makes it look like you are coding for a game engine and tries to use
+syntax that might help the programmer understand what he or she is trying to
+code.
 
 ReactJS Example Code
 --------------------
@@ -89,7 +96,7 @@ the user create and interact with a tic-tac-toe board. This particular block of
 code is organized into different classes.
 
 .. code-block:: text
-    :caption: Starting Tic-Tac-Toe
+    :caption: Starting Tic-Tac-Toe: Square & Board Functions
 
     function Square(props)
     {
@@ -113,6 +120,8 @@ code is organized into different classes.
         }
     }
 
+.. code-block:: text
+    :caption: Starting Tic-Tac-Toe: Creating 3x3 Array
     render()
         {
         return (
