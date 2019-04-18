@@ -29,16 +29,27 @@ History of topic / library of code
   and style of the font you see.  Eventually, the people complained about custom
   touches and that they wanted more from their browsing clients.  That is when a few
   people teamed up and made CSS.  The first CSS idea was brought to attention by
-  Bert Bos and Håkon Wium Lie.
-
-[CSSHistory]_
+  Bert Bos and Håkon Wium Lie. [CSSHistory]_
 
 Responsive Web Design
 ~~~~~~~~~~~~~~~~~~~~~
-* This is where I will go further into Responsive Web Design.  I will talk
-  about the different stylesheets and what different tools you could use.
-  Also, I will put some basic code blocks here to show the simpler ways you
-  could use CSS to add some style or looks when it comes to resizing the page.
+* We know that CSS can change the look or application to different things within
+  a webpage or app, but what can it change or do?
+
+* The CSS can change many things very simply.  A few of the easier things that
+  you can change in the CSS are the colors and the fonts.
+
+* The background color is easily changeable with a simple selector tag and a few
+  adjustments. Here is how the selector tags are done:
+  ``#p1 {background-color:rgba(255,0,0,1);}``
+  ``#p2 {background-color:rgba(0,255,0,1);}``
+  Here is how the selector tags are applied to paragraph tags:
+  ``<p id="p1">Red</p>``
+  ``<p id="p2">Green</p>``
+  Once these tags are applied to the <p> tags above the background of those words will
+  appear red and green like this:
+  .. image:: ColorDemo.PNG
+    :width: 25%
 
  [w3SchoolsRef]_
 Media Queries
