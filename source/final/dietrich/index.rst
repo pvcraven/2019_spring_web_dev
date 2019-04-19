@@ -298,9 +298,17 @@ utilize the D3 library are given below.
 
 [StackShare]_
 
-
 Conclusion
 ----------
+
+D3.js is a very beneficial library when it comes to data display and
+manipulation on web pages. It also allows for the injection of dynamic graphics
+and properties that allow you to greatly improve the interface of your
+application. It can greatly increase the effectiveness and general look of any
+data analytics tool and opens up a number of possibilities in regards to
+graphics. It was been widely accepted and implemented in professional
+development society, and allows for the efficient manipulation of web pages
+while still creating a friendly user interface. 
 
 .. [Bostock1] Bostock, Mike. “`Data-Driven Documents <https://d3js.org/>`_.” D3.Js.
 
