@@ -124,10 +124,11 @@ From this code block the user is able to create a function that allows the user
 click a button once the game begins. The Board class is then created which calls
 the Square function which allows the user to click a square within the game
 board. By clicking one of these squares, a user either puts down an X or an O
-within the square selected. 
+within the square selected.
 
 .. code-block:: text
     :caption: Starting Tic-Tac-Toe: Creating 3x3 Array
+
     render()
         {
         return (
@@ -305,9 +306,17 @@ particular box in the tic-tac-toe board to place either an X or an O.
 
 ReactJS Notable Features
 ------------------------
+Here is a in-text citation for [ReactJSComponents]_
+Here is a in-text citation for [ReactJSRefs]_
+Here is a in-text citation for [ReactJSSpecification]_
 
 Reception of ReactJS
 --------------------
+Here is an in-text citation to [TheNewStack]_
+Here is an in-text citation to [InfoQ]_
+Here is an in-text citation to [Medium]_
+Here is an in-text citation to [FacebookCode]_
+Here is an in-text citation to [TechCrunch]_
 
 ReactJS Internationalization
 ----------------------------
@@ -320,31 +329,31 @@ Sub Heading
 Citations
 ---------
 .. [ReactJS] "`Tutorial: Intro to React <https://reactjs.org/tutorial/tutorial.html>`_"
-React. Facebook Inc, Web. 4 Apr. 2019.
+    React. Facebook Inc, Web. 4 Apr. 2019.
 
-.. [ReactJS] "`Components and Props <https://reactjs.org/docs/components-and-props.html#props-are-read-only>`_"
-React. Facebook Inc, Web. 4 Apr. 2019.
+.. [ReactJSComponents] "`Components and Props <https://reactjs.org/docs/components-and-props.html#props-are-read-only>`_"
+    React. Facebook Inc, Web. 4 Apr. 2019.
 
-.. [ReactJS] "`Refs and the DOM <https://reactjs.org/docs/refs-and-the-dom.html>`_"
-React. Facebook Inc, Web. 4 Apr. 2019.
+.. [ReactJSRefs] "`Refs and the DOM <https://reactjs.org/docs/refs-and-the-dom.html>`_"
+    React. Facebook Inc, Web. 4 Apr. 2019.
 
-.. [ReactJS] "`Draft: JSX Specification <https://reactjs.org/docs/refs-and-the-dom.html>`_"
-JSX, Facebook Inc, Web. 4 Apr. 2019.
+.. [ReactJSSpecification] "`Draft: JSX Specification <https://reactjs.org/docs/refs-and-the-dom.html>`_"
+    JSX, Facebook Inc, Web. 4 Apr. 2019.
 
 .. [InfoWorld] Krill, Paul. "`React: Making Faster, Smoother UIs for data-driven Web Apps <https://www.infoworld.com/article/2608181/react--making-faster--smoother-uis-for-data-driven-web-apps.html>`_"
-InfoWorld Tech Watch, InfoWorld, Web. 15 May 2014.
+    InfoWorld Tech Watch, InfoWorld, Web. 15 May 2014.
 
 .. [TheNewStack] Dawson, Chris. "`JavaScript's History and How it Led to React JS <https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/>`_"
-The New Stack Technology, The New Stack, Web. 25 Jul. 2014.
+    The New Stack Technology, The New Stack, Web. 25 Jul. 2014.
 
 .. [InfoQ] Hemel, Zef. "`Facebook's React JavaScript User Interfaces Library Receives Mixed Reviews <https://www.infoq.com/news/2013/06/facebook-react>`_"
-InfoQ News, InfoQ, Web. 3 Jun. 2013.
+    InfoQ News, InfoQ, Web. 3 Jun. 2013.
 
 .. [Medium] Berkana. "`A Compelling Reason Not to Use ReactJS <https://medium.com/bits-and-pixels/a-compelling-reason-not-to-use-reactjs-beac24402f7b>`_"
-Bits and Pixels, A Medium Corporation, Web. 24 May 2015.
+    Bits and Pixels, A Medium Corporation, Web. 24 May 2015.
 
 .. [FacebookCode] Pearce, James. "`Updating Our Open Source Patent Grant <https://code.fb.com/open-source/updating-our-open-source-patent-grant/>`_"
-Facebook Code, Facebook Inc, Web. 10 Apr. 2015.
+    Facebook Code, Facebook Inc, Web. 10 Apr. 2015.
 
 .. [TechCrunch] Lomas, Natasha. "`WordPress to Ditch React Library Over Facebook Patent Clause Risk <https://techcrunch.com/2017/09/15/wordpress-to-ditch-react-library-over-facebook-patent-clause-risk/>`_"
-TechCrunch News, TechCrunch, Web. 8 Apr. 2017.
+    TechCrunch News, TechCrunch, Web. 8 Apr. 2017.
