@@ -182,8 +182,10 @@ able to create a tic-tac-toe board that the user or user can interact with.
 
 Player Input Code
 ~~~~~~~~~~~~~~~~~
-This block of code is able to let the user click on the game board. This lets
-the user click and place an X or an O.
+This block of code allows the user to interact with the game board. The first
+user has the ability to select a box with the X marker. Once the user has
+completed her selection, the second user will have the ability to select their
+box as well. The second user will select a box with an O marker.
 
 .. code-block:: text
     :caption: Handling User Input
@@ -227,13 +229,18 @@ the user click and place an X or an O.
         });
     }
 
-This block of code allows the user to interact with the game board. The first
-user has the ability to select a box with the X marker. Once the user has
-completed her selection, the second user will have the ability to select their
-box as well. The second user will select a box with an O marker.
+After the user has the ability to click on the boxes, a winner and a loser has
+to be implemented into the game. In order for this to happen, the user has to
+create this code block. This particular block of code uses if statements to
+determine if the user has either one the game or has to keep playing. For the
+game to find out who the winner is, an array must be put in place that is able
+to calculate how a user wins. In tic-tac-toe, you can win by getting three X's
+or O's in a row. To recognize this, this code block detects that once the user
+gets three in a row, the game will declare a winner.
+
 
 .. code-block:: text
-    :caption: Declaring Winners, Losers, & Turns
+    :caption: Declaring the Winner & Loser
 
     let status;
     if (winner)
@@ -295,9 +302,10 @@ box as well. The second user will select a box with an O marker.
 
 Player Input Example
 ~~~~~~~~~~~~~~~~~~~~
-This is what the output would look like if one or many users were to participate
-in a game of tic-tac-toe. The user or users has the ability to select a
-particular box in the tic-tac-toe board to place either an X or an O.
+Once all of these code blocks are implemented, the game will work properly. The
+tic-tac-toe game allows the user to switch back and forth until a winner is
+declared or the game ends in a tie. Here is an example of how a typical game
+would look like if the user were to win the game.
 
 .. image:: board1.PNG
     :width: 25%
@@ -319,9 +327,13 @@ particular box in the tic-tac-toe board to place either an X or an O.
 
 ReactJS Notable Features
 ------------------------
-Here is a in-text citation for [ReactJSComponents]_
-Here is a in-text citation for [ReactJSRefs]_
-Here is a in-text citation for [ReactJSSpecification]_
+When it comes to ReactJS there are some distinguishable features that the
+JavaScript library has. One of these features would be the [ReactJSComponents]_.
+Components in ReactJS are able to
+Another notable feature of ReactJS would be the [ReactJSRefs]_. Refs in ReactJS
+are able to
+Another notable feature in ReactJS would be the [ReactJSSpecifications]_. The
+specifications in ReactJS are able to
 
 Reception of ReactJS
 --------------------
@@ -350,7 +362,7 @@ Citations
 .. [ReactJSRefs] "`Refs and the DOM <https://reactjs.org/docs/refs-and-the-dom.html>`_"
     React. Facebook Inc, Web. 4 Apr. 2019.
 
-.. [ReactJSSpecification] "`Draft: JSX Specification <https://reactjs.org/docs/refs-and-the-dom.html>`_"
+.. [ReactJSSpecifications] "`Draft: JSX Specification <https://reactjs.org/docs/refs-and-the-dom.html>`_"
     JSX, Facebook Inc, Web. 4 Apr. 2019.
 
 .. [InfoWorld] Krill, Paul. "`React: Making Faster, Smoother UIs for data-driven Web Apps <https://www.infoworld.com/article/2608181/react--making-faster--smoother-uis-for-data-driven-web-apps.html>`_"
