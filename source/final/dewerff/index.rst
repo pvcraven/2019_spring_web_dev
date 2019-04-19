@@ -6,7 +6,7 @@ Outline
 * Introduction - What is React JS? Overall important points. Thesis statement; 
   make it obvious.
 * History - When was it created? Did it evolve from something else? Creator 
-	ReactJS originally started as a Javascript port of XHP, a version of PHP created by Facebook. The problem was to have dynamic web applications, it requires many trips to the server, which is not ideal for XHP. So, a Facebook engineer took it to the browser using Javascript; the result being ReactJS. 
+	ReactJS originally started as a Javascript port of XHP, a version of PHP created by Facebook. The problem was to have dynamic web applications, it requires many trips to the server, which is not ideal for XHP. So, a Facebook engineer, Jordan Wilke, took it to the browser using Javascript; the result being ReactJS. It was open sourced in May of 2013. At first, people were unsure of React, but the creators quickly tried to turn that around by having a "React Tour."
 
 
 * How was it created? [ReactHistory]_. 
@@ -43,3 +43,4 @@ Sources
 .. [ReactJS] "`Intro to React <https://reactjs.org/>`_" Facebook. Facebook Open Source, Web. 4 April 2019.
 
 .. [Hackernoon] Kostrzewa, Denis "`Is React.js the Best Javascript Framework in 2018? <https://hackernoon.com/is-react-js-the-best-javascript-framework-in-2018-264a0eb373c8>`_" Hacker Noon. Hacker Noon, 19 July 2018. Web. 8 April 2019.
+
