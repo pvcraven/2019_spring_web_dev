@@ -167,10 +167,15 @@ within the square selected.
                 }
         }
 
+This particular code block creates the array for the tic-tac-toe board. This
+board is based off of a three by three array with nine different squares. All
+nine squares are used to simulate one bigger square, thus creating the tic-tac-
+toe board.
+
 Board Example
 ~~~~~~~~~~~~~
-This particular chunk of code is able to create a game tic-tac-toe game board.
-The code creates an array of nine different boxes.
+This is a visual model of what the two code blocks above produce. This code was
+able to create a tic-tac-toe board that the user or user can interact with.
 
 .. image:: board.PNG
     :width: 25%
@@ -181,7 +186,7 @@ This block of code is able to let the user click on the game board. This lets
 the user click and place an X or an O.
 
 .. code-block:: text
-    :caption: Getting User Input
+    :caption: Handling User Input
 
     handleClick(i)
     {
@@ -221,6 +226,14 @@ the user click and place an X or an O.
             );
         });
     }
+
+This block of code allows the user to interact with the game board. The first
+user has the ability to select a box with the X marker. Once the user has
+completed her selection, the second user will have the ability to select their
+box as well. The second user will select a box with an O marker.
+
+.. code-block:: text
+    :caption: Declaring Winners, Losers, & Turns
 
     let status;
     if (winner)
