@@ -354,11 +354,21 @@ name for this props element is called user. This is the output of the code.
 .. image:: component1.PNG
     :width: 30%
 
-Another notable feature of ReactJS would be the [ReactJSRefs]_. Refs in ReactJS
-are able to 
+Another notable feature of ReactJS would be the [ReactJSHandling]_. Handling in
+ReactJS
 
-Another notable feature in ReactJS would be the [ReactJSSpecifications]_. The
+.. code-block:: text
+    :caption: Simple Handling Example
+
+The code block will go here
+
+Another notable feature in ReactJS would be the [ReactJSForms]_. The
 specifications in ReactJS are able to
+
+.. code-block:: text
+    :caption: Simple Form Example
+
+The code block will go here
 
 Reception of ReactJS
 --------------------
@@ -381,13 +391,13 @@ Citations
 .. [ReactJS] "`Tutorial: Intro to React <https://reactjs.org/tutorial/tutorial.html>`_"
     React. Facebook Inc, Web. 4 Apr. 2019.
 
-.. [ReactJSComponents] "`Components and Props <https://reactjs.org/docs/components-and-props.html#props-are-read-only>`_"
+.. [ReactJSComponents] "`Components and Props in ReactJS <https://reactjs.org/docs/components-and-props.html#props-are-read-only>`_"
     React. Facebook Inc, Web. 4 Apr. 2019.
 
-.. [ReactJSRefs] "`Refs and the DOM <https://reactjs.org/docs/refs-and-the-dom.html>`_"
+.. [ReactJSHandling] "`Handling Events in ReactJS <https://reactjs.org/docs/handling-events.html>`_"
     React. Facebook Inc, Web. 4 Apr. 2019.
 
-.. [ReactJSSpecifications] "`Draft: JSX Specification <https://reactjs.org/docs/refs-and-the-dom.html>`_"
+.. [ReactJSForms] "`Forms in ReactJS <https://reactjs.org/docs/refs-and-the-dom.html>`_"
     JSX, Facebook Inc, Web. 4 Apr. 2019.
 
 .. [InfoWorld] Krill, Paul. "`React: Making Faster, Smoother UIs for data-driven Web Apps <https://www.infoworld.com/article/2608181/react--making-faster--smoother-uis-for-data-driven-web-apps.html>`_"
