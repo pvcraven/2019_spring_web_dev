@@ -329,9 +329,29 @@ ReactJS Notable Features
 ------------------------
 When it comes to ReactJS there are some distinguishable features that the
 JavaScript library has. One of these features would be the [ReactJSComponents]_.
-Components in ReactJS are able to
+Components in ReactJS are able to split up the user interface into independent
+reusable pieces. Components are similar to JavaScript functions. Components are
+able to accept inputs and return elements that are able to describe to the user
+what they should be seeing on their screen. Here is an example of what a simple
+component looks like.
+
+.. code-block:: text
+    :caption: Simple Component Example
+
+    function Welcome(props)
+        {
+            return <h1>Hello, {props.name}!</h1>;
+        }
+
+    const element = <Welcome name="User" />;
+    ReactDOM.render(element, document.getElementById('root'));
+
+.. image:: component1.PNG
+    :width: 40%
+
 Another notable feature of ReactJS would be the [ReactJSRefs]_. Refs in ReactJS
 are able to
+
 Another notable feature in ReactJS would be the [ReactJSSpecifications]_. The
 specifications in ReactJS are able to
 
