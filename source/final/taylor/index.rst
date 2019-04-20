@@ -355,7 +355,12 @@ name for this props element is called user. This is the output of the code.
     :width: 30%
 
 Another notable feature of ReactJS would be the [ReactJSHandling]_. Handling in
-ReactJS is similar to
+elements is similar to handling DOM elements in ReactJS. DOM stands for Document
+Object Model and is used to show the programming interface. When it comes to
+handling events in ReactJS are syntactically different than using JavaScript.
+In this case a component is being used within a class which common method for an
+event handler to be within a method of a class. Int his example, the toggle
+component is being used within the class.
 
 .. code-block:: text
     :caption: Simple Handling Example
@@ -393,8 +398,22 @@ ReactJS is similar to
     document.getElementById('root')
     );
 
-Another notable feature in ReactJS would be the [ReactJSForms]_. The
-specifications in ReactJS are able to
+This is the output for what this code block can produce. As you can see the
+handling used for this button was able to toggle the button to turn it on or
+off. This is toggle is initiated once the button is clicked on.
+
+.. image:: handling1.PNG
+    :width: 30%
+
+.. image:: handling2.PNG
+    :width: 30%
+
+Another notable feature in ReactJS would be the [ReactJSForms]_. The forms in
+ReactJS are similar to the HTML forms we worked on in class. However, with
+ReactJS you are able to use JavaScript functions and HTML code to create a
+technique called controlled components. These components are able to be used
+with specific HTML tags. In this example, the form is able to use a value tag
+with a select tag which is able to help update the form more conveniently.
 
 .. code-block:: text
     :caption: Simple Form Example
@@ -444,7 +463,17 @@ specifications in ReactJS are able to
     document.getElementById('root')
     );
 
-The code block will go here
+For this form you can see that the user is able to make a choice of what flavor
+they would like from the drop down list. Once the user selects a flavor, a
+message is printed to the user interface. This message lets the user know flavor
+they selected.
+
+.. image:: form1.PNG
+    :width: 30%
+
+.. image:: form2.PNG
+    :width: 30%
+
 
 Reception of ReactJS
 --------------------
