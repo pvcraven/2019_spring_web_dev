@@ -346,11 +346,16 @@ component looks like.
     const element = <Welcome name="User" />;
     ReactDOM.render(element, document.getElementById('root'));
 
+This particular code block is able to display a simple message to the user. The
+function component is a welcome message. An HTML tag is created to display the
+message and a props element is made to be called in the function. In this case
+name for this props element is called user. This is the output of the code.
+
 .. image:: component1.PNG
-    :width: 40%
+    :width: 30%
 
 Another notable feature of ReactJS would be the [ReactJSRefs]_. Refs in ReactJS
-are able to
+are able to 
 
 Another notable feature in ReactJS would be the [ReactJSSpecifications]_. The
 specifications in ReactJS are able to
