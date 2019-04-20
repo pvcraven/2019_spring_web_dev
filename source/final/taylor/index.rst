@@ -355,12 +355,43 @@ name for this props element is called user. This is the output of the code.
     :width: 30%
 
 Another notable feature of ReactJS would be the [ReactJSHandling]_. Handling in
-ReactJS
+ReactJS is similar to
 
 .. code-block:: text
     :caption: Simple Handling Example
 
-The code block will go here
+    class Toggle extends React.Component
+        {
+            constructor(props)
+                {
+                    super(props);
+                    this.state = {isToggleOn: true};
+
+                // This binding is necessary to make this work in the callback
+                    this.handleClick = this.handleClick.bind(this);
+                }
+
+            handleClick()
+                {
+                    this.setState(prevState => ({
+                    isToggleOn: !prevState.isToggleOn
+                    }));
+                }
+
+            render()
+                {
+                    return (
+                    <button onClick={this.handleClick}>
+                    {this.state.isToggleOn ? 'ON' : 'OFF'}
+                    </button>
+                    );
+                }
+        }
+
+    ReactDOM.render(
+    <Toggle />,
+    document.getElementById('root')
+    );
 
 Another notable feature in ReactJS would be the [ReactJSForms]_. The
 specifications in ReactJS are able to
