@@ -469,10 +469,10 @@ message is printed to the user interface. This message lets the user know flavor
 they selected.
 
 .. image:: form1.PNG
-    :width: 30%
+    :width: 50%
 
 .. image:: form2.PNG
-    :width: 30%
+    :width: 45%
 
 
 Reception of ReactJS
