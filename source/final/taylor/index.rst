@@ -27,11 +27,6 @@ Outline
     * Paragraph 2
     * Paragraph 3
 
-* ReactJS Internationalization
-    * Paragraph 1
-    * Paragraph 2
-    * Paragraph 3
-
 * Conclusion
 
 Introduction to ReactJS
@@ -349,7 +344,7 @@ component looks like.
 This particular code block is able to display a simple message to the user. The
 function component is a welcome message. An HTML tag is created to display the
 message and a props element is made to be called in the function. In this case
-name for this props element is called user. This is the output of the code.
+name for this prop's element is called user. This is the output of the code.
 
 .. image:: component1.PNG
     :width: 30%
@@ -464,7 +459,7 @@ with a select tag which is able to help update the form more conveniently.
     );
 
 For this form you can see that the user is able to make a choice of what flavor
-they would like from the drop down list. Once the user selects a flavor, a
+they would like from the drop-down list. Once the user selects a flavor, a
 message is printed to the user interface. This message lets the user know flavor
 they selected.
 
@@ -477,14 +472,14 @@ they selected.
 
 Reception of ReactJS
 --------------------
-Here is an in-text citation to [TheNewStack]_
+Since ReactJS was opened to the public, it gained some pretty interesting
+attention a couple years after its release. According to [TheNewStack]_ many
+developers enjoyed ReactJS due to its ability to effectively create user
+interfaces. 
 Here is an in-text citation to [InfoQ]_
 Here is an in-text citation to [Medium]_
 Here is an in-text citation to [FacebookCode]_
 Here is an in-text citation to [TechCrunch]_
-
-ReactJS Internationalization
-----------------------------
 
 Conclusion
 ----------
