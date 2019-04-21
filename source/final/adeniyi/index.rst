@@ -1,9 +1,6 @@
 React JS - STA
 ===============
 
-Introduction to React
-----------------------
-
     React started as a version of PHP, called XHP, that was created by Facebook.
     Engineer Jordan Walke wanted to be able to create dynamic applications on the
     web, so he found a way to implement XHP in a browser along with javascript.
@@ -121,9 +118,7 @@ then changes the message value when we click it [learnReact]_.
 
 Creating an Application in React
 --------------------------------
-    Lets look at a React Tutorial to create a Tic Tac Toe Game.
-
-* React Code Example
+Lets look at a React Tutorial to create a Tic Tac Toe Game.
 
 To begin, we are provided a starter code that styles our board using CSS
 and creates 3 components: Square, Board, Game.
