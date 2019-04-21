@@ -1,15 +1,23 @@
 React JS - STA
 ===============
 
-* Introduction - What topic is about. Cover highlight points. End with thesis!
+Introduction to React
+----------------------
 
+    React started as a version of PHP, called XHP, that was created by Facebook.
+    Engineer Jordan Walke wanted to be able to create dynamic applications on the
+    web, so he found a way to implement XHP in a browser along with javascript.
+    Very soon after, Facebook officially started using React, and it has grown in
+    popularity in the following years [reactBackground]_.
 
-* Introduction & History of React
+History of React
+------------------
 
     React is a declarative, efficient and flexible JavaScript library. Created
-    by facebook engineer Jordan Walke, it was meant to help build user interfaces
-    React has really helped expand the way front end developers interact with
-    various different user interfaces.
+    by facebook engineer Jordan Walke, it was meant to help build user interfaces,
+    with a focus on being fast and flexible. React has really helped expand the
+    way front end developers interact with various different user interfaces,
+    allowing them to make complex user interfaces in very small code sizes.
 
     React was first used by Facebook and has continued to grow over the years.
     In May 2013, Facebook announced that it would open source React and its
@@ -17,8 +25,8 @@ React JS - STA
     begun to show real interest in React. Flipboard, Netflix and AirBnB were just
     a few of the earliest supporters.
 
-* Fundamentals of React.js
-
+Fundamentals of React.js
+------------------------
     * Babel & JSX (Use references)
 
         Babel is a JavaScript compiler that is mainly used to convert codes into
@@ -38,7 +46,7 @@ React JS - STA
         React uses JSX because it is fast. JSX performs optimization while it
         compiles code. It is also type-safe, allowing errors to be caught during
         compilation rather than at runtime. Finally it is easy to learn, especially
-        for individuals who have worked with HTML [w3React]_
+        for individuals who have worked with HTML [w3React]_.
 
     * Components
 
@@ -111,11 +119,11 @@ Here, we initialized state(line 88-92), modified the state using updateMessage()
 then changes the message value when we click it [learnReact]_.
 
 
-* Creating an Application in React
-
+Creating an Application in React
+--------------------------------
     Lets look at a React Tutorial to create a Tic Tac Toe Game.
 
-    * React Code Example
+* React Code Example
 
 To begin, we are provided a starter code that styles our board using CSS
 and creates 3 components: Square, Board, Game.
@@ -218,8 +226,8 @@ We will also need to change the Square component to accept the two props from Bo
       }}
 
 When you try and click Square now, you should get an error. This is because the
-``handleClick()`` has not been defined yet in Board. Edit your code to look similar
-to this:
+``handleClick()`` has not been defined yet in Board. Edit your code to look
+similar to this:
 
 .. code-block:: text
 
@@ -246,15 +254,15 @@ to this:
 
 You should now be allowed to click the Squares to fill them with an input. This
 works because we are not storing the state in Squares, but sending it from Board
-which allows Square to re-render automatically. The Board has control over the Square
-components, which we can refer to as controlled components.
+which allows Square to re-render automatically. The Board has control over the
+Square components, which we can refer to as controlled components.
 
-Ok by this point you're probably tired of reading all this code and making seemingly
-redundant changes! We're almost done!
+Ok by this point you're probably tired of reading all this code and making
+seemingly redundant changes! We're almost done!
 
 We want to change Square to be a function component. These components are simpler
-for methods that only have a ``render`` method and dont have their own state. Change
-the Square class to look like this function:
+for methods that only have a ``render`` method and dont have their own state.
+Change the Square class to look like this function:
 
 .. code-block:: text
 
@@ -365,14 +373,16 @@ some more of the code if you wanted to explore further [reactTutorial]_.
 
 
 
-* What is the ceiling of React?
+What is the future of React?
+----------------------------
 
 React is a relatively new technology, only gaining popularity withing the last
 5 years. With the amount of support React has and developers interested in using
 it, I believe it will stick around for awhile. I don't see it expanding to the level
 of other languages like Java or Python, but it definitely has its place in the
-programming world [futureReact]_. Here are just a few of the companies that actively use React
-today:
+programming world [futureReact]_. Here are just a few of the companies that
+actively use React today:
+
     * Facebook
     * WhatsApp
     * Uber
@@ -380,17 +390,17 @@ today:
     * Yahoo
     * Sberbank(#1 bank in Russia)
 
-* Conclusion
+Conclusion
+----------
 
+    As we have now learned, React is especially helful for creating complex user
+    interfaces. React make it much simpler to write code for applications and has
+    already become one of the most popular libraries for web development. With its
+    popularity continually growing since its creation, I do not see React falling
+    out of relevance. While I do not believe it will reach the levels of other
+    languages like Python or Java, React will be very resourceful for years to
+    come.
 
-Heading 1
----------
-
-Heading 2
----------
-
-Sub Heading
-~~~~~~~~~~~
 
 Works Cited
 -----------
@@ -401,3 +411,4 @@ Works Cited
 .. [reactTutorial] "`McGinnis Tyler <https://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/>`_" TylerMcGinnis.com, np. March, 12. 2018._
 .. [futureReact] "`Caliman, Diana <http://blog.creative-tim.com/web-design/the-future-of-react-2018/>`_" 2019 Creative Tim, Creative Tim's Blog. April 13,2018._
 .. [TicTacReact] "`Dan Abramov <https://codepen.io/gaearon/pen/LyyXgK?editors=0010>`_" Facebook Inc. Facebook Open Source, Web 16 April. 2019.
+.. [reactBackground] "`Dawson, Chris <https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/>`_" 2019 The New Stack, The New Stack.
