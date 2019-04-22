@@ -486,20 +486,48 @@ Reception of ReactJS
 Since ReactJS was opened to the public, it gained some pretty interesting
 attention a couple years after its release. According to [InfoQ]_ ReactJS was
 receiving some mixed reviews from the development community. One of the
-criticisms the community had was how JavaScript library made it difficult to
-separate the HTML code and the JavaScript code. Usually designers would work
-separately on these two particular coding languages and hook them together.
-Here is an in-text citation to [Medium]_
-Here is an in-text citation to [FacebookCode]_
-Here is an in-text citation to [TechCrunch]_
+criticisms the community had was how the JavaScript library made it difficult to
+separate the HTML code as the front-end language and the JavaScript code as the
+back-end language. Usually designers would work separately on these two coding
+languages and could hook them together. However, with ReactJS you are able to
+morph the two languages together, which made it tricky at first for developers
+to get a hold of.
+
+Another criticism that faced ReactJS came from its terms and conditions clause
+right after it's initial launch. According to [Medium]_, Facebook stated that if
+you were to agree to its terms and conditions, you did not have the right to sue
+Facebook or its subsidiaries, but Facebook and its subsidiaries could sue the
+user if they believed the someone was infringing on their patent rights. This
+particular clause was vague and didn't sit well with developers at first. Many
+developers and companies thought that investing in ReactJS would be too much of
+a risk for them, that their industries could be hurt if they built with ReactJS.
+
+
+As people started to distance themselves from the JavaScript library, Facebook
+came out and said that they would change their patent clause. According to
+[FacebookCode]_, the ReactJS development team wanted to make sure that anyone
+who used their JavaScript library felt confidence in using it. The development
+team stated that it wouldn't sue industries for patent infringement with the
+vague terms that were used. Facebook cleared up the confusing by stating clear
+examples of that patent infringement looked like. Cleaning up this patent clause
+was intended to help programmers and companies feel comfortable with using the
+JavaScript library again, without the fear of worrying about legal action.
 
 Conclusion
 ----------
-When it comes to ReactJS it is apparent that this JavaScript library is one that
-has potential to create simple, yet stunning user interfaces. The syntax that
-comes with this library is easy to understand once you grasp how all the unique
-features of the language interact with one another. This particular JavaScript
-library didn't
+When it comes to ReactJS, it is apparent that this JavaScript library is one
+that has the potential to create simple, yet stunning user interfaces.
+The syntax that comes with this library is easy to understand once you grasp how
+all the unique features of the language interact with one another. This
+particular JavaScript library took both HTML and JavaScript code and morphed the
+two languages into one. This was seen as an interesting step in the development
+community, while others saw it something as too complex. At first, industries
+were afraid to work with ReactJS to vague patent infringement clause. But as
+Facebook and the ReactJS Development team could see the backlash they were
+receiving, they changed their clause so companies could feel comfortable with
+using their JavaScript library. Even though ReactJS has had its problems, it is
+still an up and coming JavaScript library that has the potential to create
+sophisticated user interfaces for developers around the world.
 
 Citations
 ---------
@@ -529,6 +557,3 @@ Citations
 
 .. [FacebookCode] Pearce, James. "`Updating Our Open Source Patent Grant <https://code.fb.com/open-source/updating-our-open-source-patent-grant/>`_"
     Facebook Code, Facebook Inc, Web. 10 Apr. 2015.
-
-.. [TechCrunch] Lomas, Natasha. "`WordPress to Ditch React Library Over Facebook Patent Clause Risk <https://techcrunch.com/2017/09/15/wordpress-to-ditch-react-library-over-facebook-patent-clause-risk/>`_"
-    TechCrunch News, TechCrunch, Web. 8 Apr. 2017.
