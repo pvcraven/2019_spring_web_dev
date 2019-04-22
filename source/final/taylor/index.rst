@@ -3,9 +3,10 @@ ReactJS Project
 
 Outline
 -------
-* Introduction - What the topic is about. Cover highlight points.
-* Last sentence should be a thesis statement!
-* What is ReactJS, why the UI Library is popular?  
+* Introduction
+    * What the topic is about. Cover highlight points.
+    * Last sentence should be a thesis statement!
+    * What is ReactJS, why the UI Library is popular?
 
 * History of ReactJS / Library of Code
     * Paragraph 1
@@ -28,6 +29,8 @@ Outline
     * Paragraph 3
 
 * Conclusion
+    * Restate Thesis Statement
+    * Tie everything learned together
 
 Introduction to ReactJS
 -----------------------
@@ -75,6 +78,14 @@ for you. The difference with React is the way that you program it is much more
 like a game engine, as opposed to these alternative approaches, with
 data binding". Hunt was able to describe how different ReactJS is
 compared to other JavaScript libraries.
+
+According to the [TheNewStack]_, developers from ReactJS also helped minimize
+malicious Cross Site Scripting (XSS) attacks that occur within the JavaScript
+language. XSS attacks occur when an attacker enters content that is embedded or
+hidden within the JavaScript code that is intended to steal or compromise the
+viewer's information. To prevent these attacks, ReactJS was able to scrub
+the viewers submitted information, making it so that the attacker comes up empty
+handed.
 
 When it comes to ReactJS, the developers for the library wanted it to have a
 different look and presence compared to other popular UI developing languages.
@@ -473,18 +484,22 @@ they selected.
 Reception of ReactJS
 --------------------
 Since ReactJS was opened to the public, it gained some pretty interesting
-attention a couple years after its release. According to [TheNewStack]_ many
-developers enjoyed ReactJS due to its ability to effectively create user
-interfaces. 
-Here is an in-text citation to [InfoQ]_
+attention a couple years after its release. According to [InfoQ]_ ReactJS was
+receiving some mixed reviews from the development community. One of the
+criticisms the community had was how JavaScript library made it difficult to
+separate the HTML code and the JavaScript code. Usually designers would work
+separately on these two particular coding languages and hook them together.
 Here is an in-text citation to [Medium]_
 Here is an in-text citation to [FacebookCode]_
 Here is an in-text citation to [TechCrunch]_
 
 Conclusion
 ----------
-Sub Heading
-~~~~~~~~~~~
+When it comes to ReactJS it is apparent that this JavaScript library is one that
+has potential to create simple, yet stunning user interfaces. The syntax that
+comes with this library is easy to understand once you grasp how all the unique
+features of the language interact with one another. This particular JavaScript
+library didn't
 
 Citations
 ---------
