@@ -1,9 +1,7 @@
 How-To Examples
 ===============
-
 Aside from the documentation for [sphinx]_, here are some examples that people
 ran into the most problems with when doing the writing last year.
-
 Citation Example
 ----------------
 
