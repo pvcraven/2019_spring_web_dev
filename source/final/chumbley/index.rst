@@ -1,10 +1,6 @@
 Vue
 ===
 
-* Conditionals and Loops
-* Component Composition
-* Conclusion
-
 This is Vue
 -----------
 
@@ -14,7 +10,7 @@ integrated with other libraries and existing projects. Vue.js architecture
 focuses on declarative rendering and component composition which we will get
 into in the later sections. [VueWiki]_ [VueIntroduction]_
 
-To include Vue.js with an HTML document, add the following script:
+To include Vue.js within an HTML document, add the following script:
 ``<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>``
 
 Note that this is the development version of Vue.js. [VueIntroduction]_
@@ -93,8 +89,9 @@ Vue Directives
 You have probably noticed that double braces ``{{ }}`` are used as place-holders
 for the data that is rendered from the javascript. With Vue.js, you can also
 call directives, which are HTML attributes, with the prefix ``v-`` [w3schoolsVue]_.
-The example below will walk you through a few examples of different Vue.js
-directives.
+The ``v-`` prefix indicates that the directive is a special attribute provided by
+the Vue.js library. The example below will walk you through a few examples of
+different Vue.js directives.
 
 HTML Example
 
@@ -125,7 +122,21 @@ JavaScript Example
 
 This example shows the v-model and the v-bind directive. Like before, everything
 is reactive and both the message and the secretMessage can be changed with
-``app.message = "Something"`` or ``app.secretMessage = "Something"``.\
+``app.message = "Something"`` or ``app.secretMessage = "Something"``.
+
+The ``v-model`` directive creates a textbox for the user to interact with. In
+the above example, the ``v-model`` directive is tied to the ``{{ message }}``
+place-holder. Whatever the user types into the textbox changes what the user
+sees above the textbox. The ``v-model`` directive is great with working with
+user input.
+
+The ``v-bind`` directive binds and HTML element to a Vue instance. In the
+above example, ``title`` is bound to the vue instance of ``secretMessage``.
+Whenever the user hovers over the title, the value of secretMessage appears to
+them.
+
+These are just a few examples of the many Vue.js directives. We will work with
+a few more directives in the examples below.
 
 Conditionals and Loops
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -174,7 +185,64 @@ JavaScript Example
             }
         })
 
+The ``v-if`` directive and ``v-else`` directive, as you could guess, got
+together to allow you to do if statements and if-else statements. In the above
+example, the directive checks the value of the boolean variable ``happy`` and
+sets the text accordingly.
 
+The ``v-for`` directive, as you would assume, allows you to do a for loop. In
+the example above, the for loops runs through the elements in ``food`` and
+prints them on to the page.
+
+Component Composition
+---------------------
+
+Another important concept to Vue is the Component System. The Component
+System is this abstract idea that you can build large scale application with
+small, self-contained, and reusable parts. [VueIntroduction]_ Let's take a
+look at an example.
+
+HTML Example
+
+.. code-block:: HTML
+	:caption: Vue Components Example HTML
+
+        <div id="componentsExample">
+            <button-counter></button-counter>
+            <button-counter></button-counter>
+            <button-counter></button-counter>
+        </div>
+
+JavaScript Example
+
+.. code-block:: JavaScript
+    :caption: Vue Loops and Conditionals Example JavaScript
+        Vue.component('button-counter', {
+            data: function () {
+                return {
+                    count: 0
+                }
+            },
+            template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+        })
+
+        new Vue({ el: '#componentsExample' })
+
+In the above example, we have created a component called ``button-counter`` in
+the JavaScript code. This component creates a button that keeps track of how
+many times it has been pushed. In the HTML code, the component is called upon
+three times which creates three separate buttons with the same funtion. Each
+button keeps track of its own count and not the overall count.
+
+Conclusion
+----------
+
+This has been a short introduction to Vue.js which has shown you some of the
+key attribute of Vue.js. Declarative rendering makes the Document Object
+Model(DOM) reactive to the data. Each time the data is changes, the DOM is
+updated as well. Component composition is another big attribute of Vue.js.
+Components allow you to make large scale applications with small, reusable
+parts.
 
 Citation
 --------
