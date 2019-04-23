@@ -1,35 +1,9 @@
 React JS
 ========
 
-Outline 
-------- 
-* Introduction - What is React JS? Overall important points. Thesis statement; 
-  make it obvious.
-* History
-* How was it created? [ReactHistory]_. 
-
-1. How React is used/Tutorial [FullStackReact]_
-
-  * Facebook, Instagram
-  * Basic code samples (Add example if-else, print statements) [ReactJS]_
-  * Tutorial
-
-2. Why use React?
-  
-  * Features - Virtual DOM, JSX, Ease of Use, one-way data binding [Hackernoon]_
-  * Increase in Popularity
-  * Virtual DOM
-  
-3. Future of React
-  
-  * Battle between other options (Angular, Vue). Differences and similarities 
-    of the frameworks.	
-  * Market Demand [Hackernoon]_
-
-* Conclusion
-
 Introduction
 ------------
+ReactJS is a JavaScript library used for building user interfaces. Its goal is to make it easier to change an interface at any point in time by dividing the user interface into a group of components. A large reason it has become so popular is because of its higher efficiency and less complexity of other options such as Angular and Vue. It is also a project that benefits from being created and backed by Facebook. Due to React's combination of flexibility, ease of use, and efficiency, it is a highly used and demanded skill for jobs that work with modern web applications.
 
 History
 -------
@@ -51,10 +25,111 @@ To be able to use ReactJS, we will use Javascript; more specifically, a React ex
     }
   }
 
-Observing the code, it appears as though the render() function is returning HTML, however it is JSX. 
+Observing the code, it appears as though the render() function is returning HTML, however it is JSX. At runtime, the JSX is then translated to regular Javascript:
+
+.. code-block:: javascript
+
+	class HelloWorld extends React.Component {
+	  render() {
+	    return (
+	      React.createElement(
+		'h1',
+		'Hello World'
+	      )
+	    );
+	  }
+	}
+
+[FullStackReact]_
 
 Tutorial
 --------
+To begin building a React app, the source of React needs to be set inside a ``<script>`` tag inside the ``<head>`` element. This also includes a script that allows for the library, Babel. It is used to transpile ES6 JavaScript into ES5 JavaScript to be compatible with more browsers. In this example, we will be building a simple form that asks for your name, then sends a simple welcome message based on your input. [FullStackReact]_ 
+
+.. code-block:: HTML
+  
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <meta charset="UTF-8" />
+	    <title>Hello World</title>
+	    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	  </head>
+	  
+Now, looking at the body, before the Babel script we must set ``<div>`` tags to tell where the elements should render in the Document Object Model (DOM). Next, we can create our form component. To set the initial state of the input value, we use ``props`` to allow for customization in case we need other forms. 
+
+.. code-block:: HTML
+	
+	  <body>
+	    <div id="root"></div>
+	    <div id="welcome"></div>
+
+	<script type="text/babel">
+
+	class NameForm extends React.Component {
+	  constructor(props) {
+	    super(props);
+	    this.state = {value: ''};
+
+	    this.handleChange = this.handleChange.bind(this);
+	    this.handleSubmit = this.handleSubmit.bind(this);
+	  }
+
+Next, we need methods to be able to handle changes in the component such as button clicks or inputting a name. So, we have a method, ``handleChange(event)`` that will set the state value to the user's input. Then, another method, ``handleSubmit(event)`` that will be called in the event of the user clicking the Submit button.
+
+.. code-block:: HTML
+
+	  handleChange(event) {
+	    this.setState({value: event.target.value});
+	  }
+
+	  handleSubmit(event) {
+	    const name = this.state.value;
+	    const element = <h1> Hello, {name}</h1>;
+
+	    ReactDOM.render(
+	      element,
+	      document.getElementById("welcome")
+	    );
+	    event.preventDefault();
+	  }
+
+The ``render()`` is required for every React component that is created. In this instance, it creates the textbox for the user to input a name, then the Submit button. Finally, ``ReactDOM.render()`` is used to be able to call to the DOM. The function has two arguments, with the first telling the program *what* to render and the second *where*. In this case, we are rendering the ``NameForm`` component where the HTML element with an id of "root" is located. [FullStackReact]_
+
+.. code-block:: HTML
+
+	  render() {
+	    return (
+	      <form onSubmit={this.handleSubmit}>
+		<label>
+		  Name:
+		  <input type="text" value={this.state.value} onChange={this.handleChange} />
+		</label>
+		<input type="submit" value="Submit" />
+	      </form>
+	    );
+	  }
+	}
+
+	ReactDOM.render(
+	  <NameForm />,
+	  document.getElementById("root")
+	);
+
+
+	    </script>
+	</body>
+	</html>
+
+If done correctly, you should see a very simple form with one a textbox and button:
+
+.. image:: ReactFormP1.PNG
+
+After entering a name, by clicking the Submit button, it will call another ``ReactDOM.render()`` function that will render the element ``<h1> Hello, {name}</h1>`` where ``{name}`` changes based on the ``state``. This is done where the "welcome" id is located. It should look similar to this:
+
+.. image:: ReactFormP2.PNG
 
 
 Advantages
@@ -75,14 +150,13 @@ Putting all the advantages and disadvantages aside, React has beaten out its com
 
 Conclusion
 ----------
+React is a framework that we are only getting started exploring and learning its capabilities. Its efficiency makes it impossible for companies to ignore. Simply put, the advantages of using it causes its disadvantages to be invisible. As proven by its market demand, it is a skill that is important to know and will not be going away in the foreseeable future.
 
 Sources
 -------
 .. [FullStackReact] Lerner, Ari "`30 Days of React: What is React? <https://www.fullstackreact.com/30-days-of-react/day-1/>`_" Fullstack React, 2017. Web. 2 April 2019.
 
 .. [ReactHistory] Dawson, Chris "`Javascript's History and How it led to ReactJS <https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/>`_" The New Stack, 25 July 2014. Web. 4 April 2019. 
-
-.. [ReactJS] "`Intro to React <https://reactjs.org/>`_" Facebook. Facebook Open Source, Web. 4 April 2019.
 
 .. [Hackernoon] Kostrzewa, Denis "`Is React.js the Best Javascript Framework in 2018? <https://hackernoon.com/is-react-js-the-best-javascript-framework-in-2018-264a0eb373c8>`_" Hacker Noon. Hacker Noon, 19 July 2018. Web. 8 April 2019.
 
