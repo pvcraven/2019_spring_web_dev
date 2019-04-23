@@ -5,21 +5,19 @@ for higher-level programming compared to WebGL [Mozilla]_. It has gained
 popularity in a variety of projects, including online games, demonstrations,
 and models. Three.js gives programmers an opportunity to develop 3D programs
 that are organized and readable, while also offering a significant amount
-of features to create fantastic projects. This document will provide the benefits
-of the Three.js library, along with a basic example and explanation of how to use
-Three.js.
+of features to create fantastic projects. This document will provide the
+benefits of the Three.js library, along with a basic example and explanation of
+how to use Three.js.
 
 History
 -------
-* Explain Ricardo Cabello's timeline up to first Github release [Github]_
-* Ricardo Cabello released in April 2010
-* A few people added to the project [Github]_
-* Many contributors help in updating and supporting this project now
+Ricardo Cabello's first release of Three.js on Github was on April 23, 2010
+[Github]_. Two other contributors, Branislav Ulicny and Joshua Koo, were quick
+to contribute with their own progress to the project by contributing to
+geometry, materials, and post-processing. In the last nine years since Cabello's
+first release, there have been over 25,000 commits with help from over 1,000
+individual contributors.
 
-What WebGL does
----------------
-* WebGL is used to create 2D and 3D graphics in a web browser [Mozilla]_
-* Created by Mozilla
 
 What Three.js adds
 ------------------
@@ -29,11 +27,8 @@ For experiences developers, three.js makes it easier to create the same
 projects in less time and with less effort. Three.js is specifically meant for
 developers who want to work with graphics and animation without having to worry
 about how it will interact with hardware. A new developer does not have to learn
-any WebGL if they want to start developing a 3D application. Instead, they can
-create the same projects with Three.js.
-
-* Don't need to know WebGL [Threejs]_
-* Lower learning curve (WebGL is higher-level)
+any WebGL if they want to start developing a 3D application [Threejs]_. Instead,
+they can create the same projects with Three.js in less code and time.
 
 Three.js Example
 ----------------
@@ -51,7 +46,7 @@ different axes.
 					{
 						width: 100%;
 						height: 300px;
-						margin: 0 auto;
+						margin-bottom: 36px;
 					}
 
 					#gui_container
@@ -139,12 +134,15 @@ different axes.
 	
 	
 	
-Breaking Down the Code
-----------------------
-To start, we create the camera, the scene, and the renderer. 
+Explaining the Code
+-------------------
+There are a lot of pieces of this code, but when broken down, it is much easier
+to understand what is going on to create this project. To start, we create the
+camera, the scene, and the renderer. 
 
 .. code-block:: javascript
-
+	:linenos:
+	
 	//We use this to set how big of a screen we want our camera to see.
 	var innerDiv = document.getElementById("threejscanvas");	
 	
@@ -166,7 +164,8 @@ location of the camera is (0, 0, 0), so we change the z value to 500. This
 will allow us to see our cube that we will be positioning at (0, 0, 0).
 
 .. code-block:: javascript
-
+	:linenos:
+	
 	//Creates a new scene for adding objects
 	var scene = new THREE.Scene();
 	
@@ -176,7 +175,8 @@ pointing at the objects in our scene, then they will be displayed to the user.
 We will eventually be modifying the object in our scene by rotating the cube.
 
 .. code-block:: javascript
-
+	:linenos:
+	
 	//Creates a new renderer for creating the visuals
 	var renderer = new THREE.WebGLRenderer();
 	renderer.setPixelRatio(window.devicePixelRatio);
@@ -187,7 +187,8 @@ WebGL to actually display the scene within our project. Without the renderer,
 the scene and project are data that cannot be visualized.
 
 .. code-block:: javascript
-	
+	:linenos:
+		
 	//Creates the cube shape
 	var geometry = new THREE.CubeGeometry(200, 200, 200);
 	
@@ -211,7 +212,8 @@ similar way. Finally, we put them together in the mesh. The mesh is what we add
 to the scene to be displayed.
 	
 .. code-block:: javascript
-	
+	:linenos:
+		
 	//Adds the scene to our HTML page
 	document.getElementById("threejscanvas").appendChild(renderer.domElement);
 
@@ -227,7 +229,8 @@ begin to add animations; in our case, these animations are rotations of the
 cube.
 	
 .. code-block:: javascript
-	
+	:linenos:
+		
 	//If the window ever gets resized, the size and aspect of the scene will change
 	window.addEventListener('resize', onWindowResize);
 
@@ -244,7 +247,8 @@ size and aspect ratio. The updateProjectionMatrix function is necessary after
 changing the aspect ratio of the camera so that it can refresh correctly.
 	
 .. code-block:: javascript
-	
+	:linenos:
+		
 	function animate() {
 		//Used to call animate again
 		requestAnimationFrame(animate);
@@ -270,20 +274,39 @@ them to the corresponding rotation values of the mesh.
 
 Benefits of Three.js
 --------------------
-Three.js provides fantastic examples of how to use their library [Threejs]_. 
-
-* Lots of examples on the website [Threejs]
-* Project health is strong (Lots of commits, questions answered, etc) [Github]
-* Lightweight but has the option of adding extensions
+Besides the ability for users to develop WebGL programs in an easier,
+higher-level language, there are many other benefits to using Three.js. First,
+Three.js provides fantastic examples of how to use their library, making the
+barrier for entry even easier [Threejs]_. With hundreds of examples available,
+it is very likely a developer can find the feature they are looking to add. In
+addition, Three.js continues to be constantly updated, meaning there won't be
+any issues of the library being outdated in the near future [Github]_. Finally,
+the main Three.js package is very light; developers have the option to add other
+libraries they may need later on.
 
 Problems with Three.js
 ----------------------
-* No versioning system, meaning API changes more often [Github]
-* The online editor is not good
-* Lots of examples, but specific documentation is not great [Threejs]
+While this library is definitely fantastic, there are still some downsides to
+using Three.js. There is no official versioning system at this time, meaning the
+API still ocasionally changes [Github]_. This could mean an update to a
+developer's Three.js library has the potential to completely break their current
+project. While this doesn't happen often, it is still something to acknowledge.
+Three.js also has an online editor [Threejs]_; however, it is relatively useless
+and generally considered not good. Developers are better off using the examples
+on the website or generating something themselves. Finally, the documentation
+for this library is not very good. It lacks a lot of description that would be
+helpful to developers who have just started with developing 3D projects.
+Fortunately, the examples provided on the website do a decent job of making up
+for the lack of documentation.
 
 Conclusion
 ----------
+Three.js is a great library for users who are beginning their journey into 3D
+development, as well as experienced users who are looking for a powerful
+library. The higher-level programming makes it significantly easier to create
+projects in comparison to pure WebGL [Mozilla]_. Despite a few fallbacks, it is
+a great library that I would highly recommend to anyone looking to begin
+developing in three dimensions.
 
 Citations
 ---------
