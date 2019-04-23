@@ -278,9 +278,6 @@ Shown below is this interactive SVG in action.
 
 [Bostock3]_
 
-Graphs
-~~~~~~
-
 Who uses D3?
 ------------
 
@@ -312,6 +309,9 @@ data analytics tool and opens up a number of possibilities in regards to
 graphics. It was been widely accepted and implemented in professional
 development society, and allows for the efficient manipulation of web pages
 while still creating a friendly user interface.
+
+Sources
+-------
 
 .. [Bostock1] Bostock, Mike. “`Data-Driven Documents <https://d3js.org/>`_.” D3.Js.
 
