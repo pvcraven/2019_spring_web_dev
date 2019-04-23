@@ -1,10 +1,6 @@
 Vue
 ===
 
-* Conditionals and Loops
-* Component Composition
-* Conclusion
-
 This is Vue
 -----------
 
@@ -93,8 +89,9 @@ Vue Directives
 You have probably noticed that double braces ``{{ }}`` are used as place-holders
 for the data that is rendered from the javascript. With Vue.js, you can also
 call directives, which are HTML attributes, with the prefix ``v-`` [w3schoolsVue]_.
-The example below will walk you through a few examples of different Vue.js
-directives.
+The ``v-`` prefix indicates that the directive is a special attribute provided by
+the Vue.js library. The example below will walk you through a few examples of
+different Vue.js directives.
 
 HTML Example
 
@@ -125,7 +122,21 @@ JavaScript Example
 
 This example shows the v-model and the v-bind directive. Like before, everything
 is reactive and both the message and the secretMessage can be changed with
-``app.message = "Something"`` or ``app.secretMessage = "Something"``.\
+``app.message = "Something"`` or ``app.secretMessage = "Something"``.
+
+The ``v-model`` directive creates a textbox for the user to interact with. In
+the above example, the ``v-model`` directive is tied to the ``{{ message }}``
+place-holder. Whatever the user types into the textbox changes what the user
+sees above the textbox. The ``v-model`` directive is great with working with
+user input.
+
+The ``v-bind`` directive binds and HTML element to a Vue instance. In the
+above example, ``title`` is bound to the vue instance of ``secretMessage``.
+Whenever the user hovers over the title, the value of secretMessage appears to
+them.
+
+These are just a few examples of the many Vue.js directives. We will work with
+a few more directives in the examples below.
 
 Conditionals and Loops
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -173,6 +184,23 @@ JavaScript Example
                 }
             }
         })
+
+The ``v-if`` directive and ``v-else`` directive, as you could guess, got
+together to allow you to do if statements and if-else statements. In the above
+example, the directive checks the value of the boolean variable ``happy`` and
+sets the text accordingly.
+
+The ``v-for`` directive, as you would assume, allows you to do a for loop. In
+the example above, the for loops runs through the elements in ``food`` and
+prints them on to the page.
+
+Component Composition
+---------------------
+
+Another important concept to Vue is the Component System.
+
+Conclusion
+----------
 
 
 
