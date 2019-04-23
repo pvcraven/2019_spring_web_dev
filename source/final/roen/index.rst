@@ -87,7 +87,7 @@ different axes.
 					<script src="js/lib/three.js"></script>
 					<script src="js/lib/dat.gui.js"></script>
 					<div id="gui_container"></div>
-					<script src="http://threejs.org/build/three.min.js"></script>
+					<script src="https://threejs.org/build/three.min.js"></script>
 					<script>
 						var innerDiv = document.getElementById("threejscanvas");
 
