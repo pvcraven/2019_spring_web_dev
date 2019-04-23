@@ -21,6 +21,7 @@ are automatically tracked. In React, developers have to add additional keywords
 to avoid renders of the whole DOM. Vue achieves will only render the necessary components
 when changed.
 
+* Why to use it (rising popularity)
 
 It is possible to use Vue.js without installing it by using their CDN in a <script> tag:
 
