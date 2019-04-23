@@ -84,8 +84,6 @@ different axes.
 					<input type="range" min=-0.1 max=.1 step=.01 value=0.0 class="slider" id="zRotation">
 				</div>
 				<div id="threejscanvas">
-					<script src="js/lib/three.js"></script>
-					<script src="js/lib/dat.gui.js"></script>
 					<div id="gui_container"></div>
 					<script src="https://threejs.org/build/three.min.js"></script>
 					<script>
