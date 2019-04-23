@@ -165,7 +165,8 @@ a certain percentage of the screen.  For example.
             width: 100%;
       }
 
-      /* Then if we hit 768px or greater we switch to columns taking up a percentage of the screen and they are no longer stacking*/
+      /* Then if we hit 768px or greater we switch to columns taking up a percentage*/
+      /* of the screen and they are no longer stacking*/
       @media only screen and (min-width: 768px) {
             /* this column will take up 25% of the screen, if assigned to a tag*/
             .col-1 {width: 25%;}
