@@ -33,12 +33,13 @@ library [reactHistory]_.
 Popularity
 ----------
 
-React is arguably most popular JavaScript library on the market right now.
+React is arguably the most popular JavaScript library on the market right now.
 In June 2018, React was mentioned in over 28% of job postings across popular
 languages. Vue and Angular were far behind, with under 10% of job postings
-listing them. React also has significantly more NPM downloads than Vue or
-Angular, which shows more people are using React for their websites than
-these other competitors [reactPopularity]_. Popular websites using React are:
+listing them. React also has significantly more Node.js Package Manager (NPM)
+downloads than Vue or Angular, which shows more people are using React for
+their websites than these other competitors [reactPopularity]_.
+Popular websites using React are:
 
 * Facebook
 * Instagram
@@ -338,11 +339,11 @@ do not see React going away anytime soon.
 Sources
 ---------
 .. [reactIntro] "`Tutorial: Intro to React <https://reactjs.org/tutorial/tutorial.html>`_" React. Facebook Inc., 4/2/2019.
-.. [reactSimple] Borgen, Per Harald. "`Learn React.js in 5 Minutes <https://medium.freecodecamp.org/learn-react-js-in-5-minutes-526472d292f4>`_" FreeCodeCamp.org, A Medium Corporation, 4/10/2018.
+.. [reactSimple] Borgen, Per Harald. "`Learn React.js in 5 Minutes <https://medium.freecodecamp.org/learn-react-js-in-5-minutes-526472d292f4>`_" FreeCodeCamp, A Medium Corporation, 4/10/2018.
 .. [reactHistory] Papp, Andrea. "`The History of React.js on a Timeline <https://blog.risingstack.com/the-history-of-react-js-on-a-timeline/>`_" RisingStack, RisingStack Inc., 7/20/2018.
-.. [reactW3Schools] "`What is React? <https://www.w3schools.com/whatis/whatis_react.asp>`_" w3schools.com, W3Schools, 4/3/2019.
+.. [reactW3Schools] "`What is React? <https://www.w3schools.com/whatis/whatis_react.asp>`_" W3Schools, 4/3/2019.
 .. [reactPopularity] Kostrzewa, Denis. "`Is React.js the Best Javascript Framework in 2018? <https://hackernoon.com/is-react-js-the-best-javascript-framework-in-2018-264a0eb373c8>`_" Hacker Noon, A Medium Corporation, 7/19/2018.
-.. [reactBestPractices] "`ReactJS Best Practices. <https://www.tutorialspoint.com/reactjs/reactjs_best_practices.htm>`_" tutorialspoint.com, Tutorials Point, 4/4/2019.
+.. [reactBestPractices] "`ReactJS Best Practices. <https://www.tutorialspoint.com/reactjs/reactjs_best_practices.htm>`_" Tutorials Point, 4/4/2019.
 
 
 
