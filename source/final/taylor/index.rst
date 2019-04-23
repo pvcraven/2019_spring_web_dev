@@ -1,37 +1,6 @@
 ReactJS Project
 ======================
 
-Outline
--------
-* Introduction
-    * What the topic is about. Cover highlight points.
-    * Last sentence should be a thesis statement!
-    * What is ReactJS, why the UI Library is popular?
-
-* History of ReactJS / Library of Code
-    * Paragraph 1
-    * Paragraph 2
-    * Paragraph 3
-
-* ReactJS Example Code
-    * Paragraph 1
-    * Paragraph 2
-    * Paragraph 3
-
-* ReactJS Notable Features
-    * Paragraph 1
-    * Paragraph 2
-    * Paragraph 3
-
-* Reception of ReactJS
-    * Paragraph 1
-    * Paragraph 2
-    * Paragraph 3
-
-* Conclusion
-    * Restate Thesis Statement
-    * Tie everything learned together
-
 Introduction to ReactJS
 -----------------------
 ReactJS is a JavaScript library that specializes in building user interfaces.
