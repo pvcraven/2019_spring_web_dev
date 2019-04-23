@@ -10,7 +10,7 @@ integrated with other libraries and existing projects. Vue.js architecture
 focuses on declarative rendering and component composition which we will get
 into in the later sections. [VueWiki]_ [VueIntroduction]_
 
-To include Vue.js with an HTML document, add the following script:
+To include Vue.js within an HTML document, add the following script:
 ``<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>``
 
 Note that this is the development version of Vue.js. [VueIntroduction]_
@@ -197,12 +197,52 @@ prints them on to the page.
 Component Composition
 ---------------------
 
-Another important concept to Vue is the Component System.
+Another important concept to Vue is the Component System. The Component
+System is this abstract idea that you can build large scale application with
+small, self-contained, and reusable parts. [VueIntroduction]_ Let's take a
+look at an example.
+
+HTML Example
+
+.. code-block:: HTML
+	:caption: Vue Components Example HTML
+
+        <div id="componentsExample">
+            <button-counter></button-counter>
+            <button-counter></button-counter>
+            <button-counter></button-counter>
+        </div>
+
+JavaScript Example
+
+.. code-block:: JavaScript
+    :caption: Vue Loops and Conditionals Example JavaScript
+        Vue.component('button-counter', {
+            data: function () {
+                return {
+                    count: 0
+                }
+            },
+            template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+        })
+
+        new Vue({ el: '#componentsExample' })
+
+In the above example, we have created a component called ``button-counter`` in
+the JavaScript code. This component creates a button that keeps track of how
+many times it has been pushed. In the HTML code, the component is called upon
+three times which creates three separate buttons with the same funtion. Each
+button keeps track of its own count and not the overall count.
 
 Conclusion
 ----------
 
-
+This has been a short introduction to Vue.js which has shown you some of the
+key attribute of Vue.js. Declarative rendering makes the Document Object
+Model(DOM) reactive to the data. Each time the data is changes, the DOM is
+updated as well. Component composition is another big attribute of Vue.js.
+Components allow you to make large scale applications with small, reusable
+parts.
 
 Citation
 --------
