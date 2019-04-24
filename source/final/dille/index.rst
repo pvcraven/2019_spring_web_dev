@@ -221,16 +221,16 @@ scenarios.
 Sources
 -------
 
-.. [IntroNodeJS] Node.JS "`Introduction <https://nodejs.dev/introduction-to-nodejs>`_" Google, Web 4/2/2019
+.. [IntroNodeJS] Node.JS Intro "`Introduction <https://nodejs.dev/introduction-to-nodejs>`_" Google, Web 4/2/2019
 
-.. [Node.js Introduction] Node.JS "`Introductions <https://www.tutorialspoint.com/nodejs/nodejs_introduction.htm>`_" Google, Web 4/4/2019
+.. [Node.js Introduction] Node.JS Introduction "`Introductions <https://www.tutorialspoint.com/nodejs/nodejs_introduction.htm>`_" Google, Web 4/4/2019
 
-.. [NodeJS web app] Node.JS "`Advantages and disadvantages <https://www.mindinventory.com/blog/pros-and-cons-of-node-js-web-app-development/>`_" Google,Web 4/4/2019
+.. [NodeJS web app] Node.JS Advantages "`Advantages and disadvantages <https://www.mindinventory.com/blog/pros-and-cons-of-node-js-web-app-development/>`_" Google,Web 4/4/2019
 
-.. [WhyUseNodeJS] Node.JS "`Why use NodeJS <https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js>`_" Google, Web 4/4/2019
+.. [WhyUseNodeJS] Why use Node.JS "`Why use NodeJS <https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js>`_" Google, Web 4/4/2019
 
-.. [NodeJSTutorials] Node.JS "`Tutorials <https://codeburst.io/the-only-nodejs-introduction-youll-ever-need-d969a47ef219>`_" Google, Web 4/4/2019
+.. [NodeJSTutorials] Node.JS Tutorials "`Tutorials <https://codeburst.io/the-only-nodejs-introduction-youll-ever-need-d969a47ef219>`_" Google, Web 4/4/2019
 
-.. [BeforeNodeJS] Node.JS "`Before NodeJS <https://www.quora.com/Before-Node-js-was-created-how-did-JavaScript-communicate-with-a-database>`_" Google, Web 4/4/2019
+.. [BeforeNodeJS] Before Node.JS "`Before NodeJS <https://www.quora.com/Before-Node-js-was-created-how-did-JavaScript-communicate-with-a-database>`_" Google, Web 4/4/2019
 
-.. [Single Thread Mechanism] Node.JS "`Single Thread <https://codeburst.io/how-node-js-single-thread-mechanism-work-understanding-event-loop-in-nodejs-230f7440b0ea>`_" Google, Web 4/4/2019
+.. [Single Thread Mechanism] Node.JS Code "`Single Thread <https://codeburst.io/how-node-js-single-thread-mechanism-work-understanding-event-loop-in-nodejs-230f7440b0ea>`_" Google, Web 4/4/2019
