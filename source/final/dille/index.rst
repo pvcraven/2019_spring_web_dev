@@ -231,6 +231,6 @@ Sources
 
 .. [NodeJSTutorials] Node.JS "`Tutorials <https://codeburst.io/the-only-nodejs-introduction-youll-ever-need-d969a47ef219>`_" Google, Web 4/4/2019
 
-.. [BeforeNodeJS] Node.JS "'Before NodeJS <https://www.quora.com/Before-Node-js-was-created-how-did-JavaScript-communicate-with-a-database>'_" Google, Web 4/4/2019
+.. [BeforeNodeJS] Node.JS "`Before NodeJS <https://www.quora.com/Before-Node-js-was-created-how-did-JavaScript-communicate-with-a-database>`_" Google, Web 4/4/2019
 
-.. [Single Thread Mechanism] Node.JS "'Single Thread <https://codeburst.io/how-node-js-single-thread-mechanism-work-understanding-event-loop-in-nodejs-230f7440b0ea>'_" Google, Web 4/4/2019
+.. [Single Thread Mechanism] Node.JS "`Single Thread <https://codeburst.io/how-node-js-single-thread-mechanism-work-understanding-event-loop-in-nodejs-230f7440b0ea>`_" Google, Web 4/4/2019
