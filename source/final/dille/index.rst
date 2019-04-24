@@ -55,7 +55,7 @@ JavaScript Engine makes the library and code execute very fast. Its I/O is
 Asynchronous and Event Driven which makes the APIs of Node.js all asynchronous
 and non-blocking. This makes it so a Node.js server will never have to wait for
 an API to return data. Since Node.js has the event mechanism that helps the
-server respond in a non-blocking way it makes Node.js very scalable.
+server respond in a non-blocking way it makes Node.js very scalable. [WhyUseNodeJS]_
 
 Along with these features of Node.js, it is also single threaded, has no
 buffering, and is open source. All of these are great features that give Node.js
@@ -124,9 +124,9 @@ publishes the data to the thread pool. This is the main difference between
 Node.js and other servers. Other servers have to create a new thread every
 time you want to connect to a server. With Node.js, it receives all the
 requests on a single thread and then delegates them to be handled by
-background workers. [WhyUseNodeJS]_
+background workers. [Single Thread Mechanism]_
 
-Single thread mechanism code example [Single Thread Mechanism]_
+Single thread mechanism code example
 ------------------------------------
 
 .. code-block:: JavaScript
@@ -157,7 +157,7 @@ thousands of connections with a single server without having to manage thread
 concurrency. This is significantly more efficient and reduces a large number of
 bugs that would occur if managing thread concurrency was implemented. [IntroNodeJS]_
 
-Sample code [NodeJSTutorials]_
+Sample code
 -----------
 
 .. code-block:: JavaScript
