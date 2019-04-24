@@ -124,7 +124,7 @@ publishes the data to the thread pool. This is the main difference between
 Node.js and other servers. Other servers have to create a new thread every
 time you want to connect to a server. With Node.js, it receives all the
 requests on a single thread and then delegates them to be handled by
-background workers. [Single Thread Mechanism]_
+background workers. [WhyUseNodeJS]_
 
 Single thread mechanism code example
 ------------------------------------
@@ -143,6 +143,7 @@ Single thread mechanism code example
     console.log('socket closed!');
     });
     });
+    [Single Thread Mechanism]_
 
 
 What makes it unique
