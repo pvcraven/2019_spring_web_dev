@@ -126,7 +126,7 @@ time you want to connect to a server. With Node.js, it receives all the
 requests on a single thread and then delegates them to be handled by
 background workers. [WhyUseNodeJS]_
 
-Single thread mechanism code example
+Single thread mechanism code example [Single Thread Mechanism]_
 ------------------------------------
 
 .. code-block:: JavaScript
@@ -143,7 +143,7 @@ Single thread mechanism code example
     console.log('socket closed!');
     });
     });
-    [Single Thread Mechanism]_
+
 
 
 What makes it unique
@@ -157,7 +157,7 @@ thousands of connections with a single server without having to manage thread
 concurrency. This is significantly more efficient and reduces a large number of
 bugs that would occur if managing thread concurrency was implemented. [IntroNodeJS]_
 
-Sample code
+Sample code [NodeJSTutorials]_
 -----------
 
 .. code-block:: JavaScript
@@ -192,7 +192,7 @@ Sample code
 	server = http.createServer(makeServer);
 	server.listen(3000,()=>{
 	 console.log('Node server created at port 3000');
-	}); [NodeJSTutorials]_
+	});
 
 As you can see in the example above, this is a simple example of Node.js code.
 If you go to “localhost:3000” and then go to “localhost:3000/about” or any of
