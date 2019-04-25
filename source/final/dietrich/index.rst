@@ -3,14 +3,16 @@ Data-Driven Documents
 
 D3.js is a JavaScript library that allows developers to easily manipulate
 documents based on data. It does this through a combination of HTML, CSS, and
-SVG creation and manipulation. The main point of D3 is providing a simple way to
-create powerful visualizations in a web page from data. It does not attempt to
-solve every problem with front-end development, but rather focuses on providing
-a solution for efficiently manipulating documents based on the data provided. D3
-is extremely fast and is able to support large datasets being manipulated
-because it has little overhead. D3 allows developers to more easily integrate
-the use of data into their web page without hurting the performance of the page
-itself.
+SVG creation and manipulation. The main point of D3, which stands for data
+driven documents, is providing a simple way to create powerful visualizations in
+a web page from data. It does not attempt to solve every problem with front-end
+development, but rather focuses on providing a solution for efficiently
+manipulating documents based on the data provided. D3 is extremely fast and is
+able to support large datasets being manipulated because it has little overhead.
+D3 allows developers to more easily integrate the use of data into their web
+page without hurting the performance of the page itself. This article describes
+the history of D3 and how it is used, as well as some examples of what can be
+done with the technology.
 
 [Bostock1]_
 
@@ -18,7 +20,7 @@ History
 -------
 
 D3.js was initially released in 2011 by Michael Bostock as well as a number of
-his colleagues from the Stanford Visualization Group (Murray). It was created as
+his colleagues from the Stanford Visualization Group. It was created as
 a successor to the Protovis framework, which was also created by the same group.
 The main focus of D3 is to assist with data visualization on the web, and its
 goal is to provide the functionality of tools like excel, while also giving the
@@ -61,9 +63,9 @@ Selections is the main functionality that is provided by D3 that leads to a
 number of possibilities. These selections are used to simplify the process of
 manipulating elements within a web page. They can be created by using anything
 from element tags, class, id, or even containment, and is greatly simplified
-through the use of the D3 library (Bostock2). For example, if you wanted to set
-all of the header tags in a document to pink using the normal DOM, your code
-would look like the following:
+through the use of the D3 library. For example, if you wanted to set
+all of the header tags in a document to pink using the normal DOM, or Document
+Object Model, your code would look like the following:
 
 .. code-block:: javascript
     :Caption: DOM pink headers
@@ -173,13 +175,13 @@ seen below.
     var width = innerWidth, height = 500;
 
     var svg = d3.select("#interactive-svg").append("svg")
-        .attr("width", width)
+        .attr("width", width)           // Setting attributes of the SVG
         .attr("height", height);
 
     svg.append("rect")
         .attr("width", width)
         .attr("height", height)
-        .on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
+        .on("ontouchstart" in document ? "touchmove" : "mousemove", particle); // On cursor move with tertiary if/else statement
 
 Once the ``<rect>`` has been created, then the ``particle()`` function must be
 created. The function will use the method ``d3.mouse(this)`` to determine the
