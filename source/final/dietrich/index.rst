@@ -181,7 +181,7 @@ seen below.
     svg.append("rect")
         .attr("width", width)
         .attr("height", height)
-        .on("ontouchstart" in document ? "touchmove" : "mousemove", particle); // On cursor move with tertiary if/else statement
+        .on("ontouchstart" in document ? "touchmove" : "mousemove", particle); // On cursor move with ternary if/else statement
 
 Once the ``<rect>`` has been created, then the ``particle()`` function must be
 created. The function will use the method ``d3.mouse(this)`` to determine the
