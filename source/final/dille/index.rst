@@ -21,7 +21,7 @@ working at Joyent, a software company that specializes in application virtualiza
 and cloud computing, in 2009. The first release of Node.js only supported Linux and
 Mac OS. Two years later the Node Package Manager, or NPM, was released which
 allowed for the sharing of open source libraries. Dahl was not happy with the
-way Apache Http servers handled concurrent connections and the way code was
+way Apache HTTP servers handled concurrent connections and the way code was
 being created. This inspired him to create the Node.js project which he publicly
 showed at the inaugural European JSConf on November 8, 2009. This showing gave
 him and Node.js a lot of publicity and won him a standing ovation. [IntroNodeJS]_
