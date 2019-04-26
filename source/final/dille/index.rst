@@ -44,7 +44,7 @@ applications that run across distributed devices.” This server-side platform
 is built on Google Chrome’s JavaScript V8 Engine. Node.js is an open source,
 cross-platform runtime environment for developing server-side and networking
 applications. Most Node.js applications are written in JavaScript but can run on
-multiple operating systems like Windows, Linux, and X. [Node.js Introduction]_
+multiple operating systems like Windows, Linux, and X. [Node.jsIntroduction]_
 
 Features
 --------
@@ -60,7 +60,7 @@ server respond in a non-blocking way it makes Node.js very scalable. [WhyUseNode
 Along with these features of Node.js, it is also single threaded, has no
 buffering, and is open source. All of these are great features that give Node.js
 the leg up against its competitors and ultimately is a top choice for this kind
-of software. [Node.js Introduction]_
+of software. [Node.jsIntroduction]_
 
 Who uses it
 -----------
@@ -79,7 +79,7 @@ makes it very easy to add nodes to the existing system. Node.js is also very
 easy to learn. Since JavaScript is such a popular programming language, most
 developers already have knowledge on it and makes it much easier to start using
 Node.js at the back-end. This saves a lot of time learning how to use Node.js
-because most people will already have experience with JavaScript. [NodeJS web app]_
+because most people will already have experience with JavaScript. [NodeJSWebApp]_
 
 Node.js includes other benefits like Fullstack JS, which offers a high
 performance, support from a large and active community, caching, freedom
@@ -95,7 +95,7 @@ API which is a waste of time and very repetitive and inefficient. Node.js also
 does not have a strong library support system. Node.js has also adapted an
 asynchronous programming model. With there being more advantages for
 developers in comparison to other languages, Node.js is being adopted by more
-and more business organizations and is gaining extreme popularity. [NodeJS web app]_
+and more business organizations and is gaining extreme popularity. [NodeJSWebApp]_
 
 Before NodeJS
 -------------
@@ -124,7 +124,7 @@ publishes the data to the thread pool. This is the main difference between
 Node.js and other servers. Other servers have to create a new thread every
 time you want to connect to a server. With Node.js, it receives all the
 requests on a single thread and then delegates them to be handled by
-background workers. [Single Thread Mechanism]_
+background workers. [SingleThreadMechanism]_
 
 Single thread mechanism code example
 ------------------------------------
@@ -223,9 +223,9 @@ Sources
 
 .. [IntroNodeJS] Node.JS Intro "`Introduction <https://nodejs.dev/introduction-to-nodejs>`_" Google, Web 4/2/2019
 
-.. [Node.js Introduction] Node.JS Introduction "`Introductions <https://www.tutorialspoint.com/nodejs/nodejs_introduction.htm>`_" Google, Web 4/4/2019
+.. [Node.jsIntroduction] Node.JS Introduction "`Introductions <https://www.tutorialspoint.com/nodejs/nodejs_introduction.htm>`_" Google, Web 4/4/2019
 
-.. [NodeJS web app] Node.JS Advantages "`Advantages and disadvantages <https://www.mindinventory.com/blog/pros-and-cons-of-node-js-web-app-development/>`_" Google,Web 4/4/2019
+.. [NodeJSwebapp] Node.JS Advantages "`Advantages and disadvantages <https://www.mindinventory.com/blog/pros-and-cons-of-node-js-web-app-development/>`_" Google,Web 4/4/2019
 
 .. [WhyUseNodeJS] Why use Node.JS "`Why use NodeJS <https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js>`_" Google, Web 4/4/2019
 
@@ -233,4 +233,4 @@ Sources
 
 .. [BeforeNodeJS] Before Node.JS "`Before NodeJS <https://www.quora.com/Before-Node-js-was-created-how-did-JavaScript-communicate-with-a-database>`_" Google, Web 4/4/2019
 
-.. [Single Thread Mechanism] Node.JS Code "`Single Thread <https://codeburst.io/how-node-js-single-thread-mechanism-work-understanding-event-loop-in-nodejs-230f7440b0ea>`_" Google, Web 4/4/2019
+.. [SingleThreadMechanism] Node.JS Code "`Single Thread <https://codeburst.io/how-node-js-single-thread-mechanism-work-understanding-event-loop-in-nodejs-230f7440b0ea>`_" Google, Web 4/4/2019
