@@ -28,7 +28,7 @@ him and Node.js a lot of publicity and won him a standing ovation. [IntroNodeJS]
 
 In June 2011, Microsoft worked with Joyent to implement a Windows version of
 Node.js. In 2012, Dahl stepped aside and promoted the creator of NPM Isaac
-Schlueter to take over the project. Two years later, Fedor Indutny started a
+Schlueter to take over the project. Two years later, Fedor Industry started a
 fork of Node.js called io.js. This caused much conflict at Joyent so a neutral
 Node.js foundation was created. In June 2015, the Node.js and io.js communities
 decided to work together under this newly formed Node.js foundation. [IntroNodeJS]_
@@ -81,7 +81,7 @@ developers already have knowledge on it and makes it much easier to start using
 Node.js at the back-end. This saves a lot of time learning how to use Node.js
 because most people will already have experience with JavaScript. [NodeJSWebApp]_
 
-Node.js includes other benefits like Fullstack JS, which offers a high
+Node.js includes other benefits like Full stack JS, which offers a high
 performance, support from a large and active community, caching, freedom
 to develop apps, commonly used tools, handles requests simultaneously, and is
 highly extensible.
@@ -197,7 +197,7 @@ Sample code
 As you can see in the example above, this is a simple example of Node.js code.
 If you go to “localhost:3000” and then go to “localhost:3000/about” or any of
 the other examples above, it will take you to separate pages with different
-messages. If you do something like “localhost:3000/pagedoesntexist” it will
+messages. If you do something like “localhost:3000/PageDoesNotExist” it will
 give you an error page because we did not make this above in the code. This
 makes it so we can easily start a server, but this is inefficient to do every
 time you need a new web page on your server. This is just a simple example of
@@ -208,7 +208,7 @@ Conclusion
 ----------
 
 Node.js has transformed the usability of JavaScript, making Node.js a complete
-and efficient programming langauge. Its I/O is Asynchronous and Event Driven
+and efficient programming language. Its I/O is Asynchronous and Event Driven
 which makes the APIs of Node.js all asynchronous and non-blocking and increases
 its overall efficiency. With all the advantages that Node.js brings to programming,
 its obvious to see why many large corporations take advantage of its benefits.
