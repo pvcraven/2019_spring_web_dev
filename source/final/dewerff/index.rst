@@ -15,7 +15,7 @@ In simple terms, ReactJS works by storing the state of an application internally
 
 To be able to use ReactJS, we will use Javascript; more specifically, a React extension called Javascript eXtension, known as JSX. This extension allows us to write JavaScript that looks like HTML. To see this, we can look at this simple Hello World component:
 
-.. code-block:: javascript
+.. code-block:: text
   
   class HelloWorld extends React.Component {
     render() {
@@ -27,7 +27,7 @@ To be able to use ReactJS, we will use Javascript; more specifically, a React ex
 
 Observing the code, it appears as though the render() function is returning HTML, however it is JSX. At runtime, the JSX is then translated to regular Javascript:
 
-.. code-block:: javascript
+.. code-block:: text
 
 	class HelloWorld extends React.Component {
 	  render() {

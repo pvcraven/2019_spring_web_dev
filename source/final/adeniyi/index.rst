@@ -1,67 +1,74 @@
 React JS - STA
 ===============
 
-    React started as a version of PHP, called XHP, that was created by Facebook.
-    Engineer Jordan Walke wanted to be able to create dynamic applications on the
-    web, so he found a way to implement XHP in a browser along with javascript.
-    Very soon after, Facebook officially started using React, and it has grown in
-    popularity in the following years [reactBackground]_.
+React is a declarative, efficient, and flexible JavaScript library. Created
+by facebook engineer Jordan Walke, it was meant to help build user interfaces
+with a focus on being fast and flexible. React has helped expand the
+way front end developers interact with various user interfaces,
+allowing them to make complex user interfaces in very small code sizes. This
+tutorial will introduce you to the basics of React and show you how to create a
+Tic Tac Toe game.
 
 History of React
 ------------------
 
-    React is a declarative, efficient and flexible JavaScript library. Created
-    by facebook engineer Jordan Walke, it was meant to help build user interfaces,
-    with a focus on being fast and flexible. React has really helped expand the
-    way front end developers interact with various different user interfaces,
-    allowing them to make complex user interfaces in very small code sizes.
+React started as a version of PHP, called XHP, that was created by Facebook.
+Engineer Jordan Walke wanted to be able to create dynamic applications on the
+web, so he found a way to implement XHP in a browser along with javascript.
+Very soon after, Facebook officially started using React, and it has grown in
+popularity in the following years [reactBackground]_.
 
-    React was first used by Facebook and has continued to grow over the years.
-    In May 2013, Facebook announced that it would open source React and its
-    popularity began to skyrocket. Fast forward to 2015 and many companies had
-    begun to show real interest in React. Flipboard, Netflix and AirBnB were just
-    a few of the earliest supporters.
+React was first used by Facebook and has continued to grow over the years.
+In May 2013, Facebook announced that it would open source React and its
+popularity began to skyrocket. Fast forward to 2015 and many companies had
+begun to show real interest in React. Flipboard, Netflix, and AirBnB were just
+a few of the earliest supporters.
 
 Fundamentals of React.js
 ------------------------
-    * Babel & JSX (Use references)
 
-        Babel is a JavaScript compiler that is mainly used to convert codes into
-        compatible versions of JavaScript in different browsers. Some of the main
-        uses of Babel include:
+Babel & JSX (Use references)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-        1) Transforming Syntax
+    Babel is a JavaScript compiler that is mainly used to convert codes into
+    compatible versions of JavaScript in different browsers. Some of the main
+    uses of Babel include:
 
-        2) Polyfill features that are missing in your target environment
+    * Transforming Syntax
 
-        3) Source Code Transformations
+    * Polyfill features that are missing in your target environment
 
-        JSX is a separate technology from React, and is completely optional in
-        building a React Application. However, it does make everything much simpler
-        when you combine the two.
+    * Source Code Transformations
 
-        React uses JSX because it is fast. JSX performs optimization while it
-        compiles code. It is also type-safe, allowing errors to be caught during
-        compilation rather than at runtime. Finally it is easy to learn, especially
-        for individuals who have worked with HTML [w3React]_.
+    JSX is a separate technology from React, and is completely optional in
+    building a React Application. However, it does make everything much simpler
+    when you combine the two.
 
-    * Components
+    React uses JSX because it is fast. JSX performs optimization while it
+    compiles code. It is also type-safe, allowing errors to be caught during
+    compilation rather than at runtime. Finally, it is easy to learn, especially
+    for individuals who have worked with HTML [w3React]_.
 
-        A component is a JavasScript class that may accept inputs(much like a
-        Java function). This class then returns a React element telling how the
-        UI should look. In React, everything is considered a component. They are
-        the building blocks of any app in React. Here is an example of a Greeting
-        component:
+Components
+~~~~~~~~~~
 
-            ``const Greeting = () => <h1> Hello World! It is beautiful today!</h1>``
+    A component is a JavasScript class that may accept inputs (much like a
+    Java function). This class then returns a React element telling how the
+    user interface(UI) should look. In React, everything is considered a component.
+    They are the building blocks of any app in React. Here is an example of a
+    Greeting component:
 
-        This component returns a greeting that prints out "Hello World! It is a
-        beautiful day today!"
+        ``const Greeting = () => <h1> Hello World! It is beautiful today!</h1>``
 
-    * Handling Data (Props vs State)
-        In React there are 2 different types of data. The first is a prop. Props
-        give us the ability to write a component one time and then reuse it for
-        different cases. Here is how we would pass props to a component:
+    This component returns a greeting that prints out "Hello World! It is a
+    beautiful day today!"
+
+Handling Data (Props vs State)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    In React, there are 2 different types of data. The first is a prop. Props
+    give us the ability to write a component one time and then reuse it for
+    different cases. Here is how we would pass props to a component:
 
 .. code-block:: text
 
@@ -111,8 +118,8 @@ want the data in your app to change based on something like user input.
             }
         }
 
-Here, we initialized state(line 88-92), modified the state using updateMessage()
-(line 93-99), and added a button to call the updateMessage function. The button
+Here, we initialized state first, modified the state using updateMessage(),
+and added a button to call the updateMessage function. The button
 then changes the message value when we click it [learnReact]_.
 
 
@@ -146,7 +153,7 @@ when we click it. (We will use the arrow function syntax () => for event handler
     }
 
 
-Next we will use state to help the Square component know that it got clicked and
+Next, we will use state to help the Square component know that it got clicked and
 fill it with an "X". We will also change the Squares render method to show the
 state's value when we click it.
 
@@ -193,7 +200,7 @@ that correspond with the 9 squares of the board.
 
 Each Square will not obtain a value of 'X', 'O', or null if it is empty.
 
-Now in order for the Square to update the Board when clicked by the user, we need
+Now, in order for the Square to update the Board when clicked by the user, we need
 to make a change in the renderSquare method of Board to include an onClick listener.
 We will also need to change the Square component to accept the two props from Board,
 ``value`` and ``onClick``.
@@ -220,7 +227,7 @@ We will also need to change the Square component to accept the two props from Bo
         );
       }}
 
-When you try and click Square now, you should get an error. This is because the
+When you try and click a Square, you should get an error. This is because the
 ``handleClick()`` has not been defined yet in Board. Edit your code to look
 similar to this:
 
@@ -269,8 +276,8 @@ Change the Square class to look like this function:
       );
     }
 
-Finally, we want to be able to take turns(alternate between X's and O's). By default
-we can set the first move to be "X".
+Finally, we want to be able to take turns (alternate between X's and O's). By
+default we can set the first move to be "X".
 
 .. code-block:: text
 
@@ -312,6 +319,7 @@ Lastly (I promise!!), we want to declare a winner after the game is over. Put th
 helper function at the end of the file to allow your program to calculate a winner.
 
 .. code-block:: text
+
     function calculateWinner(squares) {
       const lines = [
         [0, 1, 2],
@@ -362,9 +370,9 @@ method to ignore a click if we have a winner, or that Square is filled already.
 Now you should have a functional working tic tac toe game!! Hopefully you have
 now learned a little more about the basics of React and why it works. Here's a
 cleaned up version of the code I've shared: [TicTacReact]_ Now there's
-other functionality that could be added(storing history of moves, showing past
-moves etc), but that's for you to play with! However,this link will take you through
-some more of the code if you wanted to explore further [reactTutorial]_.
+other functionality that could be added (storing history of moves, showing past
+moves etc), but that's for you to play with! However, this link will take you
+through some more of the code if you wish to explore further [reactTutorial]_.
 
 
 
@@ -373,10 +381,9 @@ What is the future of React?
 
 React is a relatively new technology, only gaining popularity withing the last
 5 years. With the amount of support React has and developers interested in using
-it, I believe it will stick around for awhile. I don't see it expanding to the level
-of other languages like Java or Python, but it definitely has its place in the
-programming world [futureReact]_. Here are just a few of the companies that
-actively use React today:
+it, React will stick around for awhile. It's simplicity, and conciseness has
+shown that it definitely has its place in the programming world [futureReact]_.
+Here are just a few of the companies that actively use React today:
 
     * Facebook
     * WhatsApp
@@ -388,13 +395,13 @@ actively use React today:
 Conclusion
 ----------
 
-    As we have now learned, React is especially helful for creating complex user
-    interfaces. React make it much simpler to write code for applications and has
-    already become one of the most popular libraries for web development. With its
-    popularity continually growing since its creation, I do not see React falling
-    out of relevance. While I do not believe it will reach the levels of other
-    languages like Python or Java, React will be very resourceful for years to
-    come.
+As we have now learned, React is especially helpful for creating complex user
+interfaces. React makes it much simpler to write code for applications and has
+already become one of the most popular libraries for web development. With its
+popularity continually growing since its creation, it is hard to see React falling
+out of relevance. While it is not likely  that it will reach the levels of other
+languages like Python or Java, React will be very resourceful for years to
+come.
 
 
 Works Cited

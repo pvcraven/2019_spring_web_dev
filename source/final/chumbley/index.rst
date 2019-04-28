@@ -89,8 +89,8 @@ Vue Directives
 You have probably noticed that double braces ``{{ }}`` are used as place-holders
 for the data that is rendered from the javascript. With Vue.js, you can also
 call directives, which are HTML attributes, with the prefix ``v-`` [w3schoolsVue]_.
-The ``v-`` prefix indicates that the directive is a special attribute provided by
-the Vue.js library. The example below will walk you through a few examples of
+The ``v-`` prefix indicates that the directive is a special attribute provided
+by the Vue.js library. The example below will walk you through a few examples of
 different Vue.js directives.
 
 HTML Example
@@ -197,10 +197,10 @@ prints them on to the page.
 Component Composition
 ---------------------
 
-Another important concept to Vue is the Component System. The Component
-System is this abstract idea that you can build large scale application with
-small, self-contained, and reusable parts. [VueIntroduction]_ Let's take a
-look at an example.
+Another important concept to Vue is the Component System. The Component System
+is this abstract idea that you can build large scale application with small,
+self-contained, and reusable parts. [VueIntroduction]_ Let's take a look at an
+example.
 
 HTML Example
 
@@ -216,7 +216,8 @@ HTML Example
 JavaScript Example
 
 .. code-block:: JavaScript
-    :caption: Vue Loops and Conditionals Example JavaScript
+    :caption: Vue Components Example JavaScript
+
         Vue.component('button-counter', {
             data: function () {
                 return {
@@ -231,18 +232,17 @@ JavaScript Example
 In the above example, we have created a component called ``button-counter`` in
 the JavaScript code. This component creates a button that keeps track of how
 many times it has been pushed. In the HTML code, the component is called upon
-three times which creates three separate buttons with the same funtion. Each
+three times which creates three separate buttons with the same function. Each
 button keeps track of its own count and not the overall count.
 
 Conclusion
 ----------
 
-This has been a short introduction to Vue.js which has shown you some of the
-key attribute of Vue.js. Declarative rendering makes the Document Object
-Model(DOM) reactive to the data. Each time the data is changes, the DOM is
-updated as well. Component composition is another big attribute of Vue.js.
-Components allow you to make large scale applications with small, reusable
-parts.
+This has been a short introduction to Vue.js which has shown you some of the key
+attribute of Vue.js. Declarative rendering makes the Document Object Model(DOM)
+reactive to the data. Each time the data is changes, the DOM is updated as well.
+Component composition is another big attribute of Vue.js. Components allow you
+to make large scale applications with small, reusable parts.
 
 Citation
 --------

@@ -1,37 +1,6 @@
 ReactJS Project
 ======================
 
-Outline
--------
-* Introduction
-    * What the topic is about. Cover highlight points.
-    * Last sentence should be a thesis statement!
-    * What is ReactJS, why the UI Library is popular?
-
-* History of ReactJS / Library of Code
-    * Paragraph 1
-    * Paragraph 2
-    * Paragraph 3
-
-* ReactJS Example Code
-    * Paragraph 1
-    * Paragraph 2
-    * Paragraph 3
-
-* ReactJS Notable Features
-    * Paragraph 1
-    * Paragraph 2
-    * Paragraph 3
-
-* Reception of ReactJS
-    * Paragraph 1
-    * Paragraph 2
-    * Paragraph 3
-
-* Conclusion
-    * Restate Thesis Statement
-    * Tie everything learned together
-
 Introduction to ReactJS
 -----------------------
 ReactJS is a JavaScript library that specializes in building user interfaces.
@@ -81,13 +50,13 @@ alternative approaches, with data binding". From this quote, Hunt describes that
 even though these JavaScript libraries are similar the way they are created
 syntactically is different, which gives ReactJS a leg up on other competitors.
 
-According to the [TheNewStack]_, developers from ReactJS also helped minimize
-malicious Cross Site Scripting (XSS) attacks that occur within the JavaScript
-language. XSS attacks occur when an attacker enters content that is embedded or
-hidden within the JavaScript code that is intended to steal or compromise the
-viewer's information. To prevent these attacks, ReactJS was able to scrub
-the viewers submitted information, making it so that the attacker comes up empty
-handed.
+According to the [TheNewStackArticle]_, developers from ReactJS also helped
+minimize malicious Cross Site Scripting (XSS) attacks that occur within the
+JavaScript language. XSS attacks occur when an attacker enters content that is
+embedded or hidden within the JavaScript code that is intended to steal or
+compromise the viewer's information. To prevent these attacks, ReactJS was able
+to scrub the viewers submitted information, making it so that the attacker comes
+up empty handed.
 
 When it comes to ReactJS, the developers for the library wanted it to have a
 different look and presence compared to other popular UI developing languages.
@@ -99,10 +68,10 @@ ReactJS Example Code
 --------------------
 Tic-Tac-Toe Tutorial
 ~~~~~~~~~~~~~~~~~~~~
-This particular block of code derives from the ReactJS tutorial. This code lets
-the user create and interact with a tic-tac-toe board. This particular block of
-code is organized into different classes. Here is an example of how the first
-couple of functions operate.
+This particular block of code derives from the [ReactJSTutorial]_. This code
+lets the user create and interact with a tic-tac-toe board. This particular
+block of code is organized into different classes. Here is an example of how the
+first couple of functions operate.
 
 .. code-block:: text
     :caption: Starting Tic-Tac-Toe: Square & Board Functions
@@ -504,13 +473,14 @@ morph the two languages together, which made it tricky at first for developers
 to understand.
 
 Another criticism that faced ReactJS came from its terms and conditions clause
-right after its initial launch. According to [Medium]_, Facebook stated that if
-you were to agree to its terms and conditions, you did not have the right to sue
-Facebook or its subsidiaries, but Facebook and its subsidiaries could sue the
-user if they believed the someone was infringing on their patent rights. This
-particular clause was vague and didn't sit well with developers. Many developers
-and companies thought that investing in ReactJS would be too much of a risk for
-them, that their industries could be hurt if they built with ReactJS.
+right after its initial launch. According to [MediumArticle]_, Facebook stated
+that if you were to agree to its terms and conditions, you did not have the
+right to sue Facebook or its subsidiaries, but Facebook and its subsidiaries
+could sue the user if they believed the someone was infringing on their patent
+rights. This particular clause was vague and didn't sit well with developers.
+Many developers and companies thought that investing in ReactJS would be too
+much of a risk for them, that their industries could be hurt if they built with
+ReactJS.
 
 As people started to distance themselves from the JavaScript library, Facebook
 came out and said that they would change their patent clause. According to
@@ -541,7 +511,7 @@ sophisticated user interfaces for developers around the world.
 
 Citations
 ---------
-.. [ReactJS] "`Tutorial: Intro to React <https://reactjs.org/tutorial/tutorial.html>`_"
+.. [ReactJSTutorial] "`Tutorial: Intro to React <https://reactjs.org/tutorial/tutorial.html>`_"
     React. Facebook Inc, Web. 4 Apr. 2019.
 
 .. [ReactJSComponents] "`Components and Props in ReactJS <https://reactjs.org/docs/components-and-props.html#props-are-read-only>`_"
@@ -556,13 +526,13 @@ Citations
 .. [InfoWorld] Krill, Paul. "`React: Making Faster, Smoother UIs for data-driven Web Apps <https://www.infoworld.com/article/2608181/react--making-faster--smoother-uis-for-data-driven-web-apps.html>`_"
     InfoWorld Tech Watch, InfoWorld, Web. 15 May 2014.
 
-.. [TheNewStack] Dawson, Chris. "`JavaScript's History and How it Led to React JS <https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/>`_"
+.. [TheNewStackArticle] Dawson, Chris. "`JavaScript's History and How it Led to React JS <https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/>`_"
     The New Stack Technology, The New Stack, Web. 25 Jul. 2014.
 
 .. [InfoQ] Hemel, Zef. "`Facebook's React JavaScript User Interfaces Library Receives Mixed Reviews <https://www.infoq.com/news/2013/06/facebook-react>`_"
     InfoQ News, InfoQ, Web. 3 Jun. 2013.
 
-.. [Medium] Berkana. "`A Compelling Reason Not to Use ReactJS <https://medium.com/bits-and-pixels/a-compelling-reason-not-to-use-reactjs-beac24402f7b>`_"
+.. [MediumArticle] Berkana. "`A Compelling Reason Not to Use ReactJS <https://medium.com/bits-and-pixels/a-compelling-reason-not-to-use-reactjs-beac24402f7b>`_"
     Bits and Pixels, A Medium Corporation, Web. 24 May 2015.
 
 .. [FacebookCode] Pearce, James. "`Updating Our Open Source Patent Grant <https://code.fb.com/open-source/updating-our-open-source-patent-grant/>`_"

@@ -21,6 +21,7 @@ are automatically tracked. In React, developers have to add additional keywords
 to avoid renders of the whole DOM. Vue achieves will only render the necessary components
 when changed.
 
+* Why to use it (rising popularity)
 
 It is possible to use Vue.js without installing it by using their CDN in a <script> tag:
 
@@ -62,7 +63,9 @@ boilerplate code after it covers the basics of Vue.js
 
 How to use Vue.js
 -----------------
+
 Vue begins when a Vue instance is initialized.
+
 .. code-block:: javascript
     :Caption: Initialize the Vue instance
 
@@ -78,6 +81,7 @@ that can be passed in. The first and most common option is the data object.
 
 
 Data can be passed into a Vue instance like this:
+
 .. code-block:: javascript
     :Caption: Data option
 
@@ -101,9 +105,11 @@ To access instance properties and methods, use the $ symbol like so:
 Take advantage of all of Vue's instance methods using its API reference.
 
 * Vue Templates
+
 One of Vue's top highlights is the template syntax. Instead of using JSX like
 React.js (which requires prior knowledge of ES6), Vue uses templates that mimic
 HTML syntax. Data can be interpolated using the "double mustache" syntax.
+
 .. code-block:: html
     :Caption: Templates
 
@@ -118,6 +124,7 @@ A powerful way of using templates is taking advantage of Vue directives.
 A directive is a special HTML attribute using ``v-`` such as ``v-if``.
 If data has a list, ``v-for`` can be used to iterate through it and easily
 repeat HTML elements.
+
 .. code-block:: html
     :Caption: v-for
 
@@ -166,9 +173,13 @@ When initializing Vue instances, use the el option to associate the instance
 with the div id inside the html.
 
 * Computed Properties
+
 * Event Handling
+
 * Animations [Tutorial]_
+
 * Basic Hello Vue Example
+
 In this example, the project structure will be covered and some basic syntax will be explained.
 First and foremost, here is a picture of what the directory structure should look like:
 
