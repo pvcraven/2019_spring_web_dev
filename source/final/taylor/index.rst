@@ -1,8 +1,8 @@
-ReactJS Project
-======================
+ReactJS - MWT
+=============
 
-Introduction to ReactJS
------------------------
+Introduction
+------------
 ReactJS is a JavaScript library that specializes in building user interfaces.
 This JavaScript library makes it so a programmer can create user interfaces for
 their programming application or to update and render the proper components in
