@@ -12,30 +12,13 @@ a component based JavaScript library that focuses on building encapsulated
 components that are able to manage their own state which can help the user
 compose some of the most easiest or most complex user interfaces.
 
-Over the years, several social media platforms like Facebook and Instagram have
-endorsed the JavaScript library and have implemented it into their applications.
-However, within the last five years the development of the this library has come
-under scrutiny. Disputes started to arise over Facebook's licensing agreement
-with the ReactJS and how the user agreement was vaguely written. The terms and
-conditions for the JavaScript library made it so that you had the inability
-to sue Facebook and its subsidiaries, but Facebook and its subsidiaries could
-sue you for patent infringement, if that issue were to arise.
-
-Since this JavaScript library is open sourced, it made it difficult for
-developers to want to work with ReactJS. Developers feared that even if they
-tinkered with the library, that they could be sued by Facebook for patent
-infringement, which was never the developer's intent. Even though ReactJS has
-had its issues in the development world, its benefits of creating simple UI's is
-something that most individuals should realize before judging the JavaScript
-library.
-
 History of ReactJS
 ------------------
 ReactJS began in 2011 with a couple of software engineers from Facebook. One of
 those engineers was Jordan Walke who helped integrate ReactJS into Facebook's
 news feed style set up. After ReactJS was implemented into Facebook's news feed
 set up, Instagram followed suit as well by adding ReactJS to their application
-as well a year later in 2012. After the two social media giants endorsed this
+a year later in 2012. After the two social media giants endorsed this
 JavaScript library, the code was open sourced to the public in 2013. Pete Hunt
 is another software developer, like Jordan Walke, who has been a core member of
 the ReactJS software development team.
@@ -45,10 +28,11 @@ programming has undergone in the last few years. Hunt stated "We've seen a shift
 toward what we like to call reactive programming. Meteor and Angular are
 examples of that. When your data updates, your UI is automatically updated to
 reflect that, and the system manages that for you. The difference with React is
-the way that you program it is much more like a game engine, as opposed to these
-alternative approaches, with data binding". From this quote, Hunt describes that
-even though these JavaScript libraries are similar the way they are created
-syntactically is different, which gives ReactJS a leg up on other competitors.
+the way that you program it, is much more like a game engine, as opposed to
+these alternative approaches, with data binding". From this quote, Hunt
+describes that even though these JavaScript libraries are similar the way they
+are created syntactically is different, which gives ReactJS a leg up on other
+competitors.
 
 According to the [TheNewStackArticle]_, developers from ReactJS also helped
 minimize malicious Cross Site Scripting (XSS) attacks that occur within the
@@ -64,10 +48,8 @@ ReactJS makes it look like you are coding for a game engine and tries to use
 syntax that might help the programmer understand what he or she is trying to
 code.
 
-ReactJS Example Code
---------------------
-Tic-Tac-Toe Tutorial
-~~~~~~~~~~~~~~~~~~~~
+ReactJS Tic-Tac-Toe Tutorial
+----------------------------
 This particular block of code derives from the [ReactJSTutorial]_. This code
 lets the user create and interact with a tic-tac-toe board. This particular
 block of code is organized into different classes. Here is an example of how the
@@ -98,8 +80,8 @@ first couple of functions operate.
         }
     }
 
-From this code block, a function is created that allows the user clicks a button
-once the game begins. The Board class is created which calls the Square
+From this code block, a function is created that allows the user to click a
+button that starts the game. The Board class is created which calls the Square
 function which allows the user to click a square within the game board. By
 clicking one of these squares, a user either puts down an X or an O within the
 square they selected.
@@ -210,14 +192,14 @@ select a box with an O marker.
     }
 
 After the user has the ability to click on the boxes, a winner and a loser is
-then implemented into the game. In order for this to happen, this can be seen
-from the code block below. This particular block of code uses if statements to
-determine if the user has either one the game or has to keep playing. For the
-game to find out who the winner is, an array must be put in place that is able
-to calculate how a user wins. In tic-tac-toe, you can win by getting three X's
-or O's in a row. To recognize this, this code block detects that once the user
-gets three in a row, the game will declare a winner and end. If the game ends in
-a tie, the game will end, letting both users know it was a draw.
+then implemented into the game. In order for this to happen, refer to the code
+block below. This particular block of code uses if statements to determine if
+the user has either won the game or has to keep playing. For the game to find
+out who the winner is, an array must be put in place that is able to calculate
+how a user wins. In tic-tac-toe, you can win by getting three X's or O's in a
+row. To recognize this, this code block detects that once the user gets three in
+a row, the game will declare a winner and end. If the game ends in a tie, the
+game will end, letting both users know it was a draw.
 
 .. code-block:: text
     :caption: Declaring the Winner & Loser
@@ -330,7 +312,7 @@ component looks like.
 This particular code block is able to display a simple message to the user. The
 function component is a welcome message. An HTML tag is created to display the
 message and a props element is made to be called in the function. In this case
-name for this prop's element is called user. This is the output of the code.
+the name for this prop's element is called user. This is the output of the code.
 
 .. image:: component1.PNG
     :width: 30%
@@ -339,11 +321,11 @@ Another notable feature of ReactJS would be the [ReactJSHandling]_. Handling in
 elements is similar to handling DOM elements in ReactJS. DOM stands for Document
 Object Model and is used to show the programming interface. When it comes to
 handling events in ReactJS, there are syntax differences compared to using
-JavaScript. In this case a component is being used within a class which common
-method for an event handler to be within a method of a class. In this example,
-the toggle component is being used within the class. The toggle class utilizes
-the handle click and constructor methods to tell when the button is on and when
-it is off.
+JavaScript. In this case a component is being used within a class which is a
+common method for an event handler to be within a method of a class. In this
+example, the toggle component is being used within the class. The toggle class
+utilizes the handle click and constructor methods to tell when the button is on
+and when it is off.
 
 .. code-block:: text
     :caption: Simple Handling Example
@@ -451,8 +433,8 @@ the FlavorForm class.
 
 For this form you can see that the user is able to make a choice of what flavor
 they would like from the drop-down list. Once the user selects a flavor, a
-message is printed to the user interface. This message lets the user know flavor
-they selected.
+message is printed to the user interface. This message lets the user know the
+flavor they selected.
 
 .. image:: form1.PNG
     :width: 50%
@@ -476,7 +458,7 @@ Another criticism that faced ReactJS came from its terms and conditions clause
 right after its initial launch. According to [MediumArticle]_, Facebook stated
 that if you were to agree to its terms and conditions, you did not have the
 right to sue Facebook or its subsidiaries, but Facebook and its subsidiaries
-could sue the user if they believed the someone was infringing on their patent
+could sue the user if they believed that someone was infringing on their patent
 rights. This particular clause was vague and didn't sit well with developers.
 Many developers and companies thought that investing in ReactJS would be too
 much of a risk for them, that their industries could be hurt if they built with
@@ -485,7 +467,7 @@ ReactJS.
 As people started to distance themselves from the JavaScript library, Facebook
 came out and said that they would change their patent clause. According to
 [FacebookCode]_, the ReactJS development team wanted to make sure that anyone
-who used their JavaScript library felt confidence in using it. The development
+who used their JavaScript library felt confident using it. The development
 team stated that it wouldn't sue industries for patent infringement with the
 vague terms that were used. Facebook cleared up the confusing statement by
 stating clear examples of that patent infringement looked like. Cleaning up this
@@ -501,7 +483,7 @@ The syntax that comes with this library is easy to understand once you grasp how
 all the unique features of the language interact with one another. This
 particular JavaScript library took both HTML and JavaScript code and morphed the
 two languages into one. This was seen as an interesting step in the development
-community, while others saw it something as too complex. At first, industries
+community, while others saw it as something as too complex. At first, industries
 were afraid to work with ReactJS due to its vague patent infringement clause.
 But as Facebook and the ReactJS Development team could see the backlash they
 were receiving, they changed their clause so companies could feel comfortable
