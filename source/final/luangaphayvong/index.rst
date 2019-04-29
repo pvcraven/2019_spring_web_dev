@@ -17,7 +17,7 @@ JavaScript code and this tutorial will show how to set up Node.js from with thin
 like, installation, REPL commands, Node package manager, and setting up Node.js 
 with MySQL for database queries.
 
-Node.js is a server-side platform thats build from Google Chrome's JavaScript Engine.
+Node.js is a server-side platform built from Google Chrome's JavaScript Engine.
 Node.js is open source, cross-platform runtime environment for developing on the
 server-side. Node.js is written in JavaScript and can be ran on OS X, Microsoft,
 Windows, and Linux. [Tutorialspoint]_
@@ -31,12 +31,12 @@ intensive real-time applications that runs across many devices.
 History
 -------
 Node.js was first created by Ryan Dahl and was developed and maintained by Dahl
-which later got sponsored and supported by Joyent(What is joyent). Dahl created
-Node.js because he had a distaste about the way Apache Http server used to handle
-a lot of concurrent connections and how the code being created was either
-blocked by the entire process or implied multiple execution stacks.[Thinkmobiles]_
+which later got sponsored and supported by Joyent. Dahl created Node.js because 
+he had a distaste about the way Apache Http server used to handle a lot of 
+concurrent connections and how the code being created was either blocked by the 
+entire process or implied multiple execution stacks. [Thinkmobiles]_
 
-Getting starting on installing Node.js
+Getting started on Installing Node.js
 --------------------------------------
 
 Starting off, if you're installing Node.js on Windows then you can just go to
@@ -44,7 +44,7 @@ nodejs.org and download, follow the prompts and you're set. A thing to take note
 is that the default path that it is installed at is ``C:\Program Files\nodejs\bin``
 that will be the Node.js directory.
 
-On the other hand if you're installing on UNIX/Linux/Mac OS X or SunOS you'll
+On the other hand if the user installing on UNIX/Linux/Mac OS X or SunOS they'll
 first need to download and extract the archive into /temp, and move the extracted
 files into a specified directory directory for Node.js.
 
@@ -57,9 +57,9 @@ files into a specified directory directory for Node.js.
     $ mkdir - /usr/local/nodejs
     $ mv node-v10.15.3-linux-x64/* /user/local/nodejs
 
-After it is installed, just to make sure its installed in working validate it by
-executing a file. You can easily do this by making a file like test.js on your 
-machine and have some test code like following.
+To make sure it's installed and working validate it by
+executing a file. The user can easily do this by making a file like test.js on 
+their machine and have some test code like following.
 
 .. code-block:: javascript
     :Caption: Test for Installation
@@ -80,7 +80,7 @@ If it is installed correctly it should print.
 
     This is a test.
 
-Getting an application started
+Getting an Application Started
 ------------------------------
 Next up to create the server you will have to call on the http module and then use
 that to create a server and bind it to a port.
@@ -97,22 +97,22 @@ that to create a server and bind it to a port.
     console.log("First application instance");
 
 Line one uses the require directive to store the returned HTTP instance into an
-http variable from http module. On line three is where you create an http instance,
-this is done by calling the ``http.createServer()`` method that creates the server
-instance and then on line six you bind it to port 8080. By default, once you start
-the server it'll automatically go to ``http://127.0.0.1:8080`` in a web browser.
-What should show is what you put into ``response.end()`` on line five. To stop the
-server instance, just hit ``Ctrl+c`` in the command line.
+http variable from http module. On line three is where you create an http instance
+by calling the ``http.createServer()`` method that creates the server
+instance and then on line six you bind it to port 8080. By default, once the user
+starts the server it'll automatically go to ``http://127.0.0.1:8080`` in a web 
+browser. The result should be what you put into ``response.end()`` on line five. 
+To stop the server instance, just hit ``Ctrl+c`` in the command line.
 
-Node.js virtual environment
+Node.js Virtual Environment
 ---------------------------
 Node.js comes with a virtual environment called REPL (also Node shell). REPL is
 the abbreviation of Read-Eval-Print-Loop. Its a way to quickly test simple
 Node.js/JavaScript code.
 
 To start up REPL is as easy as just typing node into the command console. After
-typing node and hitting enter, you're able to run JavaScript, use variables and
-multiline expressions.
+typing node and hitting enter, the user will able to run JavaScript, use variables 
+and multiline expressions.
 
 REPL Commands
 ~~~~~~~~~~~~~
@@ -133,12 +133,12 @@ tab Keys            List of current commands
 
 .. note::
 
-    As an add on to get the last result ``_`` can be used to get that.
+    As an add on to get the last result, "``_``" can be used to get that.
 
 Node Package Manager (NPM)
 --------------------------
-NPM has two main functionalities, online repositories for node.js pakcages and
-modules, and command line utility to install Node.js packages, do version 
+NPM has two main functionalities: online repositories for node.js packages and
+modules, and command line utility to install Node.js packages, and do version 
 management and dependency management.
 
 To check the current version of NPM just do the type the following in the command
@@ -149,7 +149,7 @@ console-
 
     npm --version
 
-If it is an old version of NPM you can update the following command-
+If it is an old version of NPM the user can update using the following command-
 
 .. code-block:: text
     :Caption: Update NPM Version
@@ -236,7 +236,7 @@ Attributes of Package.json
 Creating Modules
 ~~~~~~~~~~~~~~~~
 Now that the basics are done, the user can also create a module. This requires
-that package.json to be generated and using NPM will generate a basic skeleton
+package.json to be generated. Using NPM will generate a basic skeleton
 of package.json.
 
 .. code-block:: text
@@ -249,9 +249,9 @@ of package.json.
     ^C
     Name:(webmaster)
 
-After ``$ npm init`` is used, the utility will walk the user through making a 
-package.json file and covers common items. For help for package.json documentation 
-``$ npm help json`` will help with definitive documentation on the package.json 
+After ``$ npm init`` is used, the command prompt will walk the user through making a 
+package.json file that covers common items. For help for package.json documentation, 
+``$ npm help json`` will show definitive documentation on the package.json 
 fields and what they do. ``$ npm install <pkg> --save`` will install the package
 and save it as a dependency in package.json file.
 
@@ -279,9 +279,10 @@ There are many ways to set up Node.js with a database and it may seem complicate
 but it's actually simple and this quick tutorial will show how to connect Node.js
 with MySQL.
 
-First up what is needed is to install the MySQL module and this can be done in
-the command console. After the module is installed, next will be to make a JavaScript
-file that creates the connection and what will be used to query the database.
+First up, how to install the MySQL module. This can be done in
+the command console. After the module is installed, the next step is to make a 
+JavaScript file that creates the connection and what will be used to query the 
+database.
 
 .. code-block:: text
     :Caption: Installing MySQL module
@@ -312,8 +313,19 @@ file that creates the connection and what will be used to query the database.
 
 [W3Schools]_ used as reference code
 
+Where the user made the variable ``con`` is where the user will create a connection, 
+and this means you'll have to enter the correct information about the database, 
+such as the host, user, and password. After that the function after will make the 
+connection and handle any errors. With con.query() how the user makes the statement
+they want is to replace is by replacing the part of the code where it says ``sql``
+in the con.query() function. The whole sql statement will have to go before the
+function is called.
+
 Conclusion
 ----------
+In conclusion, Node.js is a helpful tool for quick testing of a javascript file 
+that can be helpful and reliable. The best thing about Node.js is the amount of 
+modules a user can get to help the person do what they need.
 
 Sources
 -------
