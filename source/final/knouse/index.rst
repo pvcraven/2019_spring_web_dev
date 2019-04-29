@@ -118,7 +118,7 @@ Code Examples
         <!--CSS must be embedded inline.-->
         <style amp-custom>
             h1 {
-                color: blue;
+                color: black;
             }
         </style>
         <!--The AMP boilerplate.-->
@@ -169,7 +169,7 @@ Code Examples
             <!--CSS must be embedded inline.-->
             <style amp-custom>
                 h1 {
-                    color: blue;
+                    color: black;
                 }
             </style>
             <!--The AMP boilerplate.-->
