@@ -376,6 +376,7 @@ customized ad placements. Some publishers defend AMP, saying that monetization
 has remained largely unchanged since using AMP. AMP has since launched the
 "AMP Ads Initiative" which supports more types of advertising options.
 
+[AMPWiki]_.
 
 Conclusion
 ----------
