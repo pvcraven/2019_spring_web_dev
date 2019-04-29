@@ -123,8 +123,7 @@ Code Examples
 -------------
 
 .. code-block:: html
-
-	:caption: AMP Hello World
+	:Caption: AMP Hello World
 
 	<!doctype html>
     <!-- This is the AMP declaration. `<html amp>` works too.-->
