@@ -313,6 +313,9 @@ This next example shows a basic animation based on the scroll of the page:
              }
            </script>
        </amp-animation>
+    </body>
+
+    </html>
 Conclusion
 ----------
 AMP is a very useful tool for web developers of all skill levels. Websites
