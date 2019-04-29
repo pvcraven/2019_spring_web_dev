@@ -123,33 +123,33 @@ Code Examples
 -------------
 
 .. code-block:: html
-	:Caption: AMP Hello World
+    :Caption: AMP Hello World
 
-	<!doctype html>
+    <!doctype html>
     <!-- This is the AMP declaration. `<html amp>` works too.-->
     <html ⚡>
 
     <head>
-      <meta charset="utf-8">
-      <title> Hello World</title>
-      <!-- The AMP runtime must be loaded as the second
-      child of the `<head>` tag.-->
-      <script async src="https://cdn.ampproject.org/v0.js"></script>
-      <!--
-        AMP HTML files require a link pointing to the regular HTML. If no HTML
-        version exists, it should point to itself.
-      -->
-      <link rel="canonical" href="https://amp.dev/documentation/examples/introduction/hello_world/index.html">
-      <!--AMP HTML files require a viewport declaration.-->
-      <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-      <!--CSS must be embedded inline.-->
-      <style amp-custom>
-        h1 {
-          color: blue;
-        }
-      </style>
-      <!--The AMP boilerplate.-->
-      <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+        <meta charset="utf-8">
+        <title> Hello World</title>
+        <!-- The AMP runtime must be loaded as the second
+        child of the `<head>` tag.-->
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <!--
+            AMP HTML files require a link pointing to the regular HTML. If no HTML
+            version exists, it should point to itself.
+        -->
+        <link rel="canonical" href="https://amp.dev/documentation/examples/introduction/hello_world/index.html">
+        <!--AMP HTML files require a viewport declaration.-->
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <!--CSS must be embedded inline.-->
+        <style amp-custom>
+            h1 {
+                color: blue;
+            }
+        </style>
+        <!--The AMP boilerplate.-->
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     </head>
 
     <body>
