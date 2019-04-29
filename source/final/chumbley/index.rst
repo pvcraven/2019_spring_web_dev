@@ -5,7 +5,7 @@ This is Vue
 -----------
 
 Vue.js is a progressive open-source JavaScript framework built for the purpose
-of building user interfaces. The Vue library was designed to be easily
+of building user interfaces. The Vue.js library is designed to be easily
 integrated with other libraries and existing projects. Vue.js architecture
 focuses on declarative rendering and component composition which we will get
 into in the later sections. [VueWiki]_ [VueIntroduction]_
@@ -25,17 +25,18 @@ formally worked for Google in Google's Creative Lab. He heavily used Angular 1
 working on different projects and found that many of the features he either did
 not like or hardly used [Egghead]. Out of this, Vue was born.
 
-You built a templating library for his own personal and later released it as
-Vue.js. As the user community grew and addition features were added, Vue.js grew
-from a small templating library into the open-source JavaScript framework that
-it is today comparable to Angular which it grew out of [Egghead]_.
+You built a templating library for his own personal use and later released it as
+Vue.js. As the user community grew and additional features were added, Vue.js
+transformed from a small templating library into the open-source JavaScript
+framework that it is today. It is comparable to Angular which it grew out of
+[Egghead]_.
 
 Declarative Rendering
 ---------------------
 
 The Vue.js system allows users to declaratively render data to the Document
 Object Model (DOM). From the surface, it appears like it is rendering a string
-template. However, Vue has done a lot of the work behind the scene. The data and
+template. However, Vue has done a lot of the work behind the scenes. The data and
 the DOM have been linked making everything reactive [VueIntroduction]_. Let's
 take a look at an example to get a better understanding.
 
@@ -87,10 +88,10 @@ Vue Directives
 ~~~~~~~~~~~~~~
 
 You have probably noticed that double braces ``{{ }}`` are used as place-holders
-for the data that is rendered from the javascript. With Vue.js, you can also
+for the data that is rendered from the JavaScript. With Vue.js, you can also
 call directives, which are HTML attributes, with the prefix ``v-`` [w3schoolsVue]_.
 The ``v-`` prefix indicates that the directive is a special attribute provided
-by the Vue.js library. The example below will walk you through a few examples of
+by the Vue.js library. The examples below will walk you through a few examples of
 different Vue.js directives.
 
 HTML Example
@@ -127,10 +128,10 @@ is reactive and both the message and the secretMessage can be changed with
 The ``v-model`` directive creates a textbox for the user to interact with. In
 the above example, the ``v-model`` directive is tied to the ``{{ message }}``
 place-holder. Whatever the user types into the textbox changes what the user
-sees above the textbox. The ``v-model`` directive is great with working with
+sees above the textbox. The ``v-model`` directive is great for working with
 user input.
 
-The ``v-bind`` directive binds and HTML element to a Vue instance. In the
+The ``v-bind`` directive binds an HTML element to a Vue instance. In the
 above example, ``title`` is bound to the vue instance of ``secretMessage``.
 Whenever the user hovers over the title, the value of secretMessage appears to
 them.
@@ -141,9 +142,9 @@ a few more directives in the examples below.
 Conditionals and Loops
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Using directives, Vue gives you the ability to write if statements and for loops
-with ``v-if`` and ``v-for``. The following example walks you through how to do
-conditionals and loops in Vue.js.
+Using directives, Vue gives you the ability to write "if" statements and "for"
+loops with ``v-if`` and ``v-for``. The following example walks you through how
+to do conditionals and loops in Vue.js.
 
 HTML Example
 
@@ -192,13 +193,13 @@ sets the text accordingly.
 
 The ``v-for`` directive, as you would assume, allows you to do a for loop. In
 the example above, the for loops runs through the elements in ``food`` and
-prints them on to the page.
+displays them on to the page.
 
 Component Composition
 ---------------------
 
-Another important concept to Vue is the Component System. The Component System
-is this abstract idea that you can build large scale application with small,
+Another important concept of Vue is the Component System. The Component System
+is this abstract idea that you can build large scale applications with small,
 self-contained, and reusable parts. [VueIntroduction]_ Let's take a look at an
 example.
 
