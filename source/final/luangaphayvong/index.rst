@@ -1,15 +1,6 @@
 NodeJS
 ======
 
-* Intro
-* History
-* Getting started with Node.js installation
-* Getting an application started
-* Node.js virtual environment (REPL)
-* Node Package Manager
-* Setting up Node.js with MySQL
-* Conclusion
-
 Intro
 -----
 Node.js is a helpful run-time environment that is able to quickly and easily run
