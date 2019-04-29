@@ -293,7 +293,7 @@ This next example shows a basic animation based on the scroll of the page:
           <amp-position-observer on="scroll:spinAnimation.seekTo(percent=event.percent)" intersection-ratios="1" layout="nodisplay">
           </amp-position-observer>
 
-          <amp-img id="fidgetSpinnerImage" width="1024" height="1114" layout="responsive" src="/static/samples/img/fidget.png" alt="Picture of a fidget spinner"></amp-img>
+          <amp-img id="fidgetSpinnerImage" width="1024" height="1114" layout="responsive" src="/img/fidget.png" alt="Picture of a fidget spinner"></amp-img>
        </div>
 
        <amp-animation id="spinAnimation" layout="nodisplay">
