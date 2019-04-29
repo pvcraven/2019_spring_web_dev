@@ -294,7 +294,7 @@ This next example shows a basic animation based on the scroll of the page:
             </amp-position-observer>
 
             <amp-img id="fidgetSpinnerImage" width="256" height="280" layout="responsive"
-                 src="fidget.png"
+                 src="https://amp.dev/static/samples/img/fidget.png"
                  alt="Picture of a fidget spinner"></amp-img>
         </div>
 
