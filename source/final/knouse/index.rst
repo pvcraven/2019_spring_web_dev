@@ -123,10 +123,11 @@ Code Examples
 -------------
 
 .. code-block:: html
+
 	:caption: AMP Hello World
 
 	<!doctype html>
-    <!-- This is the AMP declaration. `<html amp>` works too. -->
+    <!-- This is the AMP declaration. `<html amp>` works too.-->
     <html ⚡>
 
     <head>
@@ -166,7 +167,7 @@ Code Examples
     </body>
     </html>
 
-The code above is the most basic example for how to show text and images using
+The code above is a basic example for how to show text and images using
 AMP. As you can see, AMP is very similar to HTML in its use of tags. For
 anyone proficient in HTML, AMP would be fairly easy to pick up.
 
