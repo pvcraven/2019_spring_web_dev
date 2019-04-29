@@ -124,7 +124,7 @@ Code Examples
 AMP is very similar to HTML. Most tags used in HTML work with AMP, and have the
 same functionality. Below are some examples of different things that AMP can do.
 
-.. code-block:: AMP
+.. code-block:: html
 	:caption: AMP Hello World
 
 	<!doctype html>
