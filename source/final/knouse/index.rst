@@ -112,7 +112,7 @@ Code Examples
             AMP HTML files require a link pointing to the regular HTML. If no HTML
             version exists, it should point to itself.
         -->
-        <link rel="canonical" href="https://amp.dev/documentation/examples/introduction/hello_world/index.html">
+        <link rel="canonical" href="https://2019-spring-web-dev.readthedocs.io/en/latest/final/knouse/index.html">
         <!--AMP HTML files require a viewport declaration.-->
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
         <!--CSS must be embedded inline.-->
@@ -143,7 +143,7 @@ Code Examples
         Certain tags, such as the `<img>` tag, are replaced with equivalent or
         slightly enhanced custom AMP HTML tags
       -->
-      <amp-img src="/static/samples/img/amp.jpg" width="540" height="300" layout="responsive"></amp-img>
+      <amp-img src="/static/samples/img/amp.jpg" width="270" height="150" layout="responsive"></amp-img>
 
     </body>
     </html>
@@ -163,7 +163,7 @@ Code Examples
                 AMP HTML files require a link pointing to the regular HTML. If no HTML
                 version exists, it should point to itself.
             -->
-            <link rel="canonical" href="https://amp.dev/documentation/examples/introduction/hello_world/index.html">
+            <link rel="canonical" href="https://2019-spring-web-dev.readthedocs.io/en/latest/final/knouse/index.html">
             <!--AMP HTML files require a viewport declaration.-->
             <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
             <!--CSS must be embedded inline.-->
@@ -194,7 +194,7 @@ Code Examples
             Certain tags, such as the `<img>` tag, are replaced with equivalent or
             slightly enhanced custom AMP HTML tags
           -->
-          <amp-img src="https://amp.dev/static/samples/img/amp.jpg" width="540" height="300"
+          <amp-img src="https://amp.dev/static/samples/img/amp.jpg" width="270" height="150"
           layout="responsive"></amp-img>
 
         </body>
@@ -225,7 +225,7 @@ This next example shows a basic animation based on the scroll of the page:
         <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
 
-        <link rel="canonical" href="https://amp.dev/documentation/examples/visual-effects/basics_of_scrollbound_effects/index.html">
+        <link rel="canonical" href="https://2019-spring-web-dev.readthedocs.io/en/latest/final/knouse/index.html">
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
             -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
@@ -296,7 +296,7 @@ This next example shows a basic animation based on the scroll of the page:
         <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
 
-        <link rel="canonical" href="https://amp.dev/documentation/examples/visual-effects/basics_of_scrollbound_effects/index.html">
+        <link rel="canonical" href="https://2019-spring-web-dev.readthedocs.io/en/latest/final/knouse/index.html">
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
             -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
@@ -348,6 +348,35 @@ This next example shows a basic animation based on the scroll of the page:
     </body>
 
     </html>
+
+The example above works by rotating the image based on the users current
+position on the page. the "amp-position-observer" monitors the position of
+the element within the view of the user. The image rotates a full 360 degrees
+as the user scrolls by with { "transform": "rotate(360deg)" }. There are many
+scrollbound animations you can do, including parallax scrolling as well as fades
+and slide transitions.
+
+Criticisms
+----------
+AMP does not have numerous criticisms, however, it has one big criticism that
+most of the tech industry agrees with; Google attempting to assert dominance on
+the web. Many people think AMP is an attempt for Google to dictate how websites
+are monetized and built. AMP has also been linked with Google's attempts to
+deprecate URLs so users can't immediately see if they are viewing a normal web
+page, or an AMP page hosted by Google.
+
+Many people fear that even though AMP is open-source, Google is using it to
+shape how mobile web operates. It also ensures Google gets plenty of ad revenue
+from AMP pages. Google disagrees with this however, saying that AMP is an
+open-source initiative, and isn't "Google's AMP".
+
+Some publishers report reduced ad revenue when using AMP pages. Since AMP uses
+mainly banner ads, this prevents publishers from using pop-ups, or other
+customized ad placements. Some publishers defend AMP, saying that monetization
+has remained largely unchanged since using AMP. AMP has since launched the
+"AMP Ads Initiative" which supports more types of advertising options.
+
+
 Conclusion
 ----------
 AMP is a very useful tool for web developers of all skill levels. Websites
@@ -356,6 +385,7 @@ don’t jump around when new ads or pictures load in. The optimizations that the
 AMP team has put in place really speed up the loading process for all devices,
 not just mobile devices. By using AMP, developers can create stunning pages with
 only a bit of practice and a bit of creativity.
+
 Sources
 -------
 
