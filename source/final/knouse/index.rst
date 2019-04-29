@@ -121,8 +121,6 @@ user.
 
 Code Examples
 -------------
-AMP is very similar to HTML. Most tags used in HTML work with AMP, and have the
-same functionality. Below are some examples of different things that AMP can do.
 
 .. code-block:: html
 	:caption: AMP Hello World
@@ -167,6 +165,10 @@ same functionality. Below are some examples of different things that AMP can do.
 
     </body>
     </html>
+
+The code above is the most basic example for how to show text and images using
+AMP. As you can see, AMP is very similar to HTML in its use of tags. For
+anyone proficient in HTML, AMP would be fairly easy to pick up.
 
 Conclusion
 ----------
