@@ -185,68 +185,73 @@ This next example shows a basic animation based on the scroll of the page:
     :Caption: Scrollbound Animation
 
     <!doctype html>
-        <html ⚡>
+    <html ⚡>
 
-        <head>
-          <meta charset="utf-8">
-          <title>Scrollbound Animation Basics</title>
-          <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <title>Scrollbound Animation Basics</title>
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-          <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+        <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
 
-          <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+        <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
 
-          <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
-          <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+        <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+        <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
 
-          <link rel="canonical" href="https://amp.dev/documentation/examples/visual-effects/basics_of_scrollbound_effects/index.html">
-          <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-          <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-          -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-          animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes
-          -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes
-          -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes
-          -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes
-          -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes
-          -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript>
-          <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;
-          -ms-animation:none;animation:none}</style></noscript>
+        <link rel="canonical" href="https://amp.dev/documentation/examples/visual-effects/basics_of_scrollbound_effects/index.html">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+            -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+            animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes
+            -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes
+            -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes
+            -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes
+            -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes
+            -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript>
+        <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;
+            -ms-animation:none;animation:none}</style></noscript>
 
-          <style amp-custom>
+        <style amp-custom>
 
             .fidget-spinner-scene {
-              margin: 10px 20%;
+                margin: 10px 20%;
             }
-          </style>
-        </head>
+        </style>
+    </head>
 
-        <body>
-           <div class="fidget-spinner-scene">
+    <body>
+        <div class="fidget-spinner-scene">
 
-              <amp-position-observer on="scroll:spinAnimation.seekTo(percent=event.percent)" intersection-ratios="1" layout="nodisplay">
-              </amp-position-observer>
+            <amp-position-observer on="scroll:spinAnimation.seekTo(percent=event.percent)" intersection-ratios="1" layout="nodisplay">
+            </amp-position-observer>
 
-              <amp-img id="fidgetSpinnerImage" width="1024" height="1114" layout="responsive" src="/static/samples/img/fidget.png" alt="Picture of a fidget spinner"></amp-img>
-           </div>
+            <amp-img id="fidgetSpinnerImage" width="256" height="280" layout="responsive"
+                 src="https://amp.dev/static/samples/img/fidget.png"
+                 alt="Picture of a fidget spinner"></amp-img>
+        </div>
 
-           <amp-animation id="spinAnimation" layout="nodisplay">
-               <script type="application/json">
-                 {
-                   "duration": "1",
-                   "fill": "both",
-                   "direction": "reverse",
-                   "animations": [
-                     {
-                       "selector": "#fidgetSpinnerImage",
-                       "keyframes": [
-                         { "transform": "rotate(360deg)" }
-                       ]
-                     }
-                   ]
-                 }
-               </script>
-           </amp-animation>
+        <amp-animation id="spinAnimation" layout="nodisplay">
+            <script type="application/json">
+                {
+                    "duration": "1",
+                    "fill": "both",
+                    "direction": "reverse",
+                    "animations": [
+                        {
+                            "selector": "#fidgetSpinnerImage",
+                            "keyframes": [
+                                { "transform": "rotate(360deg)" }
+                            ]
+                        }
+                    ]
+                }
+            </script>
+        </amp-animation>
+    </body>
+
+    </html>
 
 .. raw:: html
 
@@ -271,11 +276,11 @@ This next example shows a basic animation based on the scroll of the page:
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
             -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
             animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes
-                                                                  -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes
-                                                                                                                           -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes
-                                                                                                                                                                                    -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes
-                                                                                                                                                                                                                                             -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes
-                                                                                                                                                                                                                                                                                                      -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript>
+            -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes
+            -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes
+            -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes
+            -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes
+            -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript>
         <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;
             -ms-animation:none;animation:none}</style></noscript>
 
@@ -331,3 +336,5 @@ Sources
 
 .. _'Accelerated Mobile Pages Project.' Accelerated Mobile Pages Project – AMP, AMP Project: www.ampproject.org/.
 .. _'Accelerated Mobile Pages.' Wikipedia, Wikimedia Foundation, 3 Apr. 2019: en.wikipedia.org/wiki/Accelerated_Mobile_Pages.
+.. [AMP] AMP "`Accelerated Mobile Pages Project. <https://www.ampproject.org/>`_."
+.. [AMPWiki] Wikipedia "`Accelerated Mobile Pages. <https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages>`_."
