@@ -3,14 +3,16 @@ Data-Driven Documents
 
 D3.js is a JavaScript library that allows developers to easily manipulate
 documents based on data. It does this through a combination of HTML, CSS, and
-SVG creation and manipulation. The main point of D3 is providing a simple way to
-create powerful visualizations in a web page from data. It does not attempt to
-solve every problem with front-end development, but rather focuses on providing
-a solution for efficiently manipulating documents based on the data provided.
-D3 is extremely fast, and is able to support large datasets being manipulated
-because it has little overhead. D3 allows developers to more easily integrate
-the use of data into their web page without hurting the performance of the page
-itself.
+SVG creation and manipulation. The main point of D3, which stands for data
+driven documents, is providing a simple way to create powerful visualizations in
+a web page from data. It does not attempt to solve every problem with front-end
+development, but rather focuses on providing a solution for efficiently
+manipulating documents based on the data provided. D3 is extremely fast and is
+able to support large datasets being manipulated because it has little overhead.
+D3 allows developers to more easily integrate the use of data into their web
+page without hurting the performance of the page itself. This article describes
+the history of D3 and how it is used, as well as some examples of what can be
+done with the technology.
 
 [Bostock1]_
 
@@ -18,21 +20,23 @@ History
 -------
 
 D3.js was initially released in 2011 by Michael Bostock as well as a number of
-his colleagues from the Stanford Visualization Group. It was created as a
-successor to the Protovis framework, which was also created by the same group.
+his colleagues from the Stanford Visualization Group. It was created as
+a successor to the Protovis framework, which was also created by the same group.
 The main focus of D3 is to assist with data visualization on the web, and its
-goal is to provide the perfect balance of efficiency and expressiveness.
-Currently it has an open source BSD-license and is widely adopted and used at a
-professional level.
+goal is to provide the functionality of tools like excel, while also giving the
+efficiency of tools like OpenGL. It is still being maintained by Mike Bostock,
+and currently it has an open source BSD-license and is widely adopted and used
+at a professional level.
 
 [Murray]_
 
 Using D3.js
 -----------
 
-It is very simple to include D3.js into and web development project that you may
-be creating. All that you need to do is include the link to the script before
-the closing tag for your body:
+It is very easy to implement D3.js into any web development project that you may
+be creating. All that needs to be done is include a link to the script in the
+bottom of your body tag in order to access all the functionality that D3 has to
+offer. The page will look like:
 
 .. code-block:: html
 
@@ -48,18 +52,20 @@ the closing tag for your body:
         </body>
     </html>
 
-Once you have done this, you are able to easily begin using the library in both
-internal and external JavaScript to utilize the number of capabilities that D3
-has to offer.
+Once you have added this to the body of your project, any script, internal or
+external, that is called and used within the webpage can use the d3 object to
+access and utilize the multitude of capabilities provided by the D3 library.
 
 Selection
 ~~~~~~~~~
 
-In D3, selections are used to simplify the process of manipulating elements in
-an HTML page. These selections can be created by selecting any tag, class, id,
-and even containment, and much more easily achieved with the use of the D3
-library. For example, if you wanted to set the color of all header tags to pink,
-your code would look like the following.
+Selections is the main functionality that is provided by D3 that leads to a
+number of possibilities. These selections are used to simplify the process of
+manipulating elements within a web page. They can be created by using anything
+from element tags, class, id, or even containment, and is greatly simplified
+through the use of the D3 library. For example, if you wanted to set
+all of the header tags in a document to pink using the normal DOM, or Document
+Object Model, your code would look like the following:
 
 .. code-block:: javascript
     :Caption: DOM pink headers
@@ -70,8 +76,7 @@ your code would look like the following.
         header.style.setProperty("color", "pink", null);
     }
 
-However, using the D3 library, you are able to handle all of this without using
-the for loop or extra lines.
+However, using the D3 library, this can all be handled within one line of code:
 
 .. code-block:: javascript
     :Caption: D3 pink headers
@@ -83,11 +88,12 @@ the for loop or extra lines.
 Dynamic Properties
 ~~~~~~~~~~~~~~~~~~
 
-Selection is just an introduction to the real capabilities of D3. It can be
-farther utilized to manipulate your web pages with actual data that you are
-trying to display on the page and to dynamically set the properties of any
-element contained on the page. For example, say we set up a basic web page with
-six different boxes:
+Using selections to change the style is only an introduction to the capabilities
+of the D3 library. It can be further used to not just to change the style, but
+to change it dynamically and manipulate it with actual data you want to display
+on your web page. For example, say we have a basic web page that is
+using the D3 library with 6 ``<div>`` tags, each using the class “col-4”, as
+shown below.
 
 .. code-block:: html
    :linenos:
@@ -116,10 +122,9 @@ six different boxes:
         </body>
     </html>
 
-Once I have created these boxes, it is very easy to dynamically change their
-characteristics using the D3 selection system. For example, to color all of the
-boxes a randomly generated color, you would just need to add a script tag to the
-bottom of your body with the following code:
+Once this page has been created it is easy to dynamically change the color of
+these boxes using the selections that are shown above. All that would be needed
+is a simple script being executed on the page similar to the one below:
 
 .. code-block:: html
 
@@ -170,13 +175,13 @@ seen below.
     var width = innerWidth, height = 500;
 
     var svg = d3.select("#interactive-svg").append("svg")
-        .attr("width", width)
+        .attr("width", width)           // Setting attributes of the SVG
         .attr("height", height);
 
     svg.append("rect")
         .attr("width", width)
         .attr("height", height)
-        .on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
+        .on("ontouchstart" in document ? "touchmove" : "mousemove", particle); // On cursor move with ternary if/else statement
 
 Once the ``<rect>`` has been created, then the ``particle()`` function must be
 created. The function will use the method ``d3.mouse(this)`` to determine the
@@ -275,9 +280,6 @@ Shown below is this interactive SVG in action.
 
 [Bostock3]_
 
-Graphs
-~~~~~~
-
 Who uses D3?
 ------------
 
@@ -298,9 +300,20 @@ utilize the D3 library are given below.
 
 [StackShare]_
 
-
 Conclusion
 ----------
+
+D3.js is a very beneficial library when it comes to data display and
+manipulation on web pages. It also allows for the injection of dynamic graphics
+and properties that allow you to greatly improve the interface of your
+application. It can greatly increase the effectiveness and general look of any
+data analytics tool and opens up a number of possibilities in regards to
+graphics. It was been widely accepted and implemented in professional
+development society, and allows for the efficient manipulation of web pages
+while still creating a friendly user interface.
+
+Sources
+-------
 
 .. [Bostock1] Bostock, Mike. “`Data-Driven Documents <https://d3js.org/>`_.” D3.Js.
 

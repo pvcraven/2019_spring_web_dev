@@ -2,30 +2,30 @@ AngularJS
 =========
 
 JavaScript is a programming language that is designed to enhance web applications.
-Since the release, programmers have been learning and adding to the pool of
-frameworks that make writing code even easier. AngularJS was one of those
-frameworks that has proven to be a very powerful tool that has the ability to two
+Since it's release, programmers have been learning and contribute to the pool of
+frameworks that make writing code easier. AngularJS is one of those
+frameworks that has proven to be a very powerful. AngularJS that has the ability to two
 way bind data, create beautiful single page applications, and provides tons of
-functions for the programmer making the JavaScript cleaner.
+functions for the programmer.
 
 History
 ~~~~~~~
 
-AngularJS was created initially by two Google employees: Misko Hevery and Adam
-Abrons. The two employees originally called the framework 'GetAngular' which
-would give web programmers more interaction between the front and back end of the
+AngularJS was initially created by two Google employees: Misko Hevery and Adam
+Abrons. The two employees originally called the framework 'GetAngular',
+save web programmers more interaction between the front and back end of the
 application.
 
 Eventually Hevery had to work on a different project for Google called Feedback.
-over the course of 6 months there was 17,000 lines of code written for this program
-which became increasingly difficult to test. This drove Hevery to rewrite the
+over the course of 6 months there was 17,000 lines of code written for this program,
+making it increasingly difficult to test. This drove Hevery to rewrite the
 software but this time using his part of the GetAngular project from earlier. With
 GetAngular he was able to turn the initial 17,000 lines of code into just 1,500
 in 3 weeks. With this massive rework and elimination of lines of code his manager
 took interest in GetAngular which would lead Google to start heavily development
-into Angular.js. [Austin]_ AngularJS over the years would turn into a framework
-monolith in the JavaScript community. The ability to creat single page applications in
-just a couple hundred lines of code is incredible.
+into Angular.js. [Austin]_ Over the years, AngularJS  would turn into a framework
+monolith in the JavaScript community. The ability to create single page applications in
+just a couple hundred lines of code was incredible.
 
 
 MVC (Model, View, Controller)
@@ -64,14 +64,14 @@ AngularJS MVC
     :width: 800
     :alt: Download Button for AngularJS [Angular]_
 
-Starting development in AngularJS is simple and easy. Going to `Angularjs.org <https://angularjs.org>`_
-and finding what version of AngularJS you want is simple. When you find the version you
-want to start developing in all you need to do is grab the URL of the file and stick it
-in your HTML file. [Angular]_
+Starting development in AngularJS is simple and easy. Go to `Angularjs.org <https://angularjs.org>`_
+and finding the version of AngularJS you want. When you find the version you
+like then grab the URL of the file and stick it in your HTML file. [Angular]_
 
 .. code-block:: html
    :caption: Adding the script for AngularJS
 
+    <!-- The src= is where the URL goes-->
    <script type="text/JavaScript" src="code.angularjs.org/1.7.8/angular.min.js"></script>
 
 Then you need to be worried about the global namespace that Angular uses. The
@@ -111,10 +111,10 @@ following examples:
 The function in the beginning declares person as 'Adam' but prints 'Mike' when the
 function is called in the 2nd file. This is because of the global namespace.
 This is very important to know and understand before delving to far into AngularJS.
-As mentioned before AngularJS comes with a ton of pre-defined variables in the
-global namespace which can get messy which will cause errors and bugs. To combat
-this the user will have to create their own namespace. One way is to create your
-own namespace by treating globals you may want to use as a JSON variable.
+As mentioned before, AngularJS comes with a ton of pre-defined variables in the
+global namespace which can get messy, causing errors and bugs. To combat
+this the user will have to create their own namespace. One way to create your
+own namespace is by treating globals you may want to use as a JSON variable.
 
 .. code-block:: JavaScript
     :caption: JSON namespace
@@ -129,8 +129,8 @@ This Example will no longer use the global namespace in the first example and
 the function should now return 'Adam' as intended. This concept will be very
 important for dealing with AngularJS. [Alicea]_
 
-Bring in AngularJS Features
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+AngularJS Features
+~~~~~~~~~~~~~~~~~~
 
 AngularJS offer's so many features that it makes development easy. In Angular
 the MVC is easy to understand with just a little example.
@@ -138,7 +138,7 @@ the MVC is easy to understand with just a little example.
 .. code-block:: html
     :caption: Making your HTML document a AngularJS Model
 
-    // This is the View
+    <!--This is the View-->
     <html lang="en-us" ng-app="myApp">
 
 Adding the 'ng-app' is Angular's way of specifying a model/module the programmer will
@@ -182,9 +182,6 @@ parameters and manipulate the DOM. This is a simplified version of the AngularJS
 MVC model. Notice in the two code examples above that the ng-controller
 attribute value matches the string in the 1st parameter in the JavaScript
 code. [Alicea]_
-
-What is AngularJS good for?
----------------------------
 
 Data-Binding
 ~~~~~~~~~~~~
@@ -340,14 +337,14 @@ through the different potential html pages.
 Earlier when we declared our myApp module the empty array in the parameter list
 was empty. This is how Angular will inject dependencies into the module (see
 line 2). These dependencies are usually more services that do not come with
-AngularJS by default. In this case when working with the routing services we have
-to get that delivered through a CDN additionally and then inject it into our
-application before we can use it.
+AngularJS by default. When working with the routing services we have
+to get the service delivered through a content delivery network (CDN).Then
+inject it into our application before we can use it.
 
 Once we have our service we can connect the navigation links in the HTML DOM with
 our JavaScript to make the magic happen. AngularJS will look at what the URL
 and then manipulate the DOM based on what it finds. Lines 8 - 14 in listing 13
-will look for those specific url extensions and will insert the string of html
+will look for those specific url extensions and will insert the string of HTML
 that follows the template into the ng-view attribute in the HTML document.
 [W3SchoolsAngular]_
 
@@ -410,6 +407,17 @@ very intimidating and hard if the programmer is not familiar with the concepts
 before hand. Another confusing aspect is keeping the scopes organized between
 the views in the web application. Each scope will contain different information
 depending on what view the user is currently in. [Rajput]_
+
+Conclusion
+----------
+
+Web development has become one of the hottest areas of tech in today's world.
+With the increasing demand for web programming companies have spent tons of
+money on developing frameworks that use JavaScript. AngularJS is one of those
+frameworks that emerged because a company had some employees that found a
+purpose from a small side project. Utilizing AngularJS's plethora of services
+the programmer has everything they need to create a well designed and optimal
+single page application.
 
 
 Sources

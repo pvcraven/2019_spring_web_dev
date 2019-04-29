@@ -1,0 +1,287 @@
+<!-- Public Pixel Art -->
+<!-- 
+	A web app that allows random people to connect to a chat where they can all draw pixel art on the same canvas.
+-->
+
+<!doctype html>
+<html>
+    <head>
+        <title>Public Pixel Art</title>
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { font: 13px Helvetica, Arial;}
+            .chat_input { background: #000; padding: 3px; position: fixed; bottom: 0; width: 20%;}
+            .chat_input input { border: 0; padding: 10px; width: 75%; margin-right: .5%; }
+            .chat_input button { width: 24%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+            #messages { list-style-type: none; margin: 0; padding: 0; }
+            #messages li { padding: 5px 10px; }
+            #messages li:nth-child(odd) { background: #eee; }
+            #messages { margin-bottom: 40px; margin-right: 10%; }
+            .username_input { text-align: center; margin-top: 100px;}
+            #users_online_section {margin-left: 21%; position: fixed; bottom: 2%;}
+            #pic_frame {margin-left: 25%; margin-top: 2%; position: fixed; width: 73%; height: 85%; border: 2px; border-style: solid;}
+            #message_section {position: fixed; right: 77.8%; left: 0; bottom: 0;}
+            #color_selection {position: fixed; width: 32px; margin-left: 22.5%; margin-top: 2%; list-style-type: none;}
+            .color_option {width: 32px; height: 32px; border: 2px; border-color: black; border-style:solid; margin-bottom: 2px;}
+            #username_disp {position: fixed; margin: 5px; font: 22px Helvetica, Arial; font-style: italic;}
+        </style>
+    </head>
+    <body id="body_stuff">
+        <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+        <!-- Username in top left. -->
+        <p id="username_disp">
+        </p>
+
+        <!-- The messages from the chat. -->
+        <div id="message_section">
+            <ul id="messages"></ul>
+        </div>
+
+        <!-- List of users online. -->
+        <div id="users_online_section">
+	        <h3 id="users_online_title">Users Online</h3>
+            <p id="users_online" style="color: blue;"></p>
+	    </div>
+
+	    <!-- Input box for chat. -->
+        <form id="chat_form" class="username_input" action="">
+            <input id="chat_box" autocomplete="off" /><button id="sendButton">Set Username</button>
+        </form>
+
+        <!-- Allows you to change the color you draw with. -->
+      	<ul id="color_selection">
+      		<li id="first_color" class="color_option" style="background-color: rgb(200, 20, 20); border-color: rgb(200, 0, 255);"></li>
+      		<li class="color_option" style="background-color: rgb(20, 200, 20);"></li>
+      		<li class="color_option" style="background-color: rgb(20, 20, 200);"></li>
+      		<li class="color_option" style="background-color: yellow;"></li>
+      		<li class="color_option" style="background-color: orange;"></li>
+      		<li class="color_option" style="background-color: black;"></li>
+      		<li class="color_option" style="background-color: rgb(100, 100, 100);"></li>
+      		<li class="color_option" style="background-color: white;"></li>
+      		<li class="color_option" style="background-color: pink;"></li>
+      		<li class="color_option" style="background-color: purple;"></li>
+      		<li id="custom_color" class="color_option" style="background-color: white; border-style: dotted;"></li>
+      	</ul>
+
+      	<!-- Pixels for the picture. -->
+        <table id="pic_frame" border="0" cellpadding="0" cellspacing="0">
+        </table> 
+
+        <script>
+            $(function() {
+                var socket = io(); // necessary to use socket.io 
+                var chosen_color = "rgb(200, 20, 20)"; // color you draw with
+                var last_color = $('#first_color'); // used for highlighting the currently selected color
+                var choosing_name = true; // if the user has not yet set a username this is set to true
+                var user_color = "rgb(0, 0, 0)"; // color of the user's name and chat color
+                var users = 0; // total number of users
+
+                // If the user clicks their username in the top left, change their user color.
+                // The user color changes the color of their text in chat and the color of their username.
+                $('#username_disp').click(function() {
+                	user_color = chosen_color; // Set user color to currently selected color
+                	$(this).css("color", user_color); // Change color of username to new user color.
+                	socket.emit("update user color", user_color); // Update new user color to server.
+                });
+
+                // Change which color the user draws with.
+                $('#color_selection').on('click', 'li', function() {
+                	// Highlight the currently selected color.
+                	last_color.css("border-color", "rgb(0, 0, 0)");
+                	last_color = $(this);
+	                $(this).css("border-color", "rgb(200, 0, 255)");
+
+	                /* If the user has selected the custom color option, have them input the RGB values for the custom
+	                   color. Otherwise, simply set their chosen color to the color they selected.*/
+                	if ($(this).attr("id") === 'custom_color') {
+                		var temp_color = prompt("Type in the RGB value for the custom color.");
+
+                		// some redex to make sure they are inputting RGB values, supports 3 formats:
+                		// rgb(r, g, b)
+                		// (r, g, b)
+                		// r, g, b
+                		var format_a = /^[r][g][b][(]\d{1,3}[,]\s?\d{1,3}[,]\s?\d{1,3}[)]$/;
+                		var format_b = /^[(]\d{1,3}[,]\s?\d{1,3}[,]\s?\d{1,3}[)]$/;
+                		var format_c = /^\d{1,3}[,]\s?\d{1,3}[,]\s?\d{1,3}$/;
+
+                		var valid = false;
+
+                		// If the text matched format b or format c it can easily be converted to format a.
+                		// The colors in the picture array are stored in format a so these must be in format a.
+                		if (format_a.test(temp_color)) {
+                			chosen_color = temp_color;
+                		} else if (format_b.test(temp_color)) {
+                			chosen_color = "rgb" + temp_color;
+                		} else if (format_c.test(temp_color)) {
+                			chosen_color = "rgb(" + temp_color + ")";
+                		} else {
+                			chosen_color = $(this).css("background-color");
+                			alert("Invalid RGB format. Please enter the color with a valid format. Example: (200,50,50)");
+                		}
+
+                		// Update color of custom color box to the new color.
+                		$(this).css("background-color", chosen_color); 
+                	} else {
+	                	chosen_color = $(this).css("background-color");
+	                }
+                });
+
+                // Tell the server which pixel the user clicks.
+				$('#pic_frame').on('click', 'td', function() {
+					// pic_frame is a table of pixels, jquery can find td that was clicked
+					var box_clicked = $(this).attr("id");
+					// The ids of the td elements are in a format axb (example, 20x30) where a and b is the column and row 
+					var coords = box_clicked.split("x"); // find these coordinates by doing a split with delimiter x
+					
+					// Put the location the user clicked and their chosen color into an object to send to server so that
+					// the picture may be updated on the server.
+					var click_info = {}
+					click_info.x = coords[0] || 0;
+					click_info.y = coords[1] || 0;
+					click_info.color = chosen_color;
+
+					socket.emit('box clicked', click_info);
+				});
+
+				// Runs when you click the submit button for the chat.
+                $('#sendButton').click(function() {
+                    socket.emit('chat message', $('#chat_box').val()); // send information user typed to server
+                    $('#chat_box').val(""); // empty chat box for new messages
+                    return false; // prevents that weird refresh thing from happening
+                });
+
+                // Runs when a user loads the page.
+                socket.on('on page loaded', function(picture) {
+                	if (choosing_name) { // only run this for users who have not selected their username yet
+                		// Hide everything until they input their username.
+	                    $('#users_online_section').hide();
+	                    $('#pic_frame').hide();
+	                    $('#color_selection').hide();
+
+	                    // Set up the html for the picture from the server.
+	                    $('#pic_frame').empty();
+
+	                    for (var w = 0; w < picture.length; w++) {
+	                    	var temp_row = $('<tr>');
+
+	                        for (var h = 0; h < picture[0].length; h++) {
+	                        	var temp_cell = $('<td class="picbox" style="position: relative;">');
+	                        	temp_cell.attr("id", w + "x" + h);
+	                        	temp_cell.css("background-color", picture[w][h]);
+
+	                        	temp_row.append(temp_cell);
+	                        }
+
+	                        $('#pic_frame').append(temp_row);
+	                    }
+	                }
+                });
+
+                // Update the color of the pixel the user clicked.
+                socket.on('update box', function(box_info) {
+                	var selector = box_info.x + "x" + box_info.y;
+                	$('#' + selector).css("background-color", box_info.color);
+                });
+
+                // Display the message the user sent in chat.
+                socket.on('chat message', function(username, msg, color, override) {
+                	/*
+                		Appending the html directly like this,
+						$('#messages').append(username + " : " + msg) etc
+						would allow clients to run javascript and html on other clients, which is an issue.
+						All you would have to do is type something like this in chat,
+						<script>alert('hello');<//script>
+						and it would run that on every client. So, I appending it a different way to prevent
+						this from happening.
+                	*/
+
+                	// The override feature is used for messages sent by the server instead of a user.
+                	// For example, when someone leaves or joins.
+
+                	if (override.length > 0) {
+                		var temp_li = $('<li>');
+                		temp_li.css("color", color);
+                		temp_li.text(override);
+
+                    	$('#messages').append(temp_li);
+                	} else {
+                		// Display the user's message, automatically put in their username and set the color of the
+                		// message to their user color.
+                		var temp_li = $('<li style="color: black;">');
+                		temp_li.append($('<b>').text(username + " : "));
+
+                		var temp_span = $('<span>');
+                		temp_span.css("color", color);
+                		temp_span.text(msg);
+                		temp_li.append(temp_span);
+
+                		$('#messages').append(temp_li);
+                	}
+
+                	// If there are too many messages, start removing them from the top so they don't go off the screen.
+                    if ($('#messages li').size() > 27) $('#messages li').first().remove();
+                });
+
+                // After the user inputs their username, show everything and give them permission to use everything.
+                socket.on('on chat join', function(name) {
+                	if (choosing_name) {
+	                    $('#chat_form').attr("class", "chat_input");
+	                    $('#sendButton').text("Send");
+	                    $('#users_online_section').show();
+	                    $('#pic_frame').show();
+	                    $('#color_selection').show();
+                    	$('#username_disp').text(name);
+                    	choosing_name = false;
+                    }
+                });
+
+                // Update the list of users.
+                socket.on('userlist update', function(user_data) {
+                	users = 0;
+
+                	$('#users_online').empty();
+
+                	// The server sends a list of user objects with the socket.id excluded.
+                	// These will be put into the list.
+                	for (var i = 0; i < user_data.length; i++) {
+                		var user = user_data[i];
+
+                		if (user) { // check that it's not null
+	                		users++;
+
+	                		// insert the commas for the list
+	                		var text_format = user.username;
+	                		if (users > 1 && i < user_data.length) text_format = ", " + user.username;
+
+	                		// have the color of the users correspond with the user color
+		                	var temp_span = $('<span>');
+		                	temp_span.attr("id", "user_" + user.username);
+		                	temp_span.text(text_format);
+		                	temp_span.css("color", user.user_color);
+
+		                	$('#users_online').append(temp_span);
+		                }
+                	}
+
+ 					// show number of users online
+                	$('#users_online_title').text("Users Online (" + users + ")");
+                });
+
+                // Remove a user from the user list when they disconnect.
+                socket.on('userlist remove', function(user) {
+                	users--;
+                	$('#users_online_title').text("Users Online (" + users + ")"); // update this
+                	// removes them from the list by id, id format is user_username (ex: user_dog)
+                	$('#user_' + user.username).remove(); 
+                });
+
+                // When someone changes their user color, update this in the user list.
+                socket.on('userlist update color', function(user) {
+                	$('#user_' + user.username).css("color", user.user_color);
+                });
+            });
+        </script>
+    </body>
+</html>
