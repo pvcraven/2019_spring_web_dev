@@ -204,9 +204,7 @@ This is a great tool for changing your already built website’s CSS to see if a
 improvements can be made to the style or format.  Also, it is useful for personal
 use.  If you are colorblind for example you can change the colors on a website
 to make it more user-friendly for yourself. Once you are done with the CSS options
-you can see the CSS code you changed!
-
-[diviSpace]_
+you can see the CSS code you changed! [diviSpace]_
 
 Print CSS
 ~~~~~~~~~~~~
@@ -284,9 +282,7 @@ depending on the different columns or text blocks.
 All of these things in the end will make your website look better on print as
 well as save ink and paper.  Whether that is the ability to change font size or
 make an image disappear either way there are many things you can do with CSS and
-printing but these were some of the basic things you can do with a print CSS.
-
-[SmashingMagazine]_
+printing but these were some of the basic things you can do with a print CSS. [SmashingMagazine]_
 
 Conclusion
 ~~~~~~~~~~
