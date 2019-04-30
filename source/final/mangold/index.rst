@@ -211,6 +211,7 @@ should the same just camel case. [w3schools]_
 
 DOM
 ---
+
 Document Object Model (DOM) adds behaviors, and with Angular it should be inside
 directives. Therefore, the user interface designers can see the view without all
 of the behaviors. [Lau]_
@@ -224,8 +225,17 @@ of the behaviors. [Lau]_
     <p ng-hide="false">I am visible.</p>
     </div>
 
+Conclusion
+----------
 
+Today people want websites and app to work fast and be interactive and AngularJS
+achieves that. AngularJS framework was developed to improve the development
+process and use less code. AngularJS is a good framework because of flexibility
+and how everything connects and works with the MVC.
+
+Citations
+---------
 .. [w3schools] "`AngularJS Tutorial <https://www.w3schools.com/angular/default.asp>`_" W3Schools, Web. 4 Apr. 2019
 .. [Lau] "`sitepoint <https://www.sitepoint.com/10-reasons-use-angularjs/>`_" sitepoint, 05 Sept. 2013. Web. 4 Apr. 2019
 .. [Ray] "`Why AngularJS is my preferred framework for software development <https://medium.freecodecamp.org/why-is-angularjs-the-most-preferred-framework-for-software-development-5253c2c569c9/>`_" freeCodeCamp, 16 Jul. 2018. Web. 4 Apr. 2019
-.. [Huszárik] https://blog.risingstack.com/angularjs-to-angular-history-and-tips-to-get-started/
+.. [Huszárik] "`AngularJS to Angular <https://blog.risingstack.com/angularjs-to-angular-history-and-tips-to-get-started/>_" RisingStack, Web. 4 Apr. 2019
