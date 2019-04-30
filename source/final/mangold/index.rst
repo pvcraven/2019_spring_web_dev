@@ -16,7 +16,9 @@ the coder must write due to how the program works.
 
 What is AngularJS and the history of it
 ---------------------------------------
-
+AngularJS version 1.0 was released in 2012.
+Miško Hevery, a Google employee, started to work with AngularJS in 2009.
+The idea turned out very well, and the project is now officially supported by Google.
 
 Change Detection
 ~~~~~~~~~~~~~~~~
@@ -25,6 +27,15 @@ Change Detection
 General style
 -------------
 
+When learning AngularJS you should already know HTML, CSS, and JavaScript.
+
+Using camel case
+
+.. code-block:: html
+   :caption: AngularJS is written in JavaScript.
+
+    <!-- AngularJS is used in a JavaScript file and need this tag -->
+   <script type="text/JavaScript" src="code.angularjs.org/1.7.8/angular.min.js"></script>
 
 
 MVC Framework
@@ -84,14 +95,42 @@ not loading a whole new page when you just want the menu button to come down on
 part of the page. With AngularJS you can create multiple views for URLs making
 the website transition from one view to another seamlessly.
 
-Directory
-~~~~~~~~~
+Directives
+~~~~~~~~~~
 Directives is creating a unique tag specific to your code and should be a
 standalone element that’s separate from the app. This tag can be used anytime
 once it’s defined and will work just like any other tag in HTML. To create new
 element by putting the DOM manipulation code into directives and give them
 custom attributes and class names. MVC app can now look directly and the new
 data and update it with the view.
+
+Extending HTML
+--------------
+In this example of code AngularJS works with the HTML using `ng-directives`. The
+code applies AngularJS with adding `ng-app=""` to the div tag. Next in the input
+field `ng-model` binds the application data which is name to the `ng-bind` binds
+is the view we see on the screen.
+
+.. code-block:: html
+    :caption: ng-directives with HTML
+
+    <!DOCTYPE html>
+    <html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body>
+
+    <div ng-app="">
+        <p>Name: <input type="text" ng-model="name"></p>
+        <p ng-bind="name"></p>
+    </div>
+
+    </body>
+    </html>
+
+Creating Personal Directives
+
+A directive can be created for elements, classes, and attributes.
+
 
 .. code-block:: html
     :caption: data-binding
@@ -121,11 +160,10 @@ DOM
 ---
 Document Object Model (DOM) adds behaviors, and with Angular it should be inside
 directives. Therefore, the user interface designers can see the view without all
-the behaviors.
+the behaviors. [w3schools]_ [Lau]_ [Ray]_
 
 
 .. [w3schools] "`AngularJS Tutorial <https://www.w3schools.com/angular/default.asp>`_" W3Schools, Web. 4 Apr. 2019
-
 .. [Lau] "`sitepoint <https://www.sitepoint.com/10-reasons-use-angularjs/>`_" sitepoint, 05 Sept. 2013. Web. 4 Apr. 2019
 .. [Ray] "`Why AngularJS is my preferred framework for software development <https://medium.freecodecamp.org/why-is-angularjs-the-most-preferred-framework-for-software-development-5253c2c569c9/>`_" freeCodeCamp, 16 Jul. 2018. Web. 4 Apr. 2019
 
