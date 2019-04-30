@@ -13,19 +13,19 @@ and get a great running page in the browser. Overall AngularJS is a program
 that allows you to design large scale frameworks all while minimizing the code
 that the coder must write due to how the program works.
 
-What is AngularJS and the history of it
----------------------------------------
-
-AngularJS version 1.0 was released in 2012.
-Miško Hevery, a Google employee, started to work with AngularJS in 2009.
-The idea turned out very well, and the project is now officially supported by Google. [Huszárik]_
+History
+-------
+AngularJS was started in 2019 by a Google employee named Misko Hevery. Hevery
+wanted the program to help with front-end and back-end application. The idea
+turned out very well, and the project is now officially supported by Google.
+AngularJS version 1.0 was released in 2012. [Huszárik]_
 
 When learning AngularJS you should already know HTML, CSS, and JavaScript.
 
 .. code-block:: html
    :caption: AngularJS is written in JavaScript.
 
-    <!-- AngularJS is used in a JavaScript file and need this tag -->
+   <!-- AngularJS is used in a JavaScript file and need this tag -->
    <script type="text/JavaScript" src="code.angularjs.org/1.7.8/angular.min.js"></script>
 
 MVC Framework
@@ -55,7 +55,7 @@ POJO
 POJO stands for plain old JavaScript and this goes back to the model part of MVC
 in which AngularJS binds pieces together without using a getter or setter.
 Objects can have loops created with properties, which developers can then make
-changes directly to the loop and adjust the reframe, making the code
+changes directly to the loop and adjust the re-frame, making the code
 cleaner and more precise. POJO is different than traditional data models because
 Angular’s data model has a middle holding area that works with the controller
 and the view to collect data from the user. The middle area stores data and
@@ -171,7 +171,7 @@ input field ``ng-model`` binds the application data which is name to the
     </html>
 
 .. image:: ExtendHTML.PNG
-    :width: 35%
+    :width: 45%
 
 Creating Directives
 ~~~~~~~~~~~~~~~~~~~
@@ -207,7 +207,7 @@ should the same just camel case. [w3schools]_
     </html>
 
 .. image:: directive.PNG
-    :width: 35%
+    :width: 45%
 
 DOM
 ---
