@@ -105,7 +105,7 @@ being searched through. For example if you had a list of name and searched the
 letter 'b' it would return everything with the letter 'b'. [w3schools]_
 
 Routing
-~~~~~~~
+-------
 
 Routing is important to the single page applications (SPA) and updating from one
 view to the next. Developers don't want to load a whole new page when something
@@ -128,16 +128,16 @@ URLs allowing the website transition from one view to another seamlessly. [Ray]_
     app.config(function($routeProvider) {
         $routeProvider
         .when("/", {
-            templateUrl : "main.htm"
+            templateUrl : "html1.htm"
         })
         .when("/red", {
-            templateUrl : "red.htm"
+            templateUrl : "html2.htm"
         })
     });
     </script>
 
 Directives
-~~~~~~~~~~
+----------
 
 Directives is creating a unique tag specific to your code and should be a
 standalone element that is separate from the app. This tag can be used anytime
@@ -147,10 +147,10 @@ directives and give them custom attributes and class names. MVC app can now look
 directly and the new data and update it with the view. [Lau]_
 
 Extending HTML
---------------
+~~~~~~~~~~~~~~
 
 In this example of code AngularJS works with the HTML using ``ng-directives``.
-Thecode applies AngularJS with adding ``ng-app=""`` to the div tag. Next in the
+The code applies AngularJS with adding ``ng-app=""`` to the div tag. Next in the
 input field ``ng-model`` binds the application data which is name to the
 ``ng-bind`` binds is the view we see on the screen. [w3schools]_
 
@@ -170,8 +170,11 @@ input field ``ng-model`` binds the application data which is name to the
     </body>
     </html>
 
+.. image:: ExtendHTML.PNG
+    :width: 35%
+
 Creating Directives
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 A directive can be created for elements, classes, and attributes. This simple
 example will be for an element name that will print out a ``<h1></h1>`` tag, but
@@ -202,6 +205,9 @@ should the same just camel case. [w3schools]_
 
     </body>
     </html>
+
+.. image:: directive.PNG
+    :width: 35%
 
 DOM
 ---
