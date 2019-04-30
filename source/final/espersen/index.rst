@@ -13,9 +13,9 @@ multiple aspects of the web page or app at once.
 History of topic / library of code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 There was not always CSS and the ability to change the styling and other aspects
-of the web browser.  In the early web browsing days, when Mosaic and and other
+of the web browser.  In the early days of web browsing, when Mosaic and and other
 early stage web clients were out, the only things you could change were the color
-and style of the font you see.  Eventually, the people complained about custom
+and style of the font you see.  Eventually, people complained about wanting custom
 touches and that they wanted more from their browsing clients.  That is when a few
 people teamed up and made CSS.  The first CSS idea was brought to attention by
 Bert Bos and Håkon Wium Lie. [CSSHistory]_
@@ -50,7 +50,6 @@ Responsive Web Design
 
   .. image:: ColorDemo.PNG
     :width: 25%
-
 
  [w3SchoolsRef]_
 
@@ -150,7 +149,7 @@ So for example, instead of saying if the screen gets too small then change it.
 Make it so if it gets too big then change it.  This way your website or app will
 load faster on the smaller screens.
 
-The only thing that needs to be changed in the CSS when designing for Cellphones
+The only thing that needs to be changed in the CSS when designing for mobile devices
 first is making it so instead of shrinking to size, we are growing.  So, when
 making our columns for a page we will usually make it so each column takes up
 100% of the width of the screen.  This will allow cellphones to load faster and
@@ -158,7 +157,7 @@ if the page gets larger than a certain size, then we change to columns taking up
 a certain percentage of the screen.  For example.
 
 .. code-block:: html
-      :caption: Cellphone First!
+      :caption: Mobile Devices First!
 
       /* This is for the cellphones, it makes the columns 100% width of the screen and the columns stack*/
       [class*="col-"] {
@@ -176,14 +175,6 @@ a certain percentage of the screen.  For example.
 
 [MediaQueries]_
 [w3SchoolsMediaQueries]_
-
-Bootstrap
-~~~~~~~~~
-Bootstrap is another tool that can help you design a website very easily.
-Bootstrap can be used in many ways but we will talk about the CSS framework mainly.
-It allows you to create and import styles quickly and make prototypes relatively
-fast compared to many of the other programs that are out there.  It allows you to
-implement and style buttons, tables, images, and lists easily.
 
 Stylebot
 ~~~~~~~~
@@ -301,9 +292,9 @@ Conclusion
 ~~~~~~~~~~
 Overall, when it comes to CSS on your website or mobile app all of these tools
 above can be extremely helpful.  For formatting, styling, and perfecting a website
-or app CSS is needed and I do not think anything will replace it anytime soon.
-I think that more tools will come out to make CSS easier to implement like bootstrap
-or Style bot but I think the core of CSS will remain.  CSS is embedded into
+or app CSS is needed and most likely will stay that way for awhile, until something
+better comes out.  More tools will come out to make CSS easier to implement like
+Style bot but the core of CSS will remain.  CSS is embedded into
 pretty much every website you can think of when it comes to online and without
 it everything would look bland, boring and just not appealing.
 
