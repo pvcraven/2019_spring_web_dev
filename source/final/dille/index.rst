@@ -233,4 +233,4 @@ Sources
 
 .. [BeforeNodeJS] Before Node.JS "`Before NodeJS <https://www.quora.com/Before-Node-js-was-created-how-did-JavaScript-communicate-with-a-database>`_" Google, Web 4/4/2019
 
-.. [SingleThreadMechanism] Node.JS Code "`Single Thread <https://codeburst.io/how-node-js-single-thread-mechanism-work-understanding-event-loop-in-nodejs-230f7440b0ea>`_" Google, Web 4/4/2019
+.. [SingleThreadMechanism] Node.JS Code "`Single Thread <https://medium.com/better-programming/is-node-js-really-single-threaded-7ea59bcc8d64>`_" Google, Web 4/4/2019
